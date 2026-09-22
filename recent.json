@@ -1,14 +1,14 @@
 {
   "player": "Harpers#KR1",
-  "generated_at": "2026-09-22T04:25:28.306Z",
-  "schema_version": 6,
+  "generated_at": "2026-09-22T04:35:33.723Z",
+  "schema_version": 7,
   "latest_match_id": "KR_8390325321",
   "count": 7,
   "matches": [
     {
-      "schema_version": 6,
+      "schema_version": 7,
       "match_id": "KR_8390325321",
-      "synced_at": "2026-09-22T04:25:28.006Z",
+      "synced_at": "2026-09-22T04:35:33.403Z",
       "game": {
         "datetime": "2026-09-22T04:15:42.993Z",
         "length_seconds": 2394.995361328125,
@@ -30,7 +30,7 @@
         "traits": [
           {
             "id": "DA_18_Defender",
-            "name_ko": "DA_18_Defender",
+            "name_ko": "엄호대",
             "num_units": 2,
             "tier_current": 1,
             "tier_total": 3,
@@ -38,7 +38,7 @@
           },
           {
             "id": "DA_18_Fae",
-            "name_ko": "DA_18_Fae",
+            "name_ko": "요정",
             "num_units": 3,
             "tier_current": 1,
             "tier_total": 2,
@@ -46,7 +46,7 @@
           },
           {
             "id": "DA_18_Hunter",
-            "name_ko": "DA_18_Hunter",
+            "name_ko": "사냥꾼",
             "num_units": 2,
             "tier_current": 1,
             "tier_total": 4,
@@ -54,7 +54,7 @@
           },
           {
             "id": "DA_18_LuxUniqueTrait",
-            "name_ko": "DA_18_LuxUniqueTrait",
+            "name_ko": "화신",
             "num_units": 1,
             "tier_current": 1,
             "tier_total": 1,
@@ -62,7 +62,7 @@
           },
           {
             "id": "DA_18_Rival",
-            "name_ko": "DA_18_Rival",
+            "name_ko": "경쟁자",
             "num_units": 1,
             "tier_current": 1,
             "tier_total": 3,
@@ -70,7 +70,7 @@
           },
           {
             "id": "DA_18_Spellweaver",
-            "name_ko": "DA_18_Spellweaver",
+            "name_ko": "주문술사",
             "num_units": 2,
             "tier_current": 1,
             "tier_total": 3,
@@ -78,7 +78,7 @@
           },
           {
             "id": "DA_18_Sprykin",
-            "name_ko": "DA_18_Sprykin",
+            "name_ko": "날렵이",
             "num_units": 6,
             "tier_current": 2,
             "tier_total": 3,
@@ -86,7 +86,7 @@
           },
           {
             "id": "DA_FloraFatalis18",
-            "name_ko": "DA_FloraFatalis18",
+            "name_ko": "치명적인 꽃",
             "num_units": 1,
             "tier_current": 1,
             "tier_total": 2,
@@ -96,7 +96,7 @@
         "units": [
           {
             "id": "DA_18_Veigar",
-            "name_ko": "DA_18_Veigar",
+            "name_ko": "베이가",
             "star": 2,
             "rarity": 0,
             "items": [
@@ -108,7 +108,7 @@
           },
           {
             "id": "DA_18_Kobuko",
-            "name_ko": "DA_18_Kobuko",
+            "name_ko": "코부코",
             "star": 2,
             "rarity": 0,
             "items": [
@@ -120,21 +120,21 @@
           },
           {
             "id": "DA_18_Teemo",
-            "name_ko": "DA_18_Teemo",
+            "name_ko": "티모",
             "star": 2,
             "rarity": 1,
             "items": []
           },
           {
             "id": "DA_18_KhaZix",
-            "name_ko": "DA_18_KhaZix",
+            "name_ko": "카직스",
             "star": 2,
             "rarity": 2,
             "items": []
           },
           {
             "id": "DA_18_Rammus",
-            "name_ko": "DA_18_Rammus",
+            "name_ko": "람머스",
             "star": 2,
             "rarity": 2,
             "items": [
@@ -150,21 +150,21 @@
           },
           {
             "id": "DA_Fiddlesticks18",
-            "name_ko": "DA_Fiddlesticks18",
+            "name_ko": "피들스틱",
             "star": 1,
             "rarity": 2,
             "items": []
           },
           {
             "id": "DA_Lux18_Base",
-            "name_ko": "DA_Lux18_Base",
+            "name_ko": "럭스",
             "star": 1,
             "rarity": 4,
             "items": []
           },
           {
             "id": "DA_18_Tristana",
-            "name_ko": "DA_18_Tristana",
+            "name_ko": "트리스타나",
             "star": 3,
             "rarity": 2,
             "items": [
@@ -184,7 +184,7 @@
           },
           {
             "id": "DA_18_Ashe",
-            "name_ko": "DA_18_Ashe",
+            "name_ko": "애쉬",
             "star": 1,
             "rarity": 4,
             "items": [
@@ -214,7 +214,7 @@
           "traits": [
             {
               "id": "DA_18_Blossom",
-              "name_ko": "DA_18_Blossom",
+              "name_ko": "개화",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 5,
@@ -222,7 +222,7 @@
             },
             {
               "id": "DA_18_Brawler",
-              "name_ko": "DA_18_Brawler",
+              "name_ko": "싸움꾼",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -230,7 +230,7 @@
             },
             {
               "id": "DA_18_Adaptor",
-              "name_ko": "DA_18_Adaptor",
+              "name_ko": "적응가",
               "num_units": 3,
               "tier_current": 2,
               "tier_total": 3,
@@ -238,7 +238,7 @@
             },
             {
               "id": "DA_Primal18",
-              "name_ko": "DA_Primal18",
+              "name_ko": "원시",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 2,
@@ -246,7 +246,7 @@
             },
             {
               "id": "DA_18_Rival",
-              "name_ko": "DA_18_Rival",
+              "name_ko": "경쟁자",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 3,
@@ -254,7 +254,7 @@
             },
             {
               "id": "DA_18_Caustic",
-              "name_ko": "DA_18_Caustic",
+              "name_ko": "부식",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -262,7 +262,7 @@
             },
             {
               "id": "DA_Juggernaut18",
-              "name_ko": "DA_Juggernaut18",
+              "name_ko": "전쟁기계",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -272,7 +272,7 @@
           "units": [
             {
               "id": "DA_18_Rengar",
-              "name_ko": "DA_18_Rengar",
+              "name_ko": "렝가",
               "star": 3,
               "rarity": 2,
               "items": [
@@ -292,14 +292,14 @@
             },
             {
               "id": "DA_18_Yorick",
-              "name_ko": "DA_18_Yorick",
+              "name_ko": "요릭",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Sett",
-              "name_ko": "DA_18_Sett",
+              "name_ko": "세트",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -315,7 +315,7 @@
             },
             {
               "id": "DA_18_MasterYi_AD",
-              "name_ko": "DA_18_MasterYi_AD",
+              "name_ko": "마스터 이",
               "star": 3,
               "rarity": 2,
               "items": [
@@ -335,14 +335,14 @@
             },
             {
               "id": "DA_Krug18",
-              "name_ko": "DA_Krug18",
+              "name_ko": "돌거북",
               "star": 3,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_Nidalee18_AP",
-              "name_ko": "DA_Nidalee18_AP",
+              "name_ko": "니달리",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -362,7 +362,7 @@
             },
             {
               "id": "DA_Vi18",
-              "name_ko": "DA_Vi18",
+              "name_ko": "바이",
               "star": 3,
               "rarity": 2,
               "items": [
@@ -382,7 +382,7 @@
             },
             {
               "id": "DA_KogMaw18_AD",
-              "name_ko": "DA_KogMaw18_AD",
+              "name_ko": "코그모",
               "star": 2,
               "rarity": 2,
               "items": []
@@ -401,7 +401,7 @@
           "traits": [
             {
               "id": "DA_18_Adaptor",
-              "name_ko": "DA_18_Adaptor",
+              "name_ko": "적응가",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -409,7 +409,7 @@
             },
             {
               "id": "DA_18_Inferno",
-              "name_ko": "DA_18_Inferno",
+              "name_ko": "지옥불",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -417,7 +417,7 @@
             },
             {
               "id": "DA_18_Invoker",
-              "name_ko": "DA_18_Invoker",
+              "name_ko": "기원자",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -425,7 +425,7 @@
             },
             {
               "id": "DA_18_Lunar",
-              "name_ko": "DA_18_Lunar",
+              "name_ko": "달빛",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -433,7 +433,7 @@
             },
             {
               "id": "DA_Primal18",
-              "name_ko": "DA_Primal18",
+              "name_ko": "원시",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 2,
@@ -441,7 +441,7 @@
             },
             {
               "id": "DA_18_Rapidfire",
-              "name_ko": "DA_18_Rapidfire",
+              "name_ko": "속사포",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -449,7 +449,7 @@
             },
             {
               "id": "DA_18_Vanguard",
-              "name_ko": "DA_18_Vanguard",
+              "name_ko": "선봉대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -457,7 +457,7 @@
             },
             {
               "id": "DA_18_Caustic",
-              "name_ko": "DA_18_Caustic",
+              "name_ko": "부식",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -465,7 +465,7 @@
             },
             {
               "id": "DA_Juggernaut18",
-              "name_ko": "DA_Juggernaut18",
+              "name_ko": "전쟁기계",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -475,14 +475,14 @@
           "units": [
             {
               "id": "DA_18_Varus",
-              "name_ko": "DA_18_Varus",
+              "name_ko": "바루스",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Diana",
-              "name_ko": "DA_18_Diana",
+              "name_ko": "다이애나",
               "star": 3,
               "rarity": 2,
               "items": [
@@ -494,7 +494,7 @@
             },
             {
               "id": "DA_18_Aphelios",
-              "name_ko": "DA_18_Aphelios",
+              "name_ko": "아펠리오스",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -514,14 +514,14 @@
             },
             {
               "id": "DA_Vi18",
-              "name_ko": "DA_Vi18",
+              "name_ko": "바이",
               "star": 2,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_KogMaw18_AD",
-              "name_ko": "DA_KogMaw18_AD",
+              "name_ko": "코그모",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -533,7 +533,7 @@
             },
             {
               "id": "DA_Amumu18",
-              "name_ko": "DA_Amumu18",
+              "name_ko": "아무무",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -553,7 +553,7 @@
             },
             {
               "id": "DA_Sentinel18",
-              "name_ko": "DA_Sentinel18",
+              "name_ko": "파수꾼",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -569,7 +569,7 @@
             },
             {
               "id": "DA_Nidalee18_AP",
-              "name_ko": "DA_Nidalee18_AP",
+              "name_ko": "니달리",
               "star": 1,
               "rarity": 3,
               "items": []
@@ -588,7 +588,7 @@
           "traits": [
             {
               "id": "DA_18_Battlemage",
-              "name_ko": "DA_18_Battlemage",
+              "name_ko": "거석",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -596,7 +596,7 @@
             },
             {
               "id": "DA_18_Blackthorn",
-              "name_ko": "DA_18_Blackthorn",
+              "name_ko": "검은 가시",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -604,7 +604,7 @@
             },
             {
               "id": "DA_18_Defender",
-              "name_ko": "DA_18_Defender",
+              "name_ko": "엄호대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -612,7 +612,7 @@
             },
             {
               "id": "DA_18_Inferno",
-              "name_ko": "DA_18_Inferno",
+              "name_ko": "지옥불",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -620,7 +620,7 @@
             },
             {
               "id": "DA_18_Executioner",
-              "name_ko": "DA_18_Executioner",
+              "name_ko": "처형자",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -628,7 +628,7 @@
             },
             {
               "id": "DA_18_Summoner",
-              "name_ko": "DA_18_Summoner",
+              "name_ko": "소환사",
               "num_units": 3,
               "tier_current": 2,
               "tier_total": 2,
@@ -636,7 +636,7 @@
             },
             {
               "id": "DA_FloraFatalis18",
-              "name_ko": "DA_FloraFatalis18",
+              "name_ko": "치명적인 꽃",
               "num_units": 2,
               "tier_current": 2,
               "tier_total": 2,
@@ -644,7 +644,7 @@
             },
             {
               "id": "DA_Juggernaut18",
-              "name_ko": "DA_Juggernaut18",
+              "name_ko": "전쟁기계",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -652,7 +652,7 @@
             },
             {
               "id": "DA_18_ZyraUniqueTrait",
-              "name_ko": "DA_18_ZyraUniqueTrait",
+              "name_ko": "가시의 여인",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -662,7 +662,7 @@
           "units": [
             {
               "id": "DA_18_Azir",
-              "name_ko": "DA_18_Azir",
+              "name_ko": "아지르",
               "star": 3,
               "rarity": 2,
               "items": [
@@ -682,21 +682,21 @@
             },
             {
               "id": "DA_18_Yorick",
-              "name_ko": "DA_18_Yorick",
+              "name_ko": "요릭",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Shen",
-              "name_ko": "DA_18_Shen",
+              "name_ko": "쉔",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_18_Zyra",
-              "name_ko": "DA_18_Zyra",
+              "name_ko": "자이라",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -716,14 +716,14 @@
             },
             {
               "id": "DA_Fiddlesticks18",
-              "name_ko": "DA_Fiddlesticks18",
+              "name_ko": "피들스틱",
               "star": 1,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_18_Soraka",
-              "name_ko": "DA_18_Soraka",
+              "name_ko": "소라카",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -743,7 +743,7 @@
             },
             {
               "id": "DA_Amumu18",
-              "name_ko": "DA_Amumu18",
+              "name_ko": "아무무",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -755,7 +755,7 @@
             },
             {
               "id": "DA_18_Malphite",
-              "name_ko": "DA_18_Malphite",
+              "name_ko": "말파이트",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -787,7 +787,7 @@
           "traits": [
             {
               "id": "DA_18_Blossom",
-              "name_ko": "DA_18_Blossom",
+              "name_ko": "개화",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 5,
@@ -795,7 +795,7 @@
             },
             {
               "id": "DA_18_Brawler",
-              "name_ko": "DA_18_Brawler",
+              "name_ko": "싸움꾼",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -803,7 +803,7 @@
             },
             {
               "id": "DA_18_Defender",
-              "name_ko": "DA_18_Defender",
+              "name_ko": "엄호대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -811,7 +811,7 @@
             },
             {
               "id": "DA_18_Elderwood",
-              "name_ko": "DA_18_Elderwood",
+              "name_ko": "나무정령",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 5,
@@ -819,7 +819,7 @@
             },
             {
               "id": "DA_18_Maokai_UniqueTrait",
-              "name_ko": "DA_18_Maokai_UniqueTrait",
+              "name_ko": "고목",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -827,7 +827,7 @@
             },
             {
               "id": "DA_18_Executioner",
-              "name_ko": "DA_18_Executioner",
+              "name_ko": "처형자",
               "num_units": 3,
               "tier_current": 2,
               "tier_total": 3,
@@ -835,7 +835,7 @@
             },
             {
               "id": "DA_18_Spellweaver",
-              "name_ko": "DA_18_Spellweaver",
+              "name_ko": "주문술사",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -843,7 +843,7 @@
             },
             {
               "id": "DA_FloraFatalis18",
-              "name_ko": "DA_FloraFatalis18",
+              "name_ko": "치명적인 꽃",
               "num_units": 2,
               "tier_current": 2,
               "tier_total": 2,
@@ -853,35 +853,35 @@
           "units": [
             {
               "id": "DA_Fiddlesticks18",
-              "name_ko": "DA_Fiddlesticks18",
+              "name_ko": "피들스틱",
               "star": 2,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_18_Ornn",
-              "name_ko": "DA_18_Ornn",
+              "name_ko": "오른",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Alistar",
-              "name_ko": "DA_18_Alistar",
+              "name_ko": "알리스타",
               "star": 1,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_18_Yunara",
-              "name_ko": "DA_18_Yunara",
+              "name_ko": "유나라",
               "star": 1,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_18_Ezreal",
-              "name_ko": "DA_18_Ezreal",
+              "name_ko": "이즈리얼",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -901,7 +901,7 @@
             },
             {
               "id": "DA_18_Sett",
-              "name_ko": "DA_18_Sett",
+              "name_ko": "세트",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -917,7 +917,7 @@
             },
             {
               "id": "DA_18_Ahri",
-              "name_ko": "DA_18_Ahri",
+              "name_ko": "아리",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -937,7 +937,7 @@
             },
             {
               "id": "DA_18_Soraka",
-              "name_ko": "DA_18_Soraka",
+              "name_ko": "소라카",
               "star": 1,
               "rarity": 3,
               "items": [
@@ -953,7 +953,7 @@
             },
             {
               "id": "DA_18_Maokai",
-              "name_ko": "DA_18_Maokai",
+              "name_ko": "마오카이",
               "star": 1,
               "rarity": 4,
               "items": []
@@ -972,7 +972,7 @@
           "traits": [
             {
               "id": "DA_18_Defender",
-              "name_ko": "DA_18_Defender",
+              "name_ko": "엄호대",
               "num_units": 6,
               "tier_current": 3,
               "tier_total": 3,
@@ -980,7 +980,7 @@
             },
             {
               "id": "DA_18_Spellweaver",
-              "name_ko": "DA_18_Spellweaver",
+              "name_ko": "주문술사",
               "num_units": 4,
               "tier_current": 2,
               "tier_total": 3,
@@ -988,7 +988,7 @@
             },
             {
               "id": "DA_FloraFatalis18",
-              "name_ko": "DA_FloraFatalis18",
+              "name_ko": "치명적인 꽃",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 2,
@@ -996,7 +996,7 @@
             },
             {
               "id": "DA_AluneUniqueTrait18",
-              "name_ko": "DA_AluneUniqueTrait18",
+              "name_ko": "조율",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -1006,7 +1006,7 @@
           "units": [
             {
               "id": "DA_18_Cassiopeia",
-              "name_ko": "DA_18_Cassiopeia",
+              "name_ko": "카시오페아",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -1026,21 +1026,21 @@
             },
             {
               "id": "DA_18_Ornn",
-              "name_ko": "DA_18_Ornn",
+              "name_ko": "오른",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Leona",
-              "name_ko": "DA_18_Leona",
+              "name_ko": "레오나",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Rammus",
-              "name_ko": "DA_18_Rammus",
+              "name_ko": "람머스",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -1060,7 +1060,7 @@
             },
             {
               "id": "DA_Fiddlesticks18",
-              "name_ko": "DA_Fiddlesticks18",
+              "name_ko": "피들스틱",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -1080,14 +1080,14 @@
             },
             {
               "id": "DA_18_Shen",
-              "name_ko": "DA_18_Shen",
+              "name_ko": "쉔",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_18_Lillia",
-              "name_ko": "DA_18_Lillia",
+              "name_ko": "릴리아",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -1107,7 +1107,7 @@
             },
             {
               "id": "DA_18_Alune",
-              "name_ko": "DA_18_Alune",
+              "name_ko": "알룬",
               "star": 1,
               "rarity": 4,
               "items": [
@@ -1123,7 +1123,7 @@
             },
             {
               "id": "DA_18_Ahri",
-              "name_ko": "DA_18_Ahri",
+              "name_ko": "아리",
               "star": 1,
               "rarity": 3,
               "items": []
@@ -1142,7 +1142,7 @@
           "traits": [
             {
               "id": "DA_18_Defender",
-              "name_ko": "DA_18_Defender",
+              "name_ko": "엄호대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -1150,7 +1150,7 @@
             },
             {
               "id": "DA_18_Fae",
-              "name_ko": "DA_18_Fae",
+              "name_ko": "요정",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 2,
@@ -1158,7 +1158,7 @@
             },
             {
               "id": "DA_18_Hunter",
-              "name_ko": "DA_18_Hunter",
+              "name_ko": "사냥꾼",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -1166,7 +1166,7 @@
             },
             {
               "id": "DA_18_LuxUniqueTrait",
-              "name_ko": "DA_18_LuxUniqueTrait",
+              "name_ko": "화신",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -1174,7 +1174,7 @@
             },
             {
               "id": "DA_18_Rival",
-              "name_ko": "DA_18_Rival",
+              "name_ko": "경쟁자",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 3,
@@ -1182,7 +1182,7 @@
             },
             {
               "id": "DA_18_Spellweaver",
-              "name_ko": "DA_18_Spellweaver",
+              "name_ko": "주문술사",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -1190,7 +1190,7 @@
             },
             {
               "id": "DA_18_Sprykin",
-              "name_ko": "DA_18_Sprykin",
+              "name_ko": "날렵이",
               "num_units": 6,
               "tier_current": 2,
               "tier_total": 3,
@@ -1198,7 +1198,7 @@
             },
             {
               "id": "DA_FloraFatalis18",
-              "name_ko": "DA_FloraFatalis18",
+              "name_ko": "치명적인 꽃",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 2,
@@ -1208,7 +1208,7 @@
           "units": [
             {
               "id": "DA_18_Veigar",
-              "name_ko": "DA_18_Veigar",
+              "name_ko": "베이가",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -1220,7 +1220,7 @@
             },
             {
               "id": "DA_18_Kobuko",
-              "name_ko": "DA_18_Kobuko",
+              "name_ko": "코부코",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -1232,21 +1232,21 @@
             },
             {
               "id": "DA_18_Teemo",
-              "name_ko": "DA_18_Teemo",
+              "name_ko": "티모",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_18_KhaZix",
-              "name_ko": "DA_18_KhaZix",
+              "name_ko": "카직스",
               "star": 2,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_18_Rammus",
-              "name_ko": "DA_18_Rammus",
+              "name_ko": "람머스",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -1262,21 +1262,21 @@
             },
             {
               "id": "DA_Fiddlesticks18",
-              "name_ko": "DA_Fiddlesticks18",
+              "name_ko": "피들스틱",
               "star": 1,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_Lux18_Base",
-              "name_ko": "DA_Lux18_Base",
+              "name_ko": "럭스",
               "star": 1,
               "rarity": 4,
               "items": []
             },
             {
               "id": "DA_18_Tristana",
-              "name_ko": "DA_18_Tristana",
+              "name_ko": "트리스타나",
               "star": 3,
               "rarity": 2,
               "items": [
@@ -1296,7 +1296,7 @@
             },
             {
               "id": "DA_18_Ashe",
-              "name_ko": "DA_18_Ashe",
+              "name_ko": "애쉬",
               "star": 1,
               "rarity": 4,
               "items": [
@@ -1325,7 +1325,7 @@
           "traits": [
             {
               "id": "DA_18_Blackthorn",
-              "name_ko": "DA_18_Blackthorn",
+              "name_ko": "검은 가시",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -1333,7 +1333,7 @@
             },
             {
               "id": "DA_18_Brawler",
-              "name_ko": "DA_18_Brawler",
+              "name_ko": "싸움꾼",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -1341,7 +1341,7 @@
             },
             {
               "id": "DA_18_Defender",
-              "name_ko": "DA_18_Defender",
+              "name_ko": "엄호대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -1349,7 +1349,7 @@
             },
             {
               "id": "DA_18_Spellweaver",
-              "name_ko": "DA_18_Spellweaver",
+              "name_ko": "주문술사",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -1357,7 +1357,7 @@
             },
             {
               "id": "DA_18_Sprykin",
-              "name_ko": "DA_18_Sprykin",
+              "name_ko": "날렵이",
               "num_units": 5,
               "tier_current": 2,
               "tier_total": 3,
@@ -1365,7 +1365,7 @@
             },
             {
               "id": "DA_FloraFatalis18",
-              "name_ko": "DA_FloraFatalis18",
+              "name_ko": "치명적인 꽃",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 2,
@@ -1375,14 +1375,14 @@
           "units": [
             {
               "id": "DA_18_Teemo",
-              "name_ko": "DA_18_Teemo",
+              "name_ko": "티모",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_18_Veigar",
-              "name_ko": "DA_18_Veigar",
+              "name_ko": "베이가",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -1402,7 +1402,7 @@
             },
             {
               "id": "DA_18_Kobuko",
-              "name_ko": "DA_18_Kobuko",
+              "name_ko": "코부코",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -1422,14 +1422,14 @@
             },
             {
               "id": "DA_18_RekSai",
-              "name_ko": "DA_18_RekSai",
+              "name_ko": "렉사이",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_Fiddlesticks18",
-              "name_ko": "DA_Fiddlesticks18",
+              "name_ko": "피들스틱",
               "star": 1,
               "rarity": 2,
               "items": [
@@ -1445,14 +1445,14 @@
             },
             {
               "id": "DA_18_Rammus",
-              "name_ko": "DA_18_Rammus",
+              "name_ko": "람머스",
               "star": 1,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_18_Tristana",
-              "name_ko": "DA_18_Tristana",
+              "name_ko": "트리스타나",
               "star": 1,
               "rarity": 2,
               "items": []
@@ -1471,7 +1471,7 @@
           "traits": [
             {
               "id": "DA_18_Defender",
-              "name_ko": "DA_18_Defender",
+              "name_ko": "엄호대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -1479,7 +1479,7 @@
             },
             {
               "id": "DA_18_Elderwood",
-              "name_ko": "DA_18_Elderwood",
+              "name_ko": "나무정령",
               "num_units": 4,
               "tier_current": 1,
               "tier_total": 5,
@@ -1487,7 +1487,7 @@
             },
             {
               "id": "DA_18_Rival",
-              "name_ko": "DA_18_Rival",
+              "name_ko": "경쟁자",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 3,
@@ -1495,7 +1495,7 @@
             },
             {
               "id": "DA_18_Slayer",
-              "name_ko": "DA_18_Slayer",
+              "name_ko": "약탈자",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -1503,7 +1503,7 @@
             },
             {
               "id": "DA_18_Vanguard",
-              "name_ko": "DA_18_Vanguard",
+              "name_ko": "선봉대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -1511,7 +1511,7 @@
             },
             {
               "id": "DA_FloraFatalis18",
-              "name_ko": "DA_FloraFatalis18",
+              "name_ko": "치명적인 꽃",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 2,
@@ -1521,14 +1521,14 @@
           "units": [
             {
               "id": "DA_18_Ornn",
-              "name_ko": "DA_18_Ornn",
+              "name_ko": "오른",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Xayah",
-              "name_ko": "DA_18_Xayah",
+              "name_ko": "자야",
               "star": 1,
               "rarity": 0,
               "items": [
@@ -1540,7 +1540,7 @@
             },
             {
               "id": "DA_18_Diana",
-              "name_ko": "DA_18_Diana",
+              "name_ko": "다이애나",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -1552,7 +1552,7 @@
             },
             {
               "id": "DA_18_Ezreal",
-              "name_ko": "DA_18_Ezreal",
+              "name_ko": "이즈리얼",
               "star": 1,
               "rarity": 3,
               "items": [
@@ -1564,7 +1564,7 @@
             },
             {
               "id": "DA_18_KhaZix",
-              "name_ko": "DA_18_KhaZix",
+              "name_ko": "카직스",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -1580,7 +1580,7 @@
             },
             {
               "id": "DA_18_Hecarim",
-              "name_ko": "DA_18_Hecarim",
+              "name_ko": "헤카림",
               "star": 3,
               "rarity": 2,
               "items": [
@@ -1600,7 +1600,7 @@
             },
             {
               "id": "DA_Fiddlesticks18",
-              "name_ko": "DA_Fiddlesticks18",
+              "name_ko": "피들스틱",
               "star": 2,
               "rarity": 2,
               "items": []
@@ -1610,9 +1610,9 @@
       ]
     },
     {
-      "schema_version": 6,
+      "schema_version": 7,
       "match_id": "KR_8389259052",
-      "synced_at": "2026-09-22T04:25:27.684Z",
+      "synced_at": "2026-09-22T04:35:33.030Z",
       "game": {
         "datetime": "2026-09-21T03:47:44.232Z",
         "length_seconds": 2213.411376953125,
@@ -1634,7 +1634,7 @@
         "traits": [
           {
             "id": "DA_18_Defender",
-            "name_ko": "DA_18_Defender",
+            "name_ko": "엄호대",
             "num_units": 2,
             "tier_current": 1,
             "tier_total": 3,
@@ -1642,7 +1642,7 @@
           },
           {
             "id": "DA_18_Elderwood",
-            "name_ko": "DA_18_Elderwood",
+            "name_ko": "나무정령",
             "num_units": 4,
             "tier_current": 1,
             "tier_total": 5,
@@ -1650,7 +1650,7 @@
           },
           {
             "id": "DA_18_Inferno",
-            "name_ko": "DA_18_Inferno",
+            "name_ko": "지옥불",
             "num_units": 2,
             "tier_current": 1,
             "tier_total": 4,
@@ -1658,7 +1658,7 @@
           },
           {
             "id": "DA_18_Rapidfire",
-            "name_ko": "DA_18_Rapidfire",
+            "name_ko": "속사포",
             "num_units": 4,
             "tier_current": 3,
             "tier_total": 4,
@@ -1666,7 +1666,7 @@
           },
           {
             "id": "DA_18_Rival",
-            "name_ko": "DA_18_Rival",
+            "name_ko": "경쟁자",
             "num_units": 1,
             "tier_current": 1,
             "tier_total": 3,
@@ -1676,14 +1676,14 @@
         "units": [
           {
             "id": "DA_18_Hecarim",
-            "name_ko": "DA_18_Hecarim",
+            "name_ko": "헤카림",
             "star": 2,
             "rarity": 2,
             "items": []
           },
           {
             "id": "DA_18_Ornn",
-            "name_ko": "DA_18_Ornn",
+            "name_ko": "오른",
             "star": 2,
             "rarity": 0,
             "items": [
@@ -1699,7 +1699,7 @@
           },
           {
             "id": "DA_18_Xayah",
-            "name_ko": "DA_18_Xayah",
+            "name_ko": "자야",
             "star": 2,
             "rarity": 0,
             "items": [
@@ -1715,7 +1715,7 @@
           },
           {
             "id": "DA_18_Varus",
-            "name_ko": "DA_18_Varus",
+            "name_ko": "바루스",
             "star": 2,
             "rarity": 0,
             "items": [
@@ -1735,7 +1735,7 @@
           },
           {
             "id": "DA_18_Kayle",
-            "name_ko": "DA_18_Kayle",
+            "name_ko": "케일",
             "star": 2,
             "rarity": 1,
             "items": [
@@ -1747,7 +1747,7 @@
           },
           {
             "id": "DA_18_Shen",
-            "name_ko": "DA_18_Shen",
+            "name_ko": "쉔",
             "star": 2,
             "rarity": 1,
             "items": [
@@ -1759,7 +1759,7 @@
           },
           {
             "id": "DA_CrimsonRaptor18",
-            "name_ko": "DA_CrimsonRaptor18",
+            "name_ko": "어미 부리",
             "star": 2,
             "rarity": 2,
             "items": [
@@ -1779,7 +1779,7 @@
           },
           {
             "id": "DA_18_Rengar",
-            "name_ko": "DA_18_Rengar",
+            "name_ko": "렝가",
             "star": 1,
             "rarity": 2,
             "items": []
@@ -1804,7 +1804,7 @@
           "traits": [
             {
               "id": "DA_18_Adaptor",
-              "name_ko": "DA_18_Adaptor",
+              "name_ko": "적응가",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -1812,7 +1812,7 @@
             },
             {
               "id": "DA_18_Inferno",
-              "name_ko": "DA_18_Inferno",
+              "name_ko": "지옥불",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -1820,7 +1820,7 @@
             },
             {
               "id": "DA_18_Invoker",
-              "name_ko": "DA_18_Invoker",
+              "name_ko": "기원자",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -1828,7 +1828,7 @@
             },
             {
               "id": "DA_18_Lunar",
-              "name_ko": "DA_18_Lunar",
+              "name_ko": "달빛",
               "num_units": 3,
               "tier_current": 2,
               "tier_total": 4,
@@ -1836,7 +1836,7 @@
             },
             {
               "id": "DA_Primal18",
-              "name_ko": "DA_Primal18",
+              "name_ko": "원시",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 2,
@@ -1844,7 +1844,7 @@
             },
             {
               "id": "DA_18_Rapidfire",
-              "name_ko": "DA_18_Rapidfire",
+              "name_ko": "속사포",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -1852,7 +1852,7 @@
             },
             {
               "id": "DA_18_Slayer",
-              "name_ko": "DA_18_Slayer",
+              "name_ko": "약탈자",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -1860,7 +1860,7 @@
             },
             {
               "id": "DA_18_Vanguard",
-              "name_ko": "DA_18_Vanguard",
+              "name_ko": "선봉대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -1868,7 +1868,7 @@
             },
             {
               "id": "DA_18_Caustic",
-              "name_ko": "DA_18_Caustic",
+              "name_ko": "부식",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -1876,7 +1876,7 @@
             },
             {
               "id": "DA_Juggernaut18",
-              "name_ko": "DA_Juggernaut18",
+              "name_ko": "전쟁기계",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -1884,7 +1884,7 @@
             },
             {
               "id": "DA_AluneUniqueTrait18",
-              "name_ko": "DA_AluneUniqueTrait18",
+              "name_ko": "조율",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -1894,14 +1894,14 @@
           "units": [
             {
               "id": "DA_18_Varus",
-              "name_ko": "DA_18_Varus",
+              "name_ko": "바루스",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Diana",
-              "name_ko": "DA_18_Diana",
+              "name_ko": "다이애나",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -1917,7 +1917,7 @@
             },
             {
               "id": "DA_KogMaw18_AD",
-              "name_ko": "DA_KogMaw18_AD",
+              "name_ko": "코그모",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -1929,7 +1929,7 @@
             },
             {
               "id": "DA_18_Alune",
-              "name_ko": "DA_18_Alune",
+              "name_ko": "알룬",
               "star": 1,
               "rarity": 4,
               "items": [
@@ -1945,7 +1945,7 @@
             },
             {
               "id": "DA_Amumu18",
-              "name_ko": "DA_Amumu18",
+              "name_ko": "아무무",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -1965,7 +1965,7 @@
             },
             {
               "id": "DA_Sentinel18",
-              "name_ko": "DA_Sentinel18",
+              "name_ko": "파수꾼",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -1985,14 +1985,14 @@
             },
             {
               "id": "DA_Vi18",
-              "name_ko": "DA_Vi18",
+              "name_ko": "바이",
               "star": 2,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_Nidalee18_AP",
-              "name_ko": "DA_Nidalee18_AP",
+              "name_ko": "니달리",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -2012,7 +2012,7 @@
             },
             {
               "id": "DA_18_Aphelios",
-              "name_ko": "DA_18_Aphelios",
+              "name_ko": "아펠리오스",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -2044,7 +2044,7 @@
           "traits": [
             {
               "id": "DA_18_Brawler",
-              "name_ko": "DA_18_Brawler",
+              "name_ko": "싸움꾼",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -2052,7 +2052,7 @@
             },
             {
               "id": "DA_18_Invoker",
-              "name_ko": "DA_18_Invoker",
+              "name_ko": "기원자",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -2060,7 +2060,7 @@
             },
             {
               "id": "DA_Riftbeast18",
-              "name_ko": "DA_Riftbeast18",
+              "name_ko": "협곡야수",
               "num_units": 7,
               "tier_current": 3,
               "tier_total": 4,
@@ -2068,7 +2068,7 @@
             },
             {
               "id": "DA_18_ApexPredator",
-              "name_ko": "DA_18_ApexPredator",
+              "name_ko": "최상위 포식자",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -2078,7 +2078,7 @@
           "units": [
             {
               "id": "DA_18_Sentry",
-              "name_ko": "DA_18_Sentry",
+              "name_ko": "조약돌",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -2098,7 +2098,7 @@
             },
             {
               "id": "DA_Cinderling18",
-              "name_ko": "DA_Cinderling18",
+              "name_ko": "불타는 묘목",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -2118,7 +2118,7 @@
             },
             {
               "id": "DA_Krug18",
-              "name_ko": "DA_Krug18",
+              "name_ko": "돌거북",
               "star": 3,
               "rarity": 2,
               "items": [
@@ -2138,14 +2138,14 @@
             },
             {
               "id": "DA_Brambleback18",
-              "name_ko": "DA_Brambleback18",
+              "name_ko": "덩굴정령",
               "star": 2,
               "rarity": 3,
               "items": []
             },
             {
               "id": "DA_Sentinel18",
-              "name_ko": "DA_Sentinel18",
+              "name_ko": "파수꾼",
               "star": 1,
               "rarity": 3,
               "items": [
@@ -2157,7 +2157,7 @@
             },
             {
               "id": "DA_18_GnarSmall",
-              "name_ko": "DA_18_GnarSmall",
+              "name_ko": "나르",
               "star": 1,
               "rarity": 4,
               "items": [
@@ -2173,7 +2173,7 @@
             },
             {
               "id": "DA_18_ElderDragon",
-              "name_ko": "DA_18_ElderDragon",
+              "name_ko": "장로 드래곤",
               "star": 1,
               "rarity": 4,
               "items": [
@@ -2205,7 +2205,7 @@
           "traits": [
             {
               "id": "DA_18_Blossom",
-              "name_ko": "DA_18_Blossom",
+              "name_ko": "개화",
               "num_units": 4,
               "tier_current": 1,
               "tier_total": 5,
@@ -2213,7 +2213,7 @@
             },
             {
               "id": "DA_18_Hunter",
-              "name_ko": "DA_18_Hunter",
+              "name_ko": "사냥꾼",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -2221,7 +2221,7 @@
             },
             {
               "id": "DA_Primal18",
-              "name_ko": "DA_Primal18",
+              "name_ko": "원시",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 2,
@@ -2229,7 +2229,7 @@
             },
             {
               "id": "DA_18_Spellweaver",
-              "name_ko": "DA_18_Spellweaver",
+              "name_ko": "주문술사",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -2237,7 +2237,7 @@
             },
             {
               "id": "DA_18_Summoner",
-              "name_ko": "DA_18_Summoner",
+              "name_ko": "소환사",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 2,
@@ -2245,7 +2245,7 @@
             },
             {
               "id": "DA_Juggernaut18",
-              "name_ko": "DA_Juggernaut18",
+              "name_ko": "전쟁기계",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -2253,7 +2253,7 @@
             },
             {
               "id": "DA_AluneUniqueTrait18",
-              "name_ko": "DA_AluneUniqueTrait18",
+              "name_ko": "조율",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -2261,7 +2261,7 @@
             },
             {
               "id": "DA_18_ZyraUniqueTrait",
-              "name_ko": "DA_18_ZyraUniqueTrait",
+              "name_ko": "가시의 여인",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -2271,21 +2271,21 @@
           "units": [
             {
               "id": "DA_18_Yorick",
-              "name_ko": "DA_18_Yorick",
+              "name_ko": "요릭",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_Karma18",
-              "name_ko": "DA_Karma18",
+              "name_ko": "카르마",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_Vi18",
-              "name_ko": "DA_Vi18",
+              "name_ko": "바이",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -2305,14 +2305,14 @@
             },
             {
               "id": "DA_18_Zyra",
-              "name_ko": "DA_18_Zyra",
+              "name_ko": "자이라",
               "star": 2,
               "rarity": 3,
               "items": []
             },
             {
               "id": "DA_18_Sivir",
-              "name_ko": "DA_18_Sivir",
+              "name_ko": "시비르",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -2328,7 +2328,7 @@
             },
             {
               "id": "DA_18_Sett",
-              "name_ko": "DA_18_Sett",
+              "name_ko": "세트",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -2348,14 +2348,14 @@
             },
             {
               "id": "DA_18_Ashe",
-              "name_ko": "DA_18_Ashe",
+              "name_ko": "애쉬",
               "star": 1,
               "rarity": 4,
               "items": []
             },
             {
               "id": "DA_18_Alune",
-              "name_ko": "DA_18_Alune",
+              "name_ko": "알룬",
               "star": 2,
               "rarity": 4,
               "items": [
@@ -2387,7 +2387,7 @@
           "traits": [
             {
               "id": "DA_18_Greenfather",
-              "name_ko": "DA_18_Greenfather",
+              "name_ko": "자연의 아버지",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -2395,7 +2395,7 @@
             },
             {
               "id": "DA_18_Inferno",
-              "name_ko": "DA_18_Inferno",
+              "name_ko": "지옥불",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -2403,7 +2403,7 @@
             },
             {
               "id": "DA_18_Maokai_UniqueTrait",
-              "name_ko": "DA_18_Maokai_UniqueTrait",
+              "name_ko": "고목",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -2411,7 +2411,7 @@
             },
             {
               "id": "DA_Riftbeast18",
-              "name_ko": "DA_Riftbeast18",
+              "name_ko": "협곡야수",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 4,
@@ -2419,7 +2419,7 @@
             },
             {
               "id": "DA_Juggernaut18",
-              "name_ko": "DA_Juggernaut18",
+              "name_ko": "전쟁기계",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 3,
@@ -2427,7 +2427,7 @@
             },
             {
               "id": "DA_DravenUniqueTrait18",
-              "name_ko": "DA_DravenUniqueTrait18",
+              "name_ko": "현상금 추적자",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -2435,7 +2435,7 @@
             },
             {
               "id": "DA_18_ApexPredator",
-              "name_ko": "DA_18_ApexPredator",
+              "name_ko": "최상위 포식자",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -2445,21 +2445,21 @@
           "units": [
             {
               "id": "DA_Sentinel18",
-              "name_ko": "DA_Sentinel18",
+              "name_ko": "파수꾼",
               "star": 1,
               "rarity": 3,
               "items": []
             },
             {
               "id": "DA_Vi18",
-              "name_ko": "DA_Vi18",
+              "name_ko": "바이",
               "star": 2,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_18_Maokai",
-              "name_ko": "DA_18_Maokai",
+              "name_ko": "마오카이",
               "star": 2,
               "rarity": 4,
               "items": [
@@ -2479,7 +2479,7 @@
             },
             {
               "id": "DA_18_Kennen",
-              "name_ko": "DA_18_Kennen",
+              "name_ko": "케넨",
               "star": 1,
               "rarity": 4,
               "items": [
@@ -2495,7 +2495,7 @@
             },
             {
               "id": "DA_Draven18",
-              "name_ko": "DA_Draven18",
+              "name_ko": "드레이븐",
               "star": 1,
               "rarity": 4,
               "items": [
@@ -2515,7 +2515,7 @@
             },
             {
               "id": "DA_18_Ivern",
-              "name_ko": "DA_18_Ivern",
+              "name_ko": "아이번",
               "star": 2,
               "rarity": 4,
               "items": [
@@ -2527,7 +2527,7 @@
             },
             {
               "id": "DA_18_ElderDragon",
-              "name_ko": "DA_18_ElderDragon",
+              "name_ko": "장로 드래곤",
               "star": 1,
               "rarity": 4,
               "items": [
@@ -2547,7 +2547,7 @@
             },
             {
               "id": "DA_Amumu18",
-              "name_ko": "DA_Amumu18",
+              "name_ko": "아무무",
               "star": 1,
               "rarity": 3,
               "items": [
@@ -2579,7 +2579,7 @@
           "traits": [
             {
               "id": "DA_Riftbeast18",
-              "name_ko": "DA_Riftbeast18",
+              "name_ko": "협곡야수",
               "num_units": 7,
               "tier_current": 3,
               "tier_total": 4,
@@ -2587,7 +2587,7 @@
             },
             {
               "id": "DA_18_Slayer",
-              "name_ko": "DA_18_Slayer",
+              "name_ko": "약탈자",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -2595,7 +2595,7 @@
             },
             {
               "id": "DA_Emerald18",
-              "name_ko": "DA_Emerald18",
+              "name_ko": "에메랄드 성위",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -2605,14 +2605,14 @@
           "units": [
             {
               "id": "DA_Scuttlecrab18",
-              "name_ko": "DA_Scuttlecrab18",
+              "name_ko": "바위 게",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_18_Sentry",
-              "name_ko": "DA_18_Sentry",
+              "name_ko": "조약돌",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -2632,7 +2632,7 @@
             },
             {
               "id": "DA_Murkwolf18",
-              "name_ko": "DA_Murkwolf18",
+              "name_ko": "어스름늑대",
               "star": 3,
               "rarity": 1,
               "items": [
@@ -2652,7 +2652,7 @@
             },
             {
               "id": "DA_Krug18",
-              "name_ko": "DA_Krug18",
+              "name_ko": "돌거북",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -2672,14 +2672,14 @@
             },
             {
               "id": "DA_Gromp18_AP",
-              "name_ko": "DA_Gromp18_AP",
+              "name_ko": "심술두꺼비",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_Taric18",
-              "name_ko": "DA_Taric18",
+              "name_ko": "타릭",
               "star": 1,
               "rarity": 4,
               "items": [
@@ -2699,14 +2699,14 @@
             },
             {
               "id": "DA_Brambleback18",
-              "name_ko": "DA_Brambleback18",
+              "name_ko": "덩굴정령",
               "star": 1,
               "rarity": 3,
               "items": []
             },
             {
               "id": "DA_CrimsonRaptor18",
-              "name_ko": "DA_CrimsonRaptor18",
+              "name_ko": "어미 부리",
               "star": 1,
               "rarity": 2,
               "items": []
@@ -2725,7 +2725,7 @@
           "traits": [
             {
               "id": "DA_18_Greenfather",
-              "name_ko": "DA_18_Greenfather",
+              "name_ko": "자연의 아버지",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -2733,7 +2733,7 @@
             },
             {
               "id": "DA_18_Invoker",
-              "name_ko": "DA_18_Invoker",
+              "name_ko": "기원자",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -2741,7 +2741,7 @@
             },
             {
               "id": "DA_Riftbeast18",
-              "name_ko": "DA_Riftbeast18",
+              "name_ko": "협곡야수",
               "num_units": 7,
               "tier_current": 3,
               "tier_total": 4,
@@ -2749,7 +2749,7 @@
             },
             {
               "id": "DA_18_Slayer",
-              "name_ko": "DA_18_Slayer",
+              "name_ko": "약탈자",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -2759,21 +2759,21 @@
           "units": [
             {
               "id": "DA_Murkwolf18",
-              "name_ko": "DA_Murkwolf18",
+              "name_ko": "어스름늑대",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_18_Sentry",
-              "name_ko": "DA_18_Sentry",
+              "name_ko": "조약돌",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_Cinderling18",
-              "name_ko": "DA_Cinderling18",
+              "name_ko": "불타는 묘목",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -2793,14 +2793,14 @@
             },
             {
               "id": "DA_Gromp18_AP",
-              "name_ko": "DA_Gromp18_AP",
+              "name_ko": "심술두꺼비",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_Brambleback18",
-              "name_ko": "DA_Brambleback18",
+              "name_ko": "덩굴정령",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -2820,7 +2820,7 @@
             },
             {
               "id": "DA_Krug18",
-              "name_ko": "DA_Krug18",
+              "name_ko": "돌거북",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -2840,7 +2840,7 @@
             },
             {
               "id": "DA_18_Ivern",
-              "name_ko": "DA_18_Ivern",
+              "name_ko": "아이번",
               "star": 1,
               "rarity": 4,
               "items": [
@@ -2852,7 +2852,7 @@
             },
             {
               "id": "DA_Sentinel18",
-              "name_ko": "DA_Sentinel18",
+              "name_ko": "파수꾼",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -2876,7 +2876,7 @@
           "traits": [
             {
               "id": "DA_18_Defender",
-              "name_ko": "DA_18_Defender",
+              "name_ko": "엄호대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -2884,7 +2884,7 @@
             },
             {
               "id": "DA_18_Elderwood",
-              "name_ko": "DA_18_Elderwood",
+              "name_ko": "나무정령",
               "num_units": 4,
               "tier_current": 1,
               "tier_total": 5,
@@ -2892,7 +2892,7 @@
             },
             {
               "id": "DA_18_Inferno",
-              "name_ko": "DA_18_Inferno",
+              "name_ko": "지옥불",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -2900,7 +2900,7 @@
             },
             {
               "id": "DA_18_Rapidfire",
-              "name_ko": "DA_18_Rapidfire",
+              "name_ko": "속사포",
               "num_units": 4,
               "tier_current": 3,
               "tier_total": 4,
@@ -2908,7 +2908,7 @@
             },
             {
               "id": "DA_18_Rival",
-              "name_ko": "DA_18_Rival",
+              "name_ko": "경쟁자",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 3,
@@ -2918,14 +2918,14 @@
           "units": [
             {
               "id": "DA_18_Hecarim",
-              "name_ko": "DA_18_Hecarim",
+              "name_ko": "헤카림",
               "star": 2,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_18_Ornn",
-              "name_ko": "DA_18_Ornn",
+              "name_ko": "오른",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -2941,7 +2941,7 @@
             },
             {
               "id": "DA_18_Xayah",
-              "name_ko": "DA_18_Xayah",
+              "name_ko": "자야",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -2957,7 +2957,7 @@
             },
             {
               "id": "DA_18_Varus",
-              "name_ko": "DA_18_Varus",
+              "name_ko": "바루스",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -2977,7 +2977,7 @@
             },
             {
               "id": "DA_18_Kayle",
-              "name_ko": "DA_18_Kayle",
+              "name_ko": "케일",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -2989,7 +2989,7 @@
             },
             {
               "id": "DA_18_Shen",
-              "name_ko": "DA_18_Shen",
+              "name_ko": "쉔",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -3001,7 +3001,7 @@
             },
             {
               "id": "DA_CrimsonRaptor18",
-              "name_ko": "DA_CrimsonRaptor18",
+              "name_ko": "어미 부리",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -3021,7 +3021,7 @@
             },
             {
               "id": "DA_18_Rengar",
-              "name_ko": "DA_18_Rengar",
+              "name_ko": "렝가",
               "star": 1,
               "rarity": 2,
               "items": []
@@ -3045,7 +3045,7 @@
           "traits": [
             {
               "id": "DA_18_Defender",
-              "name_ko": "DA_18_Defender",
+              "name_ko": "엄호대",
               "num_units": 4,
               "tier_current": 2,
               "tier_total": 3,
@@ -3053,7 +3053,7 @@
             },
             {
               "id": "DA_18_Solar",
-              "name_ko": "DA_18_Solar",
+              "name_ko": "햇빛",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 1,
@@ -3061,7 +3061,7 @@
             },
             {
               "id": "DA_FloraFatalis18",
-              "name_ko": "DA_FloraFatalis18",
+              "name_ko": "치명적인 꽃",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 2,
@@ -3071,7 +3071,7 @@
           "units": [
             {
               "id": "DA_18_Sejuani",
-              "name_ko": "DA_18_Sejuani",
+              "name_ko": "세주아니",
               "star": 3,
               "rarity": 1,
               "items": [
@@ -3091,7 +3091,7 @@
             },
             {
               "id": "DA_18_Kayle",
-              "name_ko": "DA_18_Kayle",
+              "name_ko": "케일",
               "star": 3,
               "rarity": 1,
               "items": [
@@ -3111,7 +3111,7 @@
             },
             {
               "id": "DA_18_Leona",
-              "name_ko": "DA_18_Leona",
+              "name_ko": "레오나",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -3127,7 +3127,7 @@
             },
             {
               "id": "DA_Fiddlesticks18",
-              "name_ko": "DA_Fiddlesticks18",
+              "name_ko": "피들스틱",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -3143,14 +3143,14 @@
             },
             {
               "id": "DA_18_Lillia",
-              "name_ko": "DA_18_Lillia",
+              "name_ko": "릴리아",
               "star": 1,
               "rarity": 3,
               "items": []
             },
             {
               "id": "DA_18_Rammus",
-              "name_ko": "DA_18_Rammus",
+              "name_ko": "람머스",
               "star": 2,
               "rarity": 2,
               "items": []
@@ -3160,9 +3160,9 @@
       ]
     },
     {
-      "schema_version": 6,
+      "schema_version": 7,
       "match_id": "KR_8389175867",
-      "synced_at": "2026-09-22T04:25:27.298Z",
+      "synced_at": "2026-09-22T04:35:32.637Z",
       "game": {
         "datetime": "2026-09-21T00:13:15.935Z",
         "length_seconds": 2538.100830078125,
@@ -3184,7 +3184,7 @@
         "traits": [
           {
             "id": "DA_18_Battlemage",
-            "name_ko": "DA_18_Battlemage",
+            "name_ko": "거석",
             "num_units": 1,
             "tier_current": 1,
             "tier_total": 1,
@@ -3192,7 +3192,7 @@
           },
           {
             "id": "DA_18_Blackthorn",
-            "name_ko": "DA_18_Blackthorn",
+            "name_ko": "검은 가시",
             "num_units": 2,
             "tier_current": 1,
             "tier_total": 3,
@@ -3200,7 +3200,7 @@
           },
           {
             "id": "DA_18_Inferno",
-            "name_ko": "DA_18_Inferno",
+            "name_ko": "지옥불",
             "num_units": 3,
             "tier_current": 2,
             "tier_total": 4,
@@ -3208,7 +3208,7 @@
           },
           {
             "id": "DA_18_Executioner",
-            "name_ko": "DA_18_Executioner",
+            "name_ko": "처형자",
             "num_units": 4,
             "tier_current": 3,
             "tier_total": 3,
@@ -3216,7 +3216,7 @@
           },
           {
             "id": "DA_FloraFatalis18",
-            "name_ko": "DA_FloraFatalis18",
+            "name_ko": "치명적인 꽃",
             "num_units": 1,
             "tier_current": 1,
             "tier_total": 2,
@@ -3226,7 +3226,7 @@
         "units": [
           {
             "id": "DA_18_Varus",
-            "name_ko": "DA_18_Varus",
+            "name_ko": "바루스",
             "star": 2,
             "rarity": 0,
             "items": [
@@ -3238,7 +3238,7 @@
           },
           {
             "id": "DA_18_Shen",
-            "name_ko": "DA_18_Shen",
+            "name_ko": "쉔",
             "star": 2,
             "rarity": 1,
             "items": [
@@ -3250,7 +3250,7 @@
           },
           {
             "id": "DA_18_Azir",
-            "name_ko": "DA_18_Azir",
+            "name_ko": "아지르",
             "star": 3,
             "rarity": 2,
             "items": [
@@ -3270,7 +3270,7 @@
           },
           {
             "id": "DA_18_Akali_AD",
-            "name_ko": "DA_18_Akali_AD",
+            "name_ko": "아칼리",
             "star": 2,
             "rarity": 0,
             "items": [
@@ -3282,7 +3282,7 @@
           },
           {
             "id": "DA_18_Yunara",
-            "name_ko": "DA_18_Yunara",
+            "name_ko": "유나라",
             "star": 2,
             "rarity": 1,
             "items": [
@@ -3298,7 +3298,7 @@
           },
           {
             "id": "DA_18_Malphite",
-            "name_ko": "DA_18_Malphite",
+            "name_ko": "말파이트",
             "star": 1,
             "rarity": 3,
             "items": [
@@ -3310,7 +3310,7 @@
           },
           {
             "id": "DA_18_Soraka",
-            "name_ko": "DA_18_Soraka",
+            "name_ko": "소라카",
             "star": 2,
             "rarity": 3,
             "items": []
@@ -3335,7 +3335,7 @@
           "traits": [
             {
               "id": "DA_18_Defender",
-              "name_ko": "DA_18_Defender",
+              "name_ko": "엄호대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -3343,7 +3343,7 @@
             },
             {
               "id": "DA_18_Inferno",
-              "name_ko": "DA_18_Inferno",
+              "name_ko": "지옥불",
               "num_units": 3,
               "tier_current": 2,
               "tier_total": 4,
@@ -3351,7 +3351,7 @@
             },
             {
               "id": "DA_18_Lunar",
-              "name_ko": "DA_18_Lunar",
+              "name_ko": "달빛",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -3359,7 +3359,7 @@
             },
             {
               "id": "DA_18_Rapidfire",
-              "name_ko": "DA_18_Rapidfire",
+              "name_ko": "속사포",
               "num_units": 3,
               "tier_current": 2,
               "tier_total": 4,
@@ -3367,7 +3367,7 @@
             },
             {
               "id": "DA_18_Solar",
-              "name_ko": "DA_18_Solar",
+              "name_ko": "햇빛",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 1,
@@ -3375,7 +3375,7 @@
             },
             {
               "id": "DA_Juggernaut18",
-              "name_ko": "DA_Juggernaut18",
+              "name_ko": "전쟁기계",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -3385,7 +3385,7 @@
           "units": [
             {
               "id": "DA_18_Leona",
-              "name_ko": "DA_18_Leona",
+              "name_ko": "레오나",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -3405,7 +3405,7 @@
             },
             {
               "id": "DA_18_Sejuani",
-              "name_ko": "DA_18_Sejuani",
+              "name_ko": "세주아니",
               "star": 3,
               "rarity": 1,
               "items": [
@@ -3425,7 +3425,7 @@
             },
             {
               "id": "DA_18_Kayle",
-              "name_ko": "DA_18_Kayle",
+              "name_ko": "케일",
               "star": 3,
               "rarity": 1,
               "items": [
@@ -3445,35 +3445,35 @@
             },
             {
               "id": "DA_18_Varus",
-              "name_ko": "DA_18_Varus",
+              "name_ko": "바루스",
               "star": 1,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Shen",
-              "name_ko": "DA_18_Shen",
+              "name_ko": "쉔",
               "star": 3,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_Amumu18",
-              "name_ko": "DA_Amumu18",
+              "name_ko": "아무무",
               "star": 2,
               "rarity": 3,
               "items": []
             },
             {
               "id": "DA_18_Diana",
-              "name_ko": "DA_18_Diana",
+              "name_ko": "다이애나",
               "star": 2,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_18_Aphelios",
-              "name_ko": "DA_18_Aphelios",
+              "name_ko": "아펠리오스",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -3501,7 +3501,7 @@
           "traits": [
             {
               "id": "DA_18_Rival",
-              "name_ko": "DA_18_Rival",
+              "name_ko": "경쟁자",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 3,
@@ -3509,7 +3509,7 @@
             },
             {
               "id": "DA_18_Executioner",
-              "name_ko": "DA_18_Executioner",
+              "name_ko": "처형자",
               "num_units": 4,
               "tier_current": 3,
               "tier_total": 3,
@@ -3517,7 +3517,7 @@
             },
             {
               "id": "DA_18_Slayer",
-              "name_ko": "DA_18_Slayer",
+              "name_ko": "약탈자",
               "num_units": 6,
               "tier_current": 3,
               "tier_total": 3,
@@ -3527,7 +3527,7 @@
           "units": [
             {
               "id": "DA_18_Camille",
-              "name_ko": "DA_18_Camille",
+              "name_ko": "카밀",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -3539,14 +3539,14 @@
             },
             {
               "id": "DA_18_Warwick",
-              "name_ko": "DA_18_Warwick",
+              "name_ko": "워윅",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_18_KhaZix",
-              "name_ko": "DA_18_KhaZix",
+              "name_ko": "카직스",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -3566,21 +3566,21 @@
             },
             {
               "id": "DA_Murkwolf18",
-              "name_ko": "DA_Murkwolf18",
+              "name_ko": "어스름늑대",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_18_Diana",
-              "name_ko": "DA_18_Diana",
+              "name_ko": "다이애나",
               "star": 2,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_18_Ezreal",
-              "name_ko": "DA_18_Ezreal",
+              "name_ko": "이즈리얼",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -3600,7 +3600,7 @@
             },
             {
               "id": "DA_18_Kennen",
-              "name_ko": "DA_18_Kennen",
+              "name_ko": "케넨",
               "star": 2,
               "rarity": 4,
               "items": [
@@ -3620,7 +3620,7 @@
             },
             {
               "id": "DA_Brambleback18",
-              "name_ko": "DA_Brambleback18",
+              "name_ko": "덩굴정령",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -3652,7 +3652,7 @@
           "traits": [
             {
               "id": "DA_18_Blackthorn",
-              "name_ko": "DA_18_Blackthorn",
+              "name_ko": "검은 가시",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -3660,7 +3660,7 @@
             },
             {
               "id": "DA_18_Brawler",
-              "name_ko": "DA_18_Brawler",
+              "name_ko": "싸움꾼",
               "num_units": 4,
               "tier_current": 2,
               "tier_total": 3,
@@ -3668,7 +3668,7 @@
             },
             {
               "id": "DA_18_Defender",
-              "name_ko": "DA_18_Defender",
+              "name_ko": "엄호대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -3676,7 +3676,7 @@
             },
             {
               "id": "DA_18_Spellweaver",
-              "name_ko": "DA_18_Spellweaver",
+              "name_ko": "주문술사",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -3684,7 +3684,7 @@
             },
             {
               "id": "DA_18_Sprykin",
-              "name_ko": "DA_18_Sprykin",
+              "name_ko": "날렵이",
               "num_units": 5,
               "tier_current": 2,
               "tier_total": 3,
@@ -3692,7 +3692,7 @@
             },
             {
               "id": "DA_FloraFatalis18",
-              "name_ko": "DA_FloraFatalis18",
+              "name_ko": "치명적인 꽃",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 2,
@@ -3700,7 +3700,7 @@
             },
             {
               "id": "DA_Emerald18",
-              "name_ko": "DA_Emerald18",
+              "name_ko": "에메랄드 성위",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -3710,7 +3710,7 @@
           "units": [
             {
               "id": "DA_18_Veigar",
-              "name_ko": "DA_18_Veigar",
+              "name_ko": "베이가",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -3730,35 +3730,35 @@
             },
             {
               "id": "DA_18_Kobuko",
-              "name_ko": "DA_18_Kobuko",
+              "name_ko": "코부코",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_RekSai",
-              "name_ko": "DA_18_RekSai",
+              "name_ko": "렉사이",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_Fiddlesticks18",
-              "name_ko": "DA_Fiddlesticks18",
+              "name_ko": "피들스틱",
               "star": 2,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_18_Rammus",
-              "name_ko": "DA_18_Rammus",
+              "name_ko": "람머스",
               "star": 2,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_18_Teemo",
-              "name_ko": "DA_18_Teemo",
+              "name_ko": "티모",
               "star": 3,
               "rarity": 1,
               "items": [
@@ -3778,7 +3778,7 @@
             },
             {
               "id": "DA_18_Sett",
-              "name_ko": "DA_18_Sett",
+              "name_ko": "세트",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -3794,7 +3794,7 @@
             },
             {
               "id": "DA_18_GnarSmall",
-              "name_ko": "DA_18_GnarSmall",
+              "name_ko": "나르",
               "star": 1,
               "rarity": 4,
               "items": [
@@ -3814,7 +3814,7 @@
             },
             {
               "id": "DA_Taric18",
-              "name_ko": "DA_Taric18",
+              "name_ko": "타릭",
               "star": 1,
               "rarity": 4,
               "items": []
@@ -3833,7 +3833,7 @@
           "traits": [
             {
               "id": "DA_18_Battlemage",
-              "name_ko": "DA_18_Battlemage",
+              "name_ko": "거석",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -3841,7 +3841,7 @@
             },
             {
               "id": "DA_18_Brawler",
-              "name_ko": "DA_18_Brawler",
+              "name_ko": "싸움꾼",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -3849,7 +3849,7 @@
             },
             {
               "id": "DA_18_Elderwood",
-              "name_ko": "DA_18_Elderwood",
+              "name_ko": "나무정령",
               "num_units": 7,
               "tier_current": 3,
               "tier_total": 5,
@@ -3857,7 +3857,7 @@
             },
             {
               "id": "DA_18_Greenfather",
-              "name_ko": "DA_18_Greenfather",
+              "name_ko": "자연의 아버지",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -3867,14 +3867,14 @@
           "units": [
             {
               "id": "DA_18_Xayah",
-              "name_ko": "DA_18_Xayah",
+              "name_ko": "자야",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Ornn",
-              "name_ko": "DA_18_Ornn",
+              "name_ko": "오른",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -3894,14 +3894,14 @@
             },
             {
               "id": "DA_18_Alistar",
-              "name_ko": "DA_18_Alistar",
+              "name_ko": "알리스타",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_18_Hecarim",
-              "name_ko": "DA_18_Hecarim",
+              "name_ko": "헤카림",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -3921,14 +3921,14 @@
             },
             {
               "id": "DA_18_LeBlanc",
-              "name_ko": "DA_18_LeBlanc",
+              "name_ko": "르블랑",
               "star": 1,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_18_GnarSmall",
-              "name_ko": "DA_18_GnarSmall",
+              "name_ko": "나르",
               "star": 1,
               "rarity": 4,
               "items": [
@@ -3948,7 +3948,7 @@
             },
             {
               "id": "DA_18_Ezreal",
-              "name_ko": "DA_18_Ezreal",
+              "name_ko": "이즈리얼",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -3964,7 +3964,7 @@
             },
             {
               "id": "DA_18_Ivern",
-              "name_ko": "DA_18_Ivern",
+              "name_ko": "아이번",
               "star": 1,
               "rarity": 4,
               "items": [
@@ -3980,7 +3980,7 @@
             },
             {
               "id": "DA_18_Malphite",
-              "name_ko": "DA_18_Malphite",
+              "name_ko": "말파이트",
               "star": 1,
               "rarity": 3,
               "items": []
@@ -3999,7 +3999,7 @@
           "traits": [
             {
               "id": "DA_18_Fae",
-              "name_ko": "DA_18_Fae",
+              "name_ko": "요정",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 2,
@@ -4007,7 +4007,7 @@
             },
             {
               "id": "DA_18_Inferno",
-              "name_ko": "DA_18_Inferno",
+              "name_ko": "지옥불",
               "num_units": 5,
               "tier_current": 3,
               "tier_total": 4,
@@ -4015,7 +4015,7 @@
             },
             {
               "id": "DA_18_Maokai_UniqueTrait",
-              "name_ko": "DA_18_Maokai_UniqueTrait",
+              "name_ko": "고목",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -4023,7 +4023,7 @@
             },
             {
               "id": "DA_18_Rapidfire",
-              "name_ko": "DA_18_Rapidfire",
+              "name_ko": "속사포",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -4031,7 +4031,7 @@
             },
             {
               "id": "DA_Juggernaut18",
-              "name_ko": "DA_Juggernaut18",
+              "name_ko": "전쟁기계",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 3,
@@ -4041,14 +4041,14 @@
           "units": [
             {
               "id": "DA_18_Rakan",
-              "name_ko": "DA_18_Rakan",
+              "name_ko": "라칸",
               "star": 3,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Akali_AD",
-              "name_ko": "DA_18_Akali_AD",
+              "name_ko": "아칼리",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -4060,7 +4060,7 @@
             },
             {
               "id": "DA_18_Varus",
-              "name_ko": "DA_18_Varus",
+              "name_ko": "바루스",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -4080,7 +4080,7 @@
             },
             {
               "id": "DA_18_Xayah",
-              "name_ko": "DA_18_Xayah",
+              "name_ko": "자야",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -4096,7 +4096,7 @@
             },
             {
               "id": "DA_Amumu18",
-              "name_ko": "DA_Amumu18",
+              "name_ko": "아무무",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -4108,14 +4108,14 @@
             },
             {
               "id": "DA_18_Maokai",
-              "name_ko": "DA_18_Maokai",
+              "name_ko": "마오카이",
               "star": 1,
               "rarity": 4,
               "items": []
             },
             {
               "id": "DA_18_Lillia",
-              "name_ko": "DA_18_Lillia",
+              "name_ko": "릴리아",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -4135,7 +4135,7 @@
             },
             {
               "id": "DA_18_Kennen",
-              "name_ko": "DA_18_Kennen",
+              "name_ko": "케넨",
               "star": 1,
               "rarity": 4,
               "items": []
@@ -4154,7 +4154,7 @@
           "traits": [
             {
               "id": "DA_18_Battlemage",
-              "name_ko": "DA_18_Battlemage",
+              "name_ko": "거석",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -4162,7 +4162,7 @@
             },
             {
               "id": "DA_18_Blackthorn",
-              "name_ko": "DA_18_Blackthorn",
+              "name_ko": "검은 가시",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -4170,7 +4170,7 @@
             },
             {
               "id": "DA_18_Inferno",
-              "name_ko": "DA_18_Inferno",
+              "name_ko": "지옥불",
               "num_units": 3,
               "tier_current": 2,
               "tier_total": 4,
@@ -4178,7 +4178,7 @@
             },
             {
               "id": "DA_18_Executioner",
-              "name_ko": "DA_18_Executioner",
+              "name_ko": "처형자",
               "num_units": 4,
               "tier_current": 3,
               "tier_total": 3,
@@ -4186,7 +4186,7 @@
             },
             {
               "id": "DA_FloraFatalis18",
-              "name_ko": "DA_FloraFatalis18",
+              "name_ko": "치명적인 꽃",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 2,
@@ -4196,7 +4196,7 @@
           "units": [
             {
               "id": "DA_18_Varus",
-              "name_ko": "DA_18_Varus",
+              "name_ko": "바루스",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -4208,7 +4208,7 @@
             },
             {
               "id": "DA_18_Shen",
-              "name_ko": "DA_18_Shen",
+              "name_ko": "쉔",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -4220,7 +4220,7 @@
             },
             {
               "id": "DA_18_Azir",
-              "name_ko": "DA_18_Azir",
+              "name_ko": "아지르",
               "star": 3,
               "rarity": 2,
               "items": [
@@ -4240,7 +4240,7 @@
             },
             {
               "id": "DA_18_Akali_AD",
-              "name_ko": "DA_18_Akali_AD",
+              "name_ko": "아칼리",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -4252,7 +4252,7 @@
             },
             {
               "id": "DA_18_Yunara",
-              "name_ko": "DA_18_Yunara",
+              "name_ko": "유나라",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -4268,7 +4268,7 @@
             },
             {
               "id": "DA_18_Malphite",
-              "name_ko": "DA_18_Malphite",
+              "name_ko": "말파이트",
               "star": 1,
               "rarity": 3,
               "items": [
@@ -4280,7 +4280,7 @@
             },
             {
               "id": "DA_18_Soraka",
-              "name_ko": "DA_18_Soraka",
+              "name_ko": "소라카",
               "star": 2,
               "rarity": 3,
               "items": []
@@ -4304,7 +4304,7 @@
           "traits": [
             {
               "id": "DA_18_Blackthorn",
-              "name_ko": "DA_18_Blackthorn",
+              "name_ko": "검은 가시",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -4312,7 +4312,7 @@
             },
             {
               "id": "DA_18_Brawler",
-              "name_ko": "DA_18_Brawler",
+              "name_ko": "싸움꾼",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -4320,7 +4320,7 @@
             },
             {
               "id": "DA_18_Elderwood",
-              "name_ko": "DA_18_Elderwood",
+              "name_ko": "나무정령",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 5,
@@ -4328,7 +4328,7 @@
             },
             {
               "id": "DA_18_Spellweaver",
-              "name_ko": "DA_18_Spellweaver",
+              "name_ko": "주문술사",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 3,
@@ -4338,7 +4338,7 @@
           "units": [
             {
               "id": "DA_18_Ornn",
-              "name_ko": "DA_18_Ornn",
+              "name_ko": "오른",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -4354,14 +4354,14 @@
             },
             {
               "id": "DA_18_RekSai",
-              "name_ko": "DA_18_RekSai",
+              "name_ko": "렉사이",
               "star": 3,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Alistar",
-              "name_ko": "DA_18_Alistar",
+              "name_ko": "알리스타",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -4373,7 +4373,7 @@
             },
             {
               "id": "DA_18_LeBlanc",
-              "name_ko": "DA_18_LeBlanc",
+              "name_ko": "르블랑",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -4393,7 +4393,7 @@
             },
             {
               "id": "DA_18_Cassiopeia",
-              "name_ko": "DA_18_Cassiopeia",
+              "name_ko": "카시오페아",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -4405,7 +4405,7 @@
             },
             {
               "id": "DA_18_Veigar",
-              "name_ko": "DA_18_Veigar",
+              "name_ko": "베이가",
               "star": 2,
               "rarity": 0,
               "items": []
@@ -4424,7 +4424,7 @@
           "traits": [
             {
               "id": "DA_18_Invoker",
-              "name_ko": "DA_18_Invoker",
+              "name_ko": "기원자",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -4432,7 +4432,7 @@
             },
             {
               "id": "DA_Riftbeast18",
-              "name_ko": "DA_Riftbeast18",
+              "name_ko": "협곡야수",
               "num_units": 6,
               "tier_current": 2,
               "tier_total": 4,
@@ -4440,7 +4440,7 @@
             },
             {
               "id": "DA_Juggernaut18",
-              "name_ko": "DA_Juggernaut18",
+              "name_ko": "전쟁기계",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -4448,7 +4448,7 @@
             },
             {
               "id": "DA_18_ApexPredator",
-              "name_ko": "DA_18_ApexPredator",
+              "name_ko": "최상위 포식자",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -4458,7 +4458,7 @@
           "units": [
             {
               "id": "DA_18_ElderDragon",
-              "name_ko": "DA_18_ElderDragon",
+              "name_ko": "장로 드래곤",
               "star": 1,
               "rarity": 4,
               "items": [
@@ -4478,7 +4478,7 @@
             },
             {
               "id": "DA_Vi18",
-              "name_ko": "DA_Vi18",
+              "name_ko": "바이",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -4494,21 +4494,21 @@
             },
             {
               "id": "DA_Scuttlecrab18",
-              "name_ko": "DA_Scuttlecrab18",
+              "name_ko": "바위 게",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_Krug18",
-              "name_ko": "DA_Krug18",
+              "name_ko": "돌거북",
               "star": 2,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_18_Sentry",
-              "name_ko": "DA_18_Sentry",
+              "name_ko": "조약돌",
               "star": 1,
               "rarity": 0,
               "items": [
@@ -4524,7 +4524,7 @@
             },
             {
               "id": "DA_Sentinel18",
-              "name_ko": "DA_Sentinel18",
+              "name_ko": "파수꾼",
               "star": 1,
               "rarity": 3,
               "items": []
@@ -4534,9 +4534,9 @@
       ]
     },
     {
-      "schema_version": 6,
+      "schema_version": 7,
       "match_id": "KR_8388357955",
-      "synced_at": "2026-09-22T04:25:26.881Z",
+      "synced_at": "2026-09-22T04:35:32.247Z",
       "game": {
         "datetime": "2026-09-20T10:10:09.344Z",
         "length_seconds": 2571.096435546875,
@@ -4558,7 +4558,7 @@
         "traits": [
           {
             "id": "DA_18_Inferno",
-            "name_ko": "DA_18_Inferno",
+            "name_ko": "지옥불",
             "num_units": 5,
             "tier_current": 3,
             "tier_total": 4,
@@ -4566,7 +4566,7 @@
           },
           {
             "id": "DA_18_Rapidfire",
-            "name_ko": "DA_18_Rapidfire",
+            "name_ko": "속사포",
             "num_units": 2,
             "tier_current": 1,
             "tier_total": 4,
@@ -4574,7 +4574,7 @@
           },
           {
             "id": "DA_Riftbeast18",
-            "name_ko": "DA_Riftbeast18",
+            "name_ko": "협곡야수",
             "num_units": 3,
             "tier_current": 1,
             "tier_total": 4,
@@ -4582,7 +4582,7 @@
           },
           {
             "id": "DA_18_Slayer",
-            "name_ko": "DA_18_Slayer",
+            "name_ko": "약탈자",
             "num_units": 2,
             "tier_current": 1,
             "tier_total": 3,
@@ -4590,7 +4590,7 @@
           },
           {
             "id": "DA_18_ApexPredator",
-            "name_ko": "DA_18_ApexPredator",
+            "name_ko": "최상위 포식자",
             "num_units": 1,
             "tier_current": 1,
             "tier_total": 1,
@@ -4600,7 +4600,7 @@
         "units": [
           {
             "id": "DA_18_Akali_AD",
-            "name_ko": "DA_18_Akali_AD",
+            "name_ko": "아칼리",
             "star": 2,
             "rarity": 0,
             "items": [
@@ -4616,7 +4616,7 @@
           },
           {
             "id": "DA_18_Varus",
-            "name_ko": "DA_18_Varus",
+            "name_ko": "바루스",
             "star": 3,
             "rarity": 0,
             "items": [
@@ -4636,7 +4636,7 @@
           },
           {
             "id": "DA_18_Shen",
-            "name_ko": "DA_18_Shen",
+            "name_ko": "쉔",
             "star": 2,
             "rarity": 1,
             "items": [
@@ -4652,7 +4652,7 @@
           },
           {
             "id": "DA_18_Kayle",
-            "name_ko": "DA_18_Kayle",
+            "name_ko": "케일",
             "star": 2,
             "rarity": 1,
             "items": [
@@ -4668,14 +4668,14 @@
           },
           {
             "id": "DA_Amumu18",
-            "name_ko": "DA_Amumu18",
+            "name_ko": "아무무",
             "star": 2,
             "rarity": 3,
             "items": []
           },
           {
             "id": "DA_18_Kennen",
-            "name_ko": "DA_18_Kennen",
+            "name_ko": "케넨",
             "star": 2,
             "rarity": 4,
             "items": [
@@ -4687,14 +4687,14 @@
           },
           {
             "id": "DA_18_ElderDragon",
-            "name_ko": "DA_18_ElderDragon",
+            "name_ko": "장로 드래곤",
             "star": 2,
             "rarity": 4,
             "items": []
           },
           {
             "id": "DA_Brambleback18",
-            "name_ko": "DA_Brambleback18",
+            "name_ko": "덩굴정령",
             "star": 2,
             "rarity": 3,
             "items": [
@@ -4724,7 +4724,7 @@
           "traits": [
             {
               "id": "DA_18_Inferno",
-              "name_ko": "DA_18_Inferno",
+              "name_ko": "지옥불",
               "num_units": 5,
               "tier_current": 3,
               "tier_total": 4,
@@ -4732,7 +4732,7 @@
             },
             {
               "id": "DA_18_Rapidfire",
-              "name_ko": "DA_18_Rapidfire",
+              "name_ko": "속사포",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -4740,7 +4740,7 @@
             },
             {
               "id": "DA_Riftbeast18",
-              "name_ko": "DA_Riftbeast18",
+              "name_ko": "협곡야수",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 4,
@@ -4748,7 +4748,7 @@
             },
             {
               "id": "DA_18_Slayer",
-              "name_ko": "DA_18_Slayer",
+              "name_ko": "약탈자",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -4756,7 +4756,7 @@
             },
             {
               "id": "DA_18_ApexPredator",
-              "name_ko": "DA_18_ApexPredator",
+              "name_ko": "최상위 포식자",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -4766,7 +4766,7 @@
           "units": [
             {
               "id": "DA_18_Akali_AD",
-              "name_ko": "DA_18_Akali_AD",
+              "name_ko": "아칼리",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -4782,7 +4782,7 @@
             },
             {
               "id": "DA_18_Varus",
-              "name_ko": "DA_18_Varus",
+              "name_ko": "바루스",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -4802,7 +4802,7 @@
             },
             {
               "id": "DA_18_Shen",
-              "name_ko": "DA_18_Shen",
+              "name_ko": "쉔",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -4818,7 +4818,7 @@
             },
             {
               "id": "DA_18_Kayle",
-              "name_ko": "DA_18_Kayle",
+              "name_ko": "케일",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -4834,14 +4834,14 @@
             },
             {
               "id": "DA_Amumu18",
-              "name_ko": "DA_Amumu18",
+              "name_ko": "아무무",
               "star": 2,
               "rarity": 3,
               "items": []
             },
             {
               "id": "DA_18_Kennen",
-              "name_ko": "DA_18_Kennen",
+              "name_ko": "케넨",
               "star": 2,
               "rarity": 4,
               "items": [
@@ -4853,14 +4853,14 @@
             },
             {
               "id": "DA_18_ElderDragon",
-              "name_ko": "DA_18_ElderDragon",
+              "name_ko": "장로 드래곤",
               "star": 2,
               "rarity": 4,
               "items": []
             },
             {
               "id": "DA_Brambleback18",
-              "name_ko": "DA_Brambleback18",
+              "name_ko": "덩굴정령",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -4889,7 +4889,7 @@
           "traits": [
             {
               "id": "DA_18_Blackthorn",
-              "name_ko": "DA_18_Blackthorn",
+              "name_ko": "검은 가시",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -4897,7 +4897,7 @@
             },
             {
               "id": "DA_18_Brawler",
-              "name_ko": "DA_18_Brawler",
+              "name_ko": "싸움꾼",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 3,
@@ -4905,7 +4905,7 @@
             },
             {
               "id": "DA_18_Spellweaver",
-              "name_ko": "DA_18_Spellweaver",
+              "name_ko": "주문술사",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -4913,7 +4913,7 @@
             },
             {
               "id": "DA_18_Sprykin",
-              "name_ko": "DA_18_Sprykin",
+              "name_ko": "날렵이",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 3,
@@ -4923,7 +4923,7 @@
           "units": [
             {
               "id": "DA_18_RekSai",
-              "name_ko": "DA_18_RekSai",
+              "name_ko": "렉사이",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -4943,14 +4943,14 @@
             },
             {
               "id": "DA_18_Kobuko",
-              "name_ko": "DA_18_Kobuko",
+              "name_ko": "코부코",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Veigar",
-              "name_ko": "DA_18_Veigar",
+              "name_ko": "베이가",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -4970,21 +4970,21 @@
             },
             {
               "id": "DA_18_Alistar",
-              "name_ko": "DA_18_Alistar",
+              "name_ko": "알리스타",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_Karma18",
-              "name_ko": "DA_Karma18",
+              "name_ko": "카르마",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Rammus",
-              "name_ko": "DA_18_Rammus",
+              "name_ko": "람머스",
               "star": 2,
               "rarity": 2,
               "items": []
@@ -5003,7 +5003,7 @@
           "traits": [
             {
               "id": "DA_18_Blossom",
-              "name_ko": "DA_18_Blossom",
+              "name_ko": "개화",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 5,
@@ -5011,7 +5011,7 @@
             },
             {
               "id": "DA_18_Fae",
-              "name_ko": "DA_18_Fae",
+              "name_ko": "요정",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 2,
@@ -5019,7 +5019,7 @@
             },
             {
               "id": "DA_18_Rapidfire",
-              "name_ko": "DA_18_Rapidfire",
+              "name_ko": "속사포",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -5027,7 +5027,7 @@
             },
             {
               "id": "DA_Riftbeast18",
-              "name_ko": "DA_Riftbeast18",
+              "name_ko": "협곡야수",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 4,
@@ -5035,7 +5035,7 @@
             },
             {
               "id": "DA_18_Summoner",
-              "name_ko": "DA_18_Summoner",
+              "name_ko": "소환사",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 2,
@@ -5043,7 +5043,7 @@
             },
             {
               "id": "DA_18_Vanguard",
-              "name_ko": "DA_18_Vanguard",
+              "name_ko": "선봉대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -5051,7 +5051,7 @@
             },
             {
               "id": "DA_Emerald18",
-              "name_ko": "DA_Emerald18",
+              "name_ko": "에메랄드 성위",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -5059,7 +5059,7 @@
             },
             {
               "id": "DA_Juggernaut18",
-              "name_ko": "DA_Juggernaut18",
+              "name_ko": "전쟁기계",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -5069,7 +5069,7 @@
           "units": [
             {
               "id": "DA_18_Yorick",
-              "name_ko": "DA_18_Yorick",
+              "name_ko": "요릭",
               "star": 1,
               "rarity": 0,
               "items": [
@@ -5085,7 +5085,7 @@
             },
             {
               "id": "DA_18_Xayah",
-              "name_ko": "DA_18_Xayah",
+              "name_ko": "자야",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -5101,7 +5101,7 @@
             },
             {
               "id": "DA_Krug18",
-              "name_ko": "DA_Krug18",
+              "name_ko": "돌거북",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -5121,14 +5121,14 @@
             },
             {
               "id": "DA_18_Rakan",
-              "name_ko": "DA_18_Rakan",
+              "name_ko": "라칸",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_CrimsonRaptor18",
-              "name_ko": "DA_CrimsonRaptor18",
+              "name_ko": "어미 부리",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -5148,7 +5148,7 @@
             },
             {
               "id": "DA_Taric18",
-              "name_ko": "DA_Taric18",
+              "name_ko": "타릭",
               "star": 1,
               "rarity": 4,
               "items": []
@@ -5167,7 +5167,7 @@
           "traits": [
             {
               "id": "DA_18_Defender",
-              "name_ko": "DA_18_Defender",
+              "name_ko": "엄호대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -5175,7 +5175,7 @@
             },
             {
               "id": "DA_18_Elderwood",
-              "name_ko": "DA_18_Elderwood",
+              "name_ko": "나무정령",
               "num_units": 5,
               "tier_current": 2,
               "tier_total": 5,
@@ -5185,7 +5185,7 @@
           "units": [
             {
               "id": "DA_18_Ornn",
-              "name_ko": "DA_18_Ornn",
+              "name_ko": "오른",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -5205,14 +5205,14 @@
             },
             {
               "id": "DA_18_Alistar",
-              "name_ko": "DA_18_Alistar",
+              "name_ko": "알리스타",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_18_Ezreal",
-              "name_ko": "DA_18_Ezreal",
+              "name_ko": "이즈리얼",
               "star": 1,
               "rarity": 3,
               "items": [
@@ -5232,7 +5232,7 @@
             },
             {
               "id": "DA_18_Hecarim",
-              "name_ko": "DA_18_Hecarim",
+              "name_ko": "헤카림",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -5244,14 +5244,14 @@
             },
             {
               "id": "DA_18_LeBlanc",
-              "name_ko": "DA_18_LeBlanc",
+              "name_ko": "르블랑",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_18_Lillia",
-              "name_ko": "DA_18_Lillia",
+              "name_ko": "릴리아",
               "star": 1,
               "rarity": 3,
               "items": [
@@ -5283,7 +5283,7 @@
           "traits": [
             {
               "id": "DA_18_Inferno",
-              "name_ko": "DA_18_Inferno",
+              "name_ko": "지옥불",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -5291,7 +5291,7 @@
             },
             {
               "id": "DA_18_Lunar",
-              "name_ko": "DA_18_Lunar",
+              "name_ko": "달빛",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -5299,7 +5299,7 @@
             },
             {
               "id": "DA_Juggernaut18",
-              "name_ko": "DA_Juggernaut18",
+              "name_ko": "전쟁기계",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -5309,7 +5309,7 @@
           "units": [
             {
               "id": "DA_Amumu18",
-              "name_ko": "DA_Amumu18",
+              "name_ko": "아무무",
               "star": 1,
               "rarity": 3,
               "items": [
@@ -5329,7 +5329,7 @@
             },
             {
               "id": "DA_Scuttlecrab18",
-              "name_ko": "DA_Scuttlecrab18",
+              "name_ko": "바위 게",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -5341,7 +5341,7 @@
             },
             {
               "id": "DA_Gromp18_AP",
-              "name_ko": "DA_Gromp18_AP",
+              "name_ko": "심술두꺼비",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -5361,7 +5361,7 @@
             },
             {
               "id": "DA_18_Morgana",
-              "name_ko": "DA_18_Morgana",
+              "name_ko": "모르가나",
               "star": 1,
               "rarity": 3,
               "items": [
@@ -5373,7 +5373,7 @@
             },
             {
               "id": "DA_18_Diana",
-              "name_ko": "DA_18_Diana",
+              "name_ko": "다이애나",
               "star": 1,
               "rarity": 2,
               "items": [
@@ -5393,7 +5393,7 @@
             },
             {
               "id": "DA_18_Aphelios",
-              "name_ko": "DA_18_Aphelios",
+              "name_ko": "아펠리오스",
               "star": 1,
               "rarity": 3,
               "items": [
@@ -5417,7 +5417,7 @@
           "traits": [
             {
               "id": "DA_18_Defender",
-              "name_ko": "DA_18_Defender",
+              "name_ko": "엄호대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -5425,7 +5425,7 @@
             },
             {
               "id": "DA_18_Inferno",
-              "name_ko": "DA_18_Inferno",
+              "name_ko": "지옥불",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -5433,7 +5433,7 @@
             },
             {
               "id": "DA_18_Rapidfire",
-              "name_ko": "DA_18_Rapidfire",
+              "name_ko": "속사포",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -5441,7 +5441,7 @@
             },
             {
               "id": "DA_18_Solar",
-              "name_ko": "DA_18_Solar",
+              "name_ko": "햇빛",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 1,
@@ -5449,7 +5449,7 @@
             },
             {
               "id": "DA_Juggernaut18",
-              "name_ko": "DA_Juggernaut18",
+              "name_ko": "전쟁기계",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -5459,7 +5459,7 @@
           "units": [
             {
               "id": "DA_18_Sejuani",
-              "name_ko": "DA_18_Sejuani",
+              "name_ko": "세주아니",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -5479,21 +5479,21 @@
             },
             {
               "id": "DA_18_Leona",
-              "name_ko": "DA_18_Leona",
+              "name_ko": "레오나",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Varus",
-              "name_ko": "DA_18_Varus",
+              "name_ko": "바루스",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Kayle",
-              "name_ko": "DA_18_Kayle",
+              "name_ko": "케일",
               "star": 1,
               "rarity": 1,
               "items": [
@@ -5513,14 +5513,14 @@
             },
             {
               "id": "DA_18_Shen",
-              "name_ko": "DA_18_Shen",
+              "name_ko": "쉔",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_Scuttlecrab18",
-              "name_ko": "DA_Scuttlecrab18",
+              "name_ko": "바위 게",
               "star": 2,
               "rarity": 1,
               "items": []
@@ -5539,7 +5539,7 @@
           "traits": [
             {
               "id": "DA_18_Elderwood",
-              "name_ko": "DA_18_Elderwood",
+              "name_ko": "나무정령",
               "num_units": 4,
               "tier_current": 1,
               "tier_total": 5,
@@ -5547,7 +5547,7 @@
             },
             {
               "id": "DA_18_Spellweaver",
-              "name_ko": "DA_18_Spellweaver",
+              "name_ko": "주문술사",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -5557,14 +5557,14 @@
           "units": [
             {
               "id": "DA_Karma18",
-              "name_ko": "DA_Karma18",
+              "name_ko": "카르마",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Alistar",
-              "name_ko": "DA_18_Alistar",
+              "name_ko": "알리스타",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -5584,7 +5584,7 @@
             },
             {
               "id": "DA_18_LeBlanc",
-              "name_ko": "DA_18_LeBlanc",
+              "name_ko": "르블랑",
               "star": 1,
               "rarity": 1,
               "items": [
@@ -5604,14 +5604,14 @@
             },
             {
               "id": "DA_18_Hecarim",
-              "name_ko": "DA_18_Hecarim",
+              "name_ko": "헤카림",
               "star": 1,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_18_Ornn",
-              "name_ko": "DA_18_Ornn",
+              "name_ko": "오른",
               "star": 1,
               "rarity": 0,
               "items": []
@@ -5630,7 +5630,7 @@
           "traits": [
             {
               "id": "DA_18_Defender",
-              "name_ko": "DA_18_Defender",
+              "name_ko": "엄호대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -5638,7 +5638,7 @@
             },
             {
               "id": "DA_18_Inferno",
-              "name_ko": "DA_18_Inferno",
+              "name_ko": "지옥불",
               "num_units": 3,
               "tier_current": 2,
               "tier_total": 4,
@@ -5646,7 +5646,7 @@
             },
             {
               "id": "DA_18_Rapidfire",
-              "name_ko": "DA_18_Rapidfire",
+              "name_ko": "속사포",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -5656,7 +5656,7 @@
           "units": [
             {
               "id": "DA_18_Varus",
-              "name_ko": "DA_18_Varus",
+              "name_ko": "바루스",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -5668,7 +5668,7 @@
             },
             {
               "id": "DA_18_Leona",
-              "name_ko": "DA_18_Leona",
+              "name_ko": "레오나",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -5688,21 +5688,21 @@
             },
             {
               "id": "DA_18_Shen",
-              "name_ko": "DA_18_Shen",
+              "name_ko": "쉔",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_18_Akali_AD",
-              "name_ko": "DA_18_Akali_AD",
+              "name_ko": "아칼리",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Kayle",
-              "name_ko": "DA_18_Kayle",
+              "name_ko": "케일",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -5725,9 +5725,9 @@
       ]
     },
     {
-      "schema_version": 6,
+      "schema_version": 7,
       "match_id": "KR_8387845292",
-      "synced_at": "2026-09-22T04:25:26.496Z",
+      "synced_at": "2026-09-22T04:35:31.851Z",
       "game": {
         "datetime": "2026-09-20T03:16:19.127Z",
         "length_seconds": 2107.994140625,
@@ -5749,7 +5749,7 @@
         "traits": [
           {
             "id": "DA_18_Brawler",
-            "name_ko": "DA_18_Brawler",
+            "name_ko": "싸움꾼",
             "num_units": 2,
             "tier_current": 1,
             "tier_total": 3,
@@ -5757,7 +5757,7 @@
           },
           {
             "id": "DA_18_Defender",
-            "name_ko": "DA_18_Defender",
+            "name_ko": "엄호대",
             "num_units": 2,
             "tier_current": 1,
             "tier_total": 3,
@@ -5765,7 +5765,7 @@
           },
           {
             "id": "DA_18_Elderwood",
-            "name_ko": "DA_18_Elderwood",
+            "name_ko": "나무정령",
             "num_units": 9,
             "tier_current": 4,
             "tier_total": 5,
@@ -5773,7 +5773,7 @@
           },
           {
             "id": "DA_18_Fae",
-            "name_ko": "DA_18_Fae",
+            "name_ko": "요정",
             "num_units": 2,
             "tier_current": 1,
             "tier_total": 2,
@@ -5781,7 +5781,7 @@
           },
           {
             "id": "DA_18_LuxUniqueTrait",
-            "name_ko": "DA_18_LuxUniqueTrait",
+            "name_ko": "화신",
             "num_units": 1,
             "tier_current": 1,
             "tier_total": 1,
@@ -5789,7 +5789,7 @@
           },
           {
             "id": "DA_18_Maokai_UniqueTrait",
-            "name_ko": "DA_18_Maokai_UniqueTrait",
+            "name_ko": "고목",
             "num_units": 1,
             "tier_current": 1,
             "tier_total": 1,
@@ -5797,7 +5797,7 @@
           },
           {
             "id": "DA_Juggernaut18",
-            "name_ko": "DA_Juggernaut18",
+            "name_ko": "전쟁기계",
             "num_units": 2,
             "tier_current": 1,
             "tier_total": 3,
@@ -5807,7 +5807,7 @@
         "units": [
           {
             "id": "DA_18_LeBlanc",
-            "name_ko": "DA_18_LeBlanc",
+            "name_ko": "르블랑",
             "star": 2,
             "rarity": 1,
             "items": [
@@ -5819,7 +5819,7 @@
           },
           {
             "id": "DA_18_Xayah",
-            "name_ko": "DA_18_Xayah",
+            "name_ko": "자야",
             "star": 3,
             "rarity": 0,
             "items": [
@@ -5835,7 +5835,7 @@
           },
           {
             "id": "DA_18_Ornn",
-            "name_ko": "DA_18_Ornn",
+            "name_ko": "오른",
             "star": 2,
             "rarity": 0,
             "items": [
@@ -5847,7 +5847,7 @@
           },
           {
             "id": "DA_18_Hecarim",
-            "name_ko": "DA_18_Hecarim",
+            "name_ko": "헤카림",
             "star": 2,
             "rarity": 2,
             "items": [
@@ -5867,7 +5867,7 @@
           },
           {
             "id": "DA_18_Alistar",
-            "name_ko": "DA_18_Alistar",
+            "name_ko": "알리스타",
             "star": 2,
             "rarity": 1,
             "items": [
@@ -5879,21 +5879,21 @@
           },
           {
             "id": "DA_18_Lillia",
-            "name_ko": "DA_18_Lillia",
+            "name_ko": "릴리아",
             "star": 2,
             "rarity": 3,
             "items": []
           },
           {
             "id": "DA_Lux18_Base",
-            "name_ko": "DA_Lux18_Base",
+            "name_ko": "럭스",
             "star": 1,
             "rarity": 4,
             "items": []
           },
           {
             "id": "DA_18_Ezreal",
-            "name_ko": "DA_18_Ezreal",
+            "name_ko": "이즈리얼",
             "star": 2,
             "rarity": 3,
             "items": [
@@ -5909,7 +5909,7 @@
           },
           {
             "id": "DA_18_GnarSmall",
-            "name_ko": "DA_18_GnarSmall",
+            "name_ko": "나르",
             "star": 1,
             "rarity": 4,
             "items": [
@@ -5921,7 +5921,7 @@
           },
           {
             "id": "DA_18_Maokai",
-            "name_ko": "DA_18_Maokai",
+            "name_ko": "마오카이",
             "star": 1,
             "rarity": 4,
             "items": []
@@ -5946,7 +5946,7 @@
           "traits": [
             {
               "id": "DA_18_Brawler",
-              "name_ko": "DA_18_Brawler",
+              "name_ko": "싸움꾼",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -5954,7 +5954,7 @@
             },
             {
               "id": "DA_18_Defender",
-              "name_ko": "DA_18_Defender",
+              "name_ko": "엄호대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -5962,7 +5962,7 @@
             },
             {
               "id": "DA_18_Elderwood",
-              "name_ko": "DA_18_Elderwood",
+              "name_ko": "나무정령",
               "num_units": 9,
               "tier_current": 4,
               "tier_total": 5,
@@ -5970,7 +5970,7 @@
             },
             {
               "id": "DA_18_Fae",
-              "name_ko": "DA_18_Fae",
+              "name_ko": "요정",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 2,
@@ -5978,7 +5978,7 @@
             },
             {
               "id": "DA_18_LuxUniqueTrait",
-              "name_ko": "DA_18_LuxUniqueTrait",
+              "name_ko": "화신",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -5986,7 +5986,7 @@
             },
             {
               "id": "DA_18_Maokai_UniqueTrait",
-              "name_ko": "DA_18_Maokai_UniqueTrait",
+              "name_ko": "고목",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -5994,7 +5994,7 @@
             },
             {
               "id": "DA_Juggernaut18",
-              "name_ko": "DA_Juggernaut18",
+              "name_ko": "전쟁기계",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -6004,7 +6004,7 @@
           "units": [
             {
               "id": "DA_18_LeBlanc",
-              "name_ko": "DA_18_LeBlanc",
+              "name_ko": "르블랑",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -6016,7 +6016,7 @@
             },
             {
               "id": "DA_18_Xayah",
-              "name_ko": "DA_18_Xayah",
+              "name_ko": "자야",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -6032,7 +6032,7 @@
             },
             {
               "id": "DA_18_Ornn",
-              "name_ko": "DA_18_Ornn",
+              "name_ko": "오른",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -6044,7 +6044,7 @@
             },
             {
               "id": "DA_18_Hecarim",
-              "name_ko": "DA_18_Hecarim",
+              "name_ko": "헤카림",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -6064,7 +6064,7 @@
             },
             {
               "id": "DA_18_Alistar",
-              "name_ko": "DA_18_Alistar",
+              "name_ko": "알리스타",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -6076,21 +6076,21 @@
             },
             {
               "id": "DA_18_Lillia",
-              "name_ko": "DA_18_Lillia",
+              "name_ko": "릴리아",
               "star": 2,
               "rarity": 3,
               "items": []
             },
             {
               "id": "DA_Lux18_Base",
-              "name_ko": "DA_Lux18_Base",
+              "name_ko": "럭스",
               "star": 1,
               "rarity": 4,
               "items": []
             },
             {
               "id": "DA_18_Ezreal",
-              "name_ko": "DA_18_Ezreal",
+              "name_ko": "이즈리얼",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -6106,7 +6106,7 @@
             },
             {
               "id": "DA_18_GnarSmall",
-              "name_ko": "DA_18_GnarSmall",
+              "name_ko": "나르",
               "star": 1,
               "rarity": 4,
               "items": [
@@ -6118,7 +6118,7 @@
             },
             {
               "id": "DA_18_Maokai",
-              "name_ko": "DA_18_Maokai",
+              "name_ko": "마오카이",
               "star": 1,
               "rarity": 4,
               "items": []
@@ -6142,7 +6142,7 @@
           "traits": [
             {
               "id": "DA_18_Fae",
-              "name_ko": "DA_18_Fae",
+              "name_ko": "요정",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 2,
@@ -6150,7 +6150,7 @@
             },
             {
               "id": "DA_18_Rapidfire",
-              "name_ko": "DA_18_Rapidfire",
+              "name_ko": "속사포",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -6158,7 +6158,7 @@
             },
             {
               "id": "DA_Riftbeast18",
-              "name_ko": "DA_Riftbeast18",
+              "name_ko": "협곡야수",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 4,
@@ -6166,7 +6166,7 @@
             },
             {
               "id": "DA_18_Summoner",
-              "name_ko": "DA_18_Summoner",
+              "name_ko": "소환사",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 2,
@@ -6174,7 +6174,7 @@
             },
             {
               "id": "DA_18_Vanguard",
-              "name_ko": "DA_18_Vanguard",
+              "name_ko": "선봉대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -6182,7 +6182,7 @@
             },
             {
               "id": "DA_Juggernaut18",
-              "name_ko": "DA_Juggernaut18",
+              "name_ko": "전쟁기계",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -6192,7 +6192,7 @@
           "units": [
             {
               "id": "DA_18_Xayah",
-              "name_ko": "DA_18_Xayah",
+              "name_ko": "자야",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -6212,21 +6212,21 @@
             },
             {
               "id": "DA_18_Rakan",
-              "name_ko": "DA_18_Rakan",
+              "name_ko": "라칸",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Yorick",
-              "name_ko": "DA_18_Yorick",
+              "name_ko": "요릭",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_Krug18",
-              "name_ko": "DA_Krug18",
+              "name_ko": "돌거북",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -6246,21 +6246,21 @@
             },
             {
               "id": "DA_Sentinel18",
-              "name_ko": "DA_Sentinel18",
+              "name_ko": "파수꾼",
               "star": 1,
               "rarity": 3,
               "items": []
             },
             {
               "id": "DA_18_Lillia",
-              "name_ko": "DA_18_Lillia",
+              "name_ko": "릴리아",
               "star": 1,
               "rarity": 3,
               "items": []
             },
             {
               "id": "DA_CrimsonRaptor18",
-              "name_ko": "DA_CrimsonRaptor18",
+              "name_ko": "어미 부리",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -6292,7 +6292,7 @@
           "traits": [
             {
               "id": "DA_18_Adaptor",
-              "name_ko": "DA_18_Adaptor",
+              "name_ko": "적응가",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -6300,7 +6300,7 @@
             },
             {
               "id": "DA_18_Invoker",
-              "name_ko": "DA_18_Invoker",
+              "name_ko": "기원자",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -6308,7 +6308,7 @@
             },
             {
               "id": "DA_Riftbeast18",
-              "name_ko": "DA_Riftbeast18",
+              "name_ko": "협곡야수",
               "num_units": 4,
               "tier_current": 1,
               "tier_total": 4,
@@ -6316,7 +6316,7 @@
             },
             {
               "id": "DA_18_Caustic",
-              "name_ko": "DA_18_Caustic",
+              "name_ko": "부식",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -6324,7 +6324,7 @@
             },
             {
               "id": "DA_Juggernaut18",
-              "name_ko": "DA_Juggernaut18",
+              "name_ko": "전쟁기계",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -6334,7 +6334,7 @@
           "units": [
             {
               "id": "DA_Gromp18_AP",
-              "name_ko": "DA_Gromp18_AP",
+              "name_ko": "심술두꺼비",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -6354,35 +6354,35 @@
             },
             {
               "id": "DA_18_Rakan",
-              "name_ko": "DA_18_Rakan",
+              "name_ko": "라칸",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Sentry",
-              "name_ko": "DA_18_Sentry",
+              "name_ko": "조약돌",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_KogMaw18_AD",
-              "name_ko": "DA_KogMaw18_AD",
+              "name_ko": "코그모",
               "star": 1,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_Murkwolf18",
-              "name_ko": "DA_Murkwolf18",
+              "name_ko": "어스름늑대",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_Scuttlecrab18",
-              "name_ko": "DA_Scuttlecrab18",
+              "name_ko": "바위 게",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -6414,7 +6414,7 @@
           "traits": [
             {
               "id": "DA_18_Adaptor",
-              "name_ko": "DA_18_Adaptor",
+              "name_ko": "적응가",
               "num_units": 3,
               "tier_current": 2,
               "tier_total": 3,
@@ -6422,7 +6422,7 @@
             },
             {
               "id": "DA_18_Slayer",
-              "name_ko": "DA_18_Slayer",
+              "name_ko": "약탈자",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -6430,7 +6430,7 @@
             },
             {
               "id": "DA_18_Caustic",
-              "name_ko": "DA_18_Caustic",
+              "name_ko": "부식",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -6440,7 +6440,7 @@
           "units": [
             {
               "id": "DA_18_Diana",
-              "name_ko": "DA_18_Diana",
+              "name_ko": "다이애나",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -6460,7 +6460,7 @@
             },
             {
               "id": "DA_18_Akali_AD",
-              "name_ko": "DA_18_Akali_AD",
+              "name_ko": "아칼리",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -6476,7 +6476,7 @@
             },
             {
               "id": "DA_Scuttlecrab18",
-              "name_ko": "DA_Scuttlecrab18",
+              "name_ko": "바위 게",
               "star": 1,
               "rarity": 1,
               "items": [
@@ -6488,7 +6488,7 @@
             },
             {
               "id": "DA_KogMaw18_AD",
-              "name_ko": "DA_KogMaw18_AD",
+              "name_ko": "코그모",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -6508,7 +6508,7 @@
             },
             {
               "id": "DA_18_MasterYi_AD",
-              "name_ko": "DA_18_MasterYi_AD",
+              "name_ko": "마스터 이",
               "star": 1,
               "rarity": 2,
               "items": [
@@ -6524,7 +6524,7 @@
             },
             {
               "id": "DA_KogMaw18_AD",
-              "name_ko": "DA_KogMaw18_AD",
+              "name_ko": "코그모",
               "star": 2,
               "rarity": 2,
               "items": []
@@ -6543,7 +6543,7 @@
           "traits": [
             {
               "id": "DA_Riftbeast18",
-              "name_ko": "DA_Riftbeast18",
+              "name_ko": "협곡야수",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 4,
@@ -6551,7 +6551,7 @@
             },
             {
               "id": "DA_18_Summoner",
-              "name_ko": "DA_18_Summoner",
+              "name_ko": "소환사",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 2,
@@ -6559,7 +6559,7 @@
             },
             {
               "id": "DA_Juggernaut18",
-              "name_ko": "DA_Juggernaut18",
+              "name_ko": "전쟁기계",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 3,
@@ -6569,7 +6569,7 @@
           "units": [
             {
               "id": "DA_18_Yorick",
-              "name_ko": "DA_18_Yorick",
+              "name_ko": "요릭",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -6589,14 +6589,14 @@
             },
             {
               "id": "DA_18_Shen",
-              "name_ko": "DA_18_Shen",
+              "name_ko": "쉔",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_Cinderling18",
-              "name_ko": "DA_Cinderling18",
+              "name_ko": "불타는 묘목",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -6616,21 +6616,21 @@
             },
             {
               "id": "DA_Scuttlecrab18",
-              "name_ko": "DA_Scuttlecrab18",
+              "name_ko": "바위 게",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_CrimsonRaptor18",
-              "name_ko": "DA_CrimsonRaptor18",
+              "name_ko": "어미 부리",
               "star": 2,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_Vi18",
-              "name_ko": "DA_Vi18",
+              "name_ko": "바이",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -6654,7 +6654,7 @@
           "traits": [
             {
               "id": "DA_18_Elderwood",
-              "name_ko": "DA_18_Elderwood",
+              "name_ko": "나무정령",
               "num_units": 4,
               "tier_current": 1,
               "tier_total": 5,
@@ -6662,7 +6662,7 @@
             },
             {
               "id": "DA_18_Spellweaver",
-              "name_ko": "DA_18_Spellweaver",
+              "name_ko": "주문술사",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -6672,7 +6672,7 @@
           "units": [
             {
               "id": "DA_18_Ornn",
-              "name_ko": "DA_18_Ornn",
+              "name_ko": "오른",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -6684,14 +6684,14 @@
             },
             {
               "id": "DA_18_Hecarim",
-              "name_ko": "DA_18_Hecarim",
+              "name_ko": "헤카림",
               "star": 2,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_18_Alistar",
-              "name_ko": "DA_18_Alistar",
+              "name_ko": "알리스타",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -6703,14 +6703,14 @@
             },
             {
               "id": "DA_Karma18",
-              "name_ko": "DA_Karma18",
+              "name_ko": "카르마",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_LeBlanc",
-              "name_ko": "DA_18_LeBlanc",
+              "name_ko": "르블랑",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -6730,7 +6730,7 @@
             },
             {
               "id": "DA_18_Alistar",
-              "name_ko": "DA_18_Alistar",
+              "name_ko": "알리스타",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -6754,7 +6754,7 @@
           "traits": [
             {
               "id": "DA_18_Spellweaver",
-              "name_ko": "DA_18_Spellweaver",
+              "name_ko": "주문술사",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 3,
@@ -6762,7 +6762,7 @@
             },
             {
               "id": "DA_FloraFatalis18",
-              "name_ko": "DA_FloraFatalis18",
+              "name_ko": "치명적인 꽃",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 2,
@@ -6770,7 +6770,7 @@
             },
             {
               "id": "DA_Juggernaut18",
-              "name_ko": "DA_Juggernaut18",
+              "name_ko": "전쟁기계",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -6778,7 +6778,7 @@
             },
             {
               "id": "DA_AluneUniqueTrait18",
-              "name_ko": "DA_AluneUniqueTrait18",
+              "name_ko": "조율",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -6788,7 +6788,7 @@
           "units": [
             {
               "id": "DA_Scuttlecrab18",
-              "name_ko": "DA_Scuttlecrab18",
+              "name_ko": "바위 게",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -6808,7 +6808,7 @@
             },
             {
               "id": "DA_Gromp18_AP",
-              "name_ko": "DA_Gromp18_AP",
+              "name_ko": "심술두꺼비",
               "star": 1,
               "rarity": 1,
               "items": [
@@ -6828,14 +6828,14 @@
             },
             {
               "id": "DA_Fiddlesticks18",
-              "name_ko": "DA_Fiddlesticks18",
+              "name_ko": "피들스틱",
               "star": 1,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_18_Cassiopeia",
-              "name_ko": "DA_18_Cassiopeia",
+              "name_ko": "카시오페아",
               "star": 1,
               "rarity": 2,
               "items": [
@@ -6851,7 +6851,7 @@
             },
             {
               "id": "DA_18_Alune",
-              "name_ko": "DA_18_Alune",
+              "name_ko": "알룬",
               "star": 1,
               "rarity": 4,
               "items": [
@@ -6863,7 +6863,7 @@
             },
             {
               "id": "DA_Vi18",
-              "name_ko": "DA_Vi18",
+              "name_ko": "바이",
               "star": 1,
               "rarity": 2,
               "items": [
@@ -6887,7 +6887,7 @@
           "traits": [
             {
               "id": "DA_18_Defender",
-              "name_ko": "DA_18_Defender",
+              "name_ko": "엄호대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -6895,7 +6895,7 @@
             },
             {
               "id": "DA_18_Inferno",
-              "name_ko": "DA_18_Inferno",
+              "name_ko": "지옥불",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -6903,7 +6903,7 @@
             },
             {
               "id": "DA_18_Rapidfire",
-              "name_ko": "DA_18_Rapidfire",
+              "name_ko": "속사포",
               "num_units": 3,
               "tier_current": 2,
               "tier_total": 4,
@@ -6911,7 +6911,7 @@
             },
             {
               "id": "DA_18_Solar",
-              "name_ko": "DA_18_Solar",
+              "name_ko": "햇빛",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 1,
@@ -6921,7 +6921,7 @@
           "units": [
             {
               "id": "DA_18_Kayle",
-              "name_ko": "DA_18_Kayle",
+              "name_ko": "케일",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -6941,14 +6941,14 @@
             },
             {
               "id": "DA_18_Varus",
-              "name_ko": "DA_18_Varus",
+              "name_ko": "바루스",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Shen",
-              "name_ko": "DA_18_Shen",
+              "name_ko": "쉔",
               "star": 1,
               "rarity": 1,
               "items": [
@@ -6964,14 +6964,14 @@
             },
             {
               "id": "DA_18_Leona",
-              "name_ko": "DA_18_Leona",
+              "name_ko": "레오나",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Sejuani",
-              "name_ko": "DA_18_Sejuani",
+              "name_ko": "세주아니",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -6990,9 +6990,9 @@
       ]
     },
     {
-      "schema_version": 6,
+      "schema_version": 7,
       "match_id": "KR_8387816587",
-      "synced_at": "2026-09-22T04:25:26.048Z",
+      "synced_at": "2026-09-22T04:35:31.448Z",
       "game": {
         "datetime": "2026-09-20T02:38:22.344Z",
         "length_seconds": 2188.152099609375,
@@ -7014,7 +7014,7 @@
         "traits": [
           {
             "id": "DA_18_Rapidfire",
-            "name_ko": "DA_18_Rapidfire",
+            "name_ko": "속사포",
             "num_units": 5,
             "tier_current": 4,
             "tier_total": 4,
@@ -7022,7 +7022,7 @@
           },
           {
             "id": "DA_Riftbeast18",
-            "name_ko": "DA_Riftbeast18",
+            "name_ko": "협곡야수",
             "num_units": 4,
             "tier_current": 1,
             "tier_total": 4,
@@ -7030,7 +7030,7 @@
           },
           {
             "id": "DA_18_Solar",
-            "name_ko": "DA_18_Solar",
+            "name_ko": "햇빛",
             "num_units": 3,
             "tier_current": 1,
             "tier_total": 1,
@@ -7038,7 +7038,7 @@
           },
           {
             "id": "DA_18_ApexPredator",
-            "name_ko": "DA_18_ApexPredator",
+            "name_ko": "최상위 포식자",
             "num_units": 1,
             "tier_current": 1,
             "tier_total": 1,
@@ -7048,7 +7048,7 @@
         "units": [
           {
             "id": "DA_18_Xayah",
-            "name_ko": "DA_18_Xayah",
+            "name_ko": "자야",
             "star": 2,
             "rarity": 0,
             "items": [
@@ -7064,7 +7064,7 @@
           },
           {
             "id": "DA_18_Varus",
-            "name_ko": "DA_18_Varus",
+            "name_ko": "바루스",
             "star": 2,
             "rarity": 0,
             "items": [
@@ -7076,14 +7076,14 @@
           },
           {
             "id": "DA_CrimsonRaptor18",
-            "name_ko": "DA_CrimsonRaptor18",
+            "name_ko": "어미 부리",
             "star": 2,
             "rarity": 2,
             "items": []
           },
           {
             "id": "DA_18_Kayle",
-            "name_ko": "DA_18_Kayle",
+            "name_ko": "케일",
             "star": 2,
             "rarity": 1,
             "items": [
@@ -7099,7 +7099,7 @@
           },
           {
             "id": "DA_18_Sejuani",
-            "name_ko": "DA_18_Sejuani",
+            "name_ko": "세주아니",
             "star": 2,
             "rarity": 1,
             "items": [
@@ -7111,7 +7111,7 @@
           },
           {
             "id": "DA_18_Leona",
-            "name_ko": "DA_18_Leona",
+            "name_ko": "레오나",
             "star": 1,
             "rarity": 0,
             "items": [
@@ -7123,7 +7123,7 @@
           },
           {
             "id": "DA_18_Aphelios",
-            "name_ko": "DA_18_Aphelios",
+            "name_ko": "아펠리오스",
             "star": 2,
             "rarity": 3,
             "items": [
@@ -7139,7 +7139,7 @@
           },
           {
             "id": "DA_18_ElderDragon",
-            "name_ko": "DA_18_ElderDragon",
+            "name_ko": "장로 드래곤",
             "star": 2,
             "rarity": 4,
             "items": [
@@ -7151,7 +7151,7 @@
           },
           {
             "id": "DA_Krug18",
-            "name_ko": "DA_Krug18",
+            "name_ko": "돌거북",
             "star": 1,
             "rarity": 2,
             "items": []
@@ -7176,7 +7176,7 @@
           "traits": [
             {
               "id": "DA_18_Rapidfire",
-              "name_ko": "DA_18_Rapidfire",
+              "name_ko": "속사포",
               "num_units": 5,
               "tier_current": 4,
               "tier_total": 4,
@@ -7184,7 +7184,7 @@
             },
             {
               "id": "DA_Riftbeast18",
-              "name_ko": "DA_Riftbeast18",
+              "name_ko": "협곡야수",
               "num_units": 4,
               "tier_current": 1,
               "tier_total": 4,
@@ -7192,7 +7192,7 @@
             },
             {
               "id": "DA_18_Solar",
-              "name_ko": "DA_18_Solar",
+              "name_ko": "햇빛",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 1,
@@ -7200,7 +7200,7 @@
             },
             {
               "id": "DA_18_ApexPredator",
-              "name_ko": "DA_18_ApexPredator",
+              "name_ko": "최상위 포식자",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -7210,7 +7210,7 @@
           "units": [
             {
               "id": "DA_18_Xayah",
-              "name_ko": "DA_18_Xayah",
+              "name_ko": "자야",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -7226,7 +7226,7 @@
             },
             {
               "id": "DA_18_Varus",
-              "name_ko": "DA_18_Varus",
+              "name_ko": "바루스",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -7238,14 +7238,14 @@
             },
             {
               "id": "DA_CrimsonRaptor18",
-              "name_ko": "DA_CrimsonRaptor18",
+              "name_ko": "어미 부리",
               "star": 2,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_18_Kayle",
-              "name_ko": "DA_18_Kayle",
+              "name_ko": "케일",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -7261,7 +7261,7 @@
             },
             {
               "id": "DA_18_Sejuani",
-              "name_ko": "DA_18_Sejuani",
+              "name_ko": "세주아니",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -7273,7 +7273,7 @@
             },
             {
               "id": "DA_18_Leona",
-              "name_ko": "DA_18_Leona",
+              "name_ko": "레오나",
               "star": 1,
               "rarity": 0,
               "items": [
@@ -7285,7 +7285,7 @@
             },
             {
               "id": "DA_18_Aphelios",
-              "name_ko": "DA_18_Aphelios",
+              "name_ko": "아펠리오스",
               "star": 2,
               "rarity": 3,
               "items": [
@@ -7301,7 +7301,7 @@
             },
             {
               "id": "DA_18_ElderDragon",
-              "name_ko": "DA_18_ElderDragon",
+              "name_ko": "장로 드래곤",
               "star": 2,
               "rarity": 4,
               "items": [
@@ -7313,7 +7313,7 @@
             },
             {
               "id": "DA_Krug18",
-              "name_ko": "DA_Krug18",
+              "name_ko": "돌거북",
               "star": 1,
               "rarity": 2,
               "items": []
@@ -7337,7 +7337,7 @@
           "traits": [
             {
               "id": "DA_18_Defender",
-              "name_ko": "DA_18_Defender",
+              "name_ko": "엄호대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -7345,7 +7345,7 @@
             },
             {
               "id": "DA_18_Inferno",
-              "name_ko": "DA_18_Inferno",
+              "name_ko": "지옥불",
               "num_units": 3,
               "tier_current": 2,
               "tier_total": 4,
@@ -7353,7 +7353,7 @@
             },
             {
               "id": "DA_18_Rapidfire",
-              "name_ko": "DA_18_Rapidfire",
+              "name_ko": "속사포",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -7361,7 +7361,7 @@
             },
             {
               "id": "DA_18_Slayer",
-              "name_ko": "DA_18_Slayer",
+              "name_ko": "약탈자",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -7371,7 +7371,7 @@
           "units": [
             {
               "id": "DA_18_Akali_AD",
-              "name_ko": "DA_18_Akali_AD",
+              "name_ko": "아칼리",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -7383,14 +7383,14 @@
             },
             {
               "id": "DA_18_Varus",
-              "name_ko": "DA_18_Varus",
+              "name_ko": "바루스",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Leona",
-              "name_ko": "DA_18_Leona",
+              "name_ko": "레오나",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -7410,7 +7410,7 @@
             },
             {
               "id": "DA_18_Kayle",
-              "name_ko": "DA_18_Kayle",
+              "name_ko": "케일",
               "star": 3,
               "rarity": 1,
               "items": [
@@ -7430,14 +7430,14 @@
             },
             {
               "id": "DA_18_Shen",
-              "name_ko": "DA_18_Shen",
+              "name_ko": "쉔",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_18_Diana",
-              "name_ko": "DA_18_Diana",
+              "name_ko": "다이애나",
               "star": 1,
               "rarity": 2,
               "items": []
@@ -7456,7 +7456,7 @@
           "traits": [
             {
               "id": "DA_18_Elderwood",
-              "name_ko": "DA_18_Elderwood",
+              "name_ko": "나무정령",
               "num_units": 5,
               "tier_current": 2,
               "tier_total": 5,
@@ -7464,7 +7464,7 @@
             },
             {
               "id": "DA_18_Spellweaver",
-              "name_ko": "DA_18_Spellweaver",
+              "name_ko": "주문술사",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -7474,14 +7474,14 @@
           "units": [
             {
               "id": "DA_18_Ornn",
-              "name_ko": "DA_18_Ornn",
+              "name_ko": "오른",
               "star": 3,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Alistar",
-              "name_ko": "DA_18_Alistar",
+              "name_ko": "알리스타",
               "star": 3,
               "rarity": 1,
               "items": [
@@ -7501,7 +7501,7 @@
             },
             {
               "id": "DA_18_LeBlanc",
-              "name_ko": "DA_18_LeBlanc",
+              "name_ko": "르블랑",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -7521,21 +7521,21 @@
             },
             {
               "id": "DA_18_Hecarim",
-              "name_ko": "DA_18_Hecarim",
+              "name_ko": "헤카림",
               "star": 2,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_18_Ahri",
-              "name_ko": "DA_18_Ahri",
+              "name_ko": "아리",
               "star": 1,
               "rarity": 3,
               "items": []
             },
             {
               "id": "DA_18_Ezreal",
-              "name_ko": "DA_18_Ezreal",
+              "name_ko": "이즈리얼",
               "star": 1,
               "rarity": 3,
               "items": []
@@ -7554,7 +7554,7 @@
           "traits": [
             {
               "id": "DA_18_Defender",
-              "name_ko": "DA_18_Defender",
+              "name_ko": "엄호대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -7562,7 +7562,7 @@
             },
             {
               "id": "DA_Juggernaut18",
-              "name_ko": "DA_Juggernaut18",
+              "name_ko": "전쟁기계",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -7572,7 +7572,7 @@
           "units": [
             {
               "id": "DA_18_Leona",
-              "name_ko": "DA_18_Leona",
+              "name_ko": "레오나",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -7592,7 +7592,7 @@
             },
             {
               "id": "DA_18_Shen",
-              "name_ko": "DA_18_Shen",
+              "name_ko": "쉔",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -7612,7 +7612,7 @@
             },
             {
               "id": "DA_Vi18",
-              "name_ko": "DA_Vi18",
+              "name_ko": "바이",
               "star": 2,
               "rarity": 2,
               "items": [
@@ -7632,7 +7632,7 @@
             },
             {
               "id": "DA_18_Sejuani",
-              "name_ko": "DA_18_Sejuani",
+              "name_ko": "세주아니",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -7652,7 +7652,7 @@
             },
             {
               "id": "DA_Brambleback18",
-              "name_ko": "DA_Brambleback18",
+              "name_ko": "덩굴정령",
               "star": 1,
               "rarity": 3,
               "items": [
@@ -7664,7 +7664,7 @@
             },
             {
               "id": "DA_18_Tristana",
-              "name_ko": "DA_18_Tristana",
+              "name_ko": "트리스타나",
               "star": 1,
               "rarity": 2,
               "items": []
@@ -7683,7 +7683,7 @@
           "traits": [
             {
               "id": "DA_18_Blackthorn",
-              "name_ko": "DA_18_Blackthorn",
+              "name_ko": "검은 가시",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -7691,7 +7691,7 @@
             },
             {
               "id": "DA_18_Brawler",
-              "name_ko": "DA_18_Brawler",
+              "name_ko": "싸움꾼",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 3,
@@ -7699,7 +7699,7 @@
             },
             {
               "id": "DA_18_Spellweaver",
-              "name_ko": "DA_18_Spellweaver",
+              "name_ko": "주문술사",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -7707,7 +7707,7 @@
             },
             {
               "id": "DA_18_Sprykin",
-              "name_ko": "DA_18_Sprykin",
+              "name_ko": "날렵이",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 3,
@@ -7717,7 +7717,7 @@
           "units": [
             {
               "id": "DA_Karma18",
-              "name_ko": "DA_Karma18",
+              "name_ko": "카르마",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -7729,7 +7729,7 @@
             },
             {
               "id": "DA_18_RekSai",
-              "name_ko": "DA_18_RekSai",
+              "name_ko": "렉사이",
               "star": 3,
               "rarity": 0,
               "items": [
@@ -7749,7 +7749,7 @@
             },
             {
               "id": "DA_18_Veigar",
-              "name_ko": "DA_18_Veigar",
+              "name_ko": "베이가",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -7769,21 +7769,21 @@
             },
             {
               "id": "DA_18_Alistar",
-              "name_ko": "DA_18_Alistar",
+              "name_ko": "알리스타",
               "star": 1,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_18_Rammus",
-              "name_ko": "DA_18_Rammus",
+              "name_ko": "람머스",
               "star": 2,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_18_Kobuko",
-              "name_ko": "DA_18_Kobuko",
+              "name_ko": "코부코",
               "star": 2,
               "rarity": 0,
               "items": []
@@ -7802,7 +7802,7 @@
           "traits": [
             {
               "id": "DA_18_Battlemage",
-              "name_ko": "DA_18_Battlemage",
+              "name_ko": "거석",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -7810,7 +7810,7 @@
             },
             {
               "id": "DA_18_LuxUniqueTrait",
-              "name_ko": "DA_18_LuxUniqueTrait",
+              "name_ko": "화신",
               "num_units": 1,
               "tier_current": 1,
               "tier_total": 1,
@@ -7818,7 +7818,7 @@
             },
             {
               "id": "DA_Primal18",
-              "name_ko": "DA_Primal18",
+              "name_ko": "원시",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 2,
@@ -7826,7 +7826,7 @@
             },
             {
               "id": "DA_Riftbeast18",
-              "name_ko": "DA_Riftbeast18",
+              "name_ko": "협곡야수",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 4,
@@ -7836,7 +7836,7 @@
           "units": [
             {
               "id": "DA_CrimsonRaptor18",
-              "name_ko": "DA_CrimsonRaptor18",
+              "name_ko": "어미 부리",
               "star": 1,
               "rarity": 2,
               "items": [
@@ -7848,14 +7848,14 @@
             },
             {
               "id": "DA_18_Diana",
-              "name_ko": "DA_18_Diana",
+              "name_ko": "다이애나",
               "star": 2,
               "rarity": 2,
               "items": []
             },
             {
               "id": "DA_Scuttlecrab18",
-              "name_ko": "DA_Scuttlecrab18",
+              "name_ko": "바위 게",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -7875,7 +7875,7 @@
             },
             {
               "id": "DA_Gromp18_AP",
-              "name_ko": "DA_Gromp18_AP",
+              "name_ko": "심술두꺼비",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -7891,7 +7891,7 @@
             },
             {
               "id": "DA_Lux18_Base",
-              "name_ko": "DA_Lux18_Base",
+              "name_ko": "럭스",
               "star": 1,
               "rarity": 4,
               "items": [
@@ -7907,7 +7907,7 @@
             },
             {
               "id": "DA_18_Malphite",
-              "name_ko": "DA_18_Malphite",
+              "name_ko": "말파이트",
               "star": 1,
               "rarity": 3,
               "items": []
@@ -7926,7 +7926,7 @@
           "traits": [
             {
               "id": "DA_18_Fae",
-              "name_ko": "DA_18_Fae",
+              "name_ko": "요정",
               "num_units": 3,
               "tier_current": 1,
               "tier_total": 2,
@@ -7934,7 +7934,7 @@
             },
             {
               "id": "DA_18_Inferno",
-              "name_ko": "DA_18_Inferno",
+              "name_ko": "지옥불",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -7942,7 +7942,7 @@
             },
             {
               "id": "DA_18_Rapidfire",
-              "name_ko": "DA_18_Rapidfire",
+              "name_ko": "속사포",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -7952,14 +7952,14 @@
           "units": [
             {
               "id": "DA_18_Varus",
-              "name_ko": "DA_18_Varus",
+              "name_ko": "바루스",
               "star": 2,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Rakan",
-              "name_ko": "DA_18_Rakan",
+              "name_ko": "라칸",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -7979,14 +7979,14 @@
             },
             {
               "id": "DA_18_Shen",
-              "name_ko": "DA_18_Shen",
+              "name_ko": "쉔",
               "star": 2,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_18_Xayah",
-              "name_ko": "DA_18_Xayah",
+              "name_ko": "자야",
               "star": 2,
               "rarity": 0,
               "items": [
@@ -8006,14 +8006,14 @@
             },
             {
               "id": "DA_18_GnarSmall",
-              "name_ko": "DA_18_GnarSmall",
+              "name_ko": "나르",
               "star": 1,
               "rarity": 4,
               "items": []
             },
             {
               "id": "DA_18_Tristana",
-              "name_ko": "DA_18_Tristana",
+              "name_ko": "트리스타나",
               "star": 1,
               "rarity": 2,
               "items": []
@@ -8032,7 +8032,7 @@
           "traits": [
             {
               "id": "DA_18_Defender",
-              "name_ko": "DA_18_Defender",
+              "name_ko": "엄호대",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 3,
@@ -8040,7 +8040,7 @@
             },
             {
               "id": "DA_18_Inferno",
-              "name_ko": "DA_18_Inferno",
+              "name_ko": "지옥불",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -8048,7 +8048,7 @@
             },
             {
               "id": "DA_18_Rapidfire",
-              "name_ko": "DA_18_Rapidfire",
+              "name_ko": "속사포",
               "num_units": 2,
               "tier_current": 1,
               "tier_total": 4,
@@ -8058,7 +8058,7 @@
           "units": [
             {
               "id": "DA_18_Cassiopeia",
-              "name_ko": "DA_18_Cassiopeia",
+              "name_ko": "카시오페아",
               "star": 1,
               "rarity": 2,
               "items": [
@@ -8078,14 +8078,14 @@
             },
             {
               "id": "DA_18_Leona",
-              "name_ko": "DA_18_Leona",
+              "name_ko": "레오나",
               "star": 1,
               "rarity": 0,
               "items": []
             },
             {
               "id": "DA_18_Varus",
-              "name_ko": "DA_18_Varus",
+              "name_ko": "바루스",
               "star": 1,
               "rarity": 0,
               "items": [
@@ -8097,14 +8097,14 @@
             },
             {
               "id": "DA_18_Shen",
-              "name_ko": "DA_18_Shen",
+              "name_ko": "쉔",
               "star": 1,
               "rarity": 1,
               "items": []
             },
             {
               "id": "DA_18_Sejuani",
-              "name_ko": "DA_18_Sejuani",
+              "name_ko": "세주아니",
               "star": 2,
               "rarity": 1,
               "items": [
@@ -8124,7 +8124,7 @@
             },
             {
               "id": "DA_18_Aphelios",
-              "name_ko": "DA_18_Aphelios",
+              "name_ko": "아펠리오스",
               "star": 1,
               "rarity": 3,
               "items": [
