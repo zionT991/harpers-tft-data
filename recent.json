@@ -1,10 +1,1614 @@
 {
   "player": "Harpers#KR1",
-  "generated_at": "2026-09-22T01:30:50.033Z",
+  "generated_at": "2026-09-22T04:20:38.772Z",
   "schema_version": 5,
-  "latest_match_id": "KR_8389259052",
-  "count": 6,
+  "latest_match_id": "KR_8390325321",
+  "count": 7,
   "matches": [
+    {
+      "schema_version": 5,
+      "match_id": "KR_8390325321",
+      "synced_at": "2026-09-22T04:20:38.499Z",
+      "game": {
+        "datetime": "2026-09-22T04:15:42.993Z",
+        "length_seconds": 2394.995361328125,
+        "queue_id": 1100,
+        "set_number": 18,
+        "set_core_name": "TFTSet18",
+        "game_type": "standard",
+        "game_version": "TFT Unreal Version ?.?.?.?"
+      },
+      "me": {
+        "is_me": true,
+        "placement": 6,
+        "level": 9,
+        "last_round": 28,
+        "gold_left": 1,
+        "players_eliminated": 0,
+        "total_damage_to_players": 0,
+        "augments": [],
+        "traits": [
+          {
+            "id": "DA_18_Defender",
+            "name_ko": "DA_18_Defender",
+            "num_units": 2,
+            "tier_current": 1,
+            "tier_total": 3,
+            "style": 1
+          },
+          {
+            "id": "DA_18_Fae",
+            "name_ko": "DA_18_Fae",
+            "num_units": 3,
+            "tier_current": 1,
+            "tier_total": 2,
+            "style": 1
+          },
+          {
+            "id": "DA_18_Hunter",
+            "name_ko": "DA_18_Hunter",
+            "num_units": 2,
+            "tier_current": 1,
+            "tier_total": 4,
+            "style": 1
+          },
+          {
+            "id": "DA_18_LuxUniqueTrait",
+            "name_ko": "DA_18_LuxUniqueTrait",
+            "num_units": 1,
+            "tier_current": 1,
+            "tier_total": 1,
+            "style": 3
+          },
+          {
+            "id": "DA_18_Rival",
+            "name_ko": "DA_18_Rival",
+            "num_units": 1,
+            "tier_current": 1,
+            "tier_total": 3,
+            "style": 4
+          },
+          {
+            "id": "DA_18_Spellweaver",
+            "name_ko": "DA_18_Spellweaver",
+            "num_units": 2,
+            "tier_current": 1,
+            "tier_total": 3,
+            "style": 1
+          },
+          {
+            "id": "DA_18_Sprykin",
+            "name_ko": "DA_18_Sprykin",
+            "num_units": 6,
+            "tier_current": 2,
+            "tier_total": 3,
+            "style": 2
+          },
+          {
+            "id": "DA_FloraFatalis18",
+            "name_ko": "DA_FloraFatalis18",
+            "num_units": 1,
+            "tier_current": 1,
+            "tier_total": 2,
+            "style": 1
+          }
+        ],
+        "units": [
+          {
+            "id": "DA_18_Veigar",
+            "name_ko": "DA_18_Veigar",
+            "star": 2,
+            "rarity": 0,
+            "items": [
+              {
+                "id": "DA_HextechGunblade",
+                "name_ko": "마법공학 총검"
+              }
+            ]
+          },
+          {
+            "id": "DA_18_Kobuko",
+            "name_ko": "DA_18_Kobuko",
+            "star": 2,
+            "rarity": 0,
+            "items": [
+              {
+                "id": "DA_Artifact_MogulsMail",
+                "name_ko": "거물의갑옷"
+              }
+            ]
+          },
+          {
+            "id": "DA_18_Teemo",
+            "name_ko": "DA_18_Teemo",
+            "star": 2,
+            "rarity": 1,
+            "items": []
+          },
+          {
+            "id": "DA_18_KhaZix",
+            "name_ko": "DA_18_KhaZix",
+            "star": 2,
+            "rarity": 2,
+            "items": []
+          },
+          {
+            "id": "DA_18_Rammus",
+            "name_ko": "DA_18_Rammus",
+            "star": 2,
+            "rarity": 2,
+            "items": [
+              {
+                "id": "DA_WarmogsArmor",
+                "name_ko": "워모그의 갑옷"
+              },
+              {
+                "id": "DA_Component_ChainVest",
+                "name_ko": "쇠사슬 조끼"
+              }
+            ]
+          },
+          {
+            "id": "DA_Fiddlesticks18",
+            "name_ko": "DA_Fiddlesticks18",
+            "star": 1,
+            "rarity": 2,
+            "items": []
+          },
+          {
+            "id": "DA_Lux18_Base",
+            "name_ko": "DA_Lux18_Base",
+            "star": 1,
+            "rarity": 4,
+            "items": []
+          },
+          {
+            "id": "DA_18_Tristana",
+            "name_ko": "DA_18_Tristana",
+            "star": 3,
+            "rarity": 2,
+            "items": [
+              {
+                "id": "DA_GuinsoosRageblade",
+                "name_ko": "구인수의 격노검"
+              },
+              {
+                "id": "DA_GiantSlayer",
+                "name_ko": "거인 학살자"
+              },
+              {
+                "id": "DA_Component_NeedlesslyLargeRod",
+                "name_ko": "쓸데없이 큰 지팡이"
+              }
+            ]
+          },
+          {
+            "id": "DA_18_Ashe",
+            "name_ko": "DA_18_Ashe",
+            "star": 1,
+            "rarity": 4,
+            "items": [
+              {
+                "id": "DA_18_EmblemSprykin",
+                "name_ko": "날렵이 상징"
+              }
+            ]
+          }
+        ],
+        "debug_augment": {
+          "raw_augments": null,
+          "skill_tree": null,
+          "related_fields": {}
+        }
+      },
+      "lobby": [
+        {
+          "is_me": false,
+          "placement": 1,
+          "level": 8,
+          "last_round": 37,
+          "gold_left": 2,
+          "players_eliminated": 0,
+          "total_damage_to_players": 0,
+          "augments": [],
+          "traits": [
+            {
+              "id": "DA_18_Blossom",
+              "name_ko": "DA_18_Blossom",
+              "num_units": 3,
+              "tier_current": 1,
+              "tier_total": 5,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Brawler",
+              "name_ko": "DA_18_Brawler",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Adaptor",
+              "name_ko": "DA_18_Adaptor",
+              "num_units": 3,
+              "tier_current": 2,
+              "tier_total": 3,
+              "style": 2
+            },
+            {
+              "id": "DA_Primal18",
+              "name_ko": "DA_Primal18",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 2,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Rival",
+              "name_ko": "DA_18_Rival",
+              "num_units": 1,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 4
+            },
+            {
+              "id": "DA_18_Caustic",
+              "name_ko": "DA_18_Caustic",
+              "num_units": 1,
+              "tier_current": 1,
+              "tier_total": 1,
+              "style": 3
+            },
+            {
+              "id": "DA_Juggernaut18",
+              "name_ko": "DA_Juggernaut18",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            }
+          ],
+          "units": [
+            {
+              "id": "DA_18_Rengar",
+              "name_ko": "DA_18_Rengar",
+              "star": 3,
+              "rarity": 2,
+              "items": [
+                {
+                  "id": "DA_GuinsoosRageblade",
+                  "name_ko": "구인수의 격노검"
+                },
+                {
+                  "id": "DA_TitansResolve",
+                  "name_ko": "거인의 결의"
+                },
+                {
+                  "id": "DA_EdgeOfNight",
+                  "name_ko": "밤의 끝자락"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Yorick",
+              "name_ko": "DA_18_Yorick",
+              "star": 2,
+              "rarity": 0,
+              "items": []
+            },
+            {
+              "id": "DA_18_Sett",
+              "name_ko": "DA_18_Sett",
+              "star": 2,
+              "rarity": 3,
+              "items": [
+                {
+                  "id": "DA_Component_GiantsBelt",
+                  "name_ko": "거인의 허리띠"
+                },
+                {
+                  "id": "DA_WarmogsArmor",
+                  "name_ko": "워모그의 갑옷"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_MasterYi_AD",
+              "name_ko": "DA_18_MasterYi_AD",
+              "star": 3,
+              "rarity": 2,
+              "items": [
+                {
+                  "id": "DA_KrakensFury",
+                  "name_ko": "크라켄의 분노"
+                },
+                {
+                  "id": "DA_EdgeOfNight",
+                  "name_ko": "밤의 끝자락"
+                },
+                {
+                  "id": "DA_Quicksilver",
+                  "name_ko": "수은"
+                }
+              ]
+            },
+            {
+              "id": "DA_Krug18",
+              "name_ko": "DA_Krug18",
+              "star": 3,
+              "rarity": 2,
+              "items": []
+            },
+            {
+              "id": "DA_Nidalee18_AP",
+              "name_ko": "DA_Nidalee18_AP",
+              "star": 2,
+              "rarity": 3,
+              "items": [
+                {
+                  "id": "DA_SpearOfShojin",
+                  "name_ko": "쇼진의 창"
+                },
+                {
+                  "id": "DA_SteraksGage",
+                  "name_ko": "스테락의 도전"
+                },
+                {
+                  "id": "DA_InfinityEdge",
+                  "name_ko": "무한의 대검"
+                }
+              ]
+            },
+            {
+              "id": "DA_Vi18",
+              "name_ko": "DA_Vi18",
+              "star": 3,
+              "rarity": 2,
+              "items": [
+                {
+                  "id": "DA_ThiefsGloves",
+                  "name_ko": "도적의 장갑"
+                },
+                {
+                  "id": "DA_NashorsTooth",
+                  "name_ko": "내셔의 이빨"
+                },
+                {
+                  "id": "DA_BrambleVest",
+                  "name_ko": "덤불 조끼"
+                }
+              ]
+            },
+            {
+              "id": "DA_KogMaw18_AD",
+              "name_ko": "DA_KogMaw18_AD",
+              "star": 2,
+              "rarity": 2,
+              "items": []
+            }
+          ]
+        },
+        {
+          "is_me": false,
+          "placement": 2,
+          "level": 8,
+          "last_round": 37,
+          "gold_left": 1,
+          "players_eliminated": 0,
+          "total_damage_to_players": 0,
+          "augments": [],
+          "traits": [
+            {
+              "id": "DA_18_Adaptor",
+              "name_ko": "DA_18_Adaptor",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Inferno",
+              "name_ko": "DA_18_Inferno",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 4,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Invoker",
+              "name_ko": "DA_18_Invoker",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 4,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Lunar",
+              "name_ko": "DA_18_Lunar",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 4,
+              "style": 1
+            },
+            {
+              "id": "DA_Primal18",
+              "name_ko": "DA_Primal18",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 2,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Rapidfire",
+              "name_ko": "DA_18_Rapidfire",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 4,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Vanguard",
+              "name_ko": "DA_18_Vanguard",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Caustic",
+              "name_ko": "DA_18_Caustic",
+              "num_units": 1,
+              "tier_current": 1,
+              "tier_total": 1,
+              "style": 3
+            },
+            {
+              "id": "DA_Juggernaut18",
+              "name_ko": "DA_Juggernaut18",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            }
+          ],
+          "units": [
+            {
+              "id": "DA_18_Varus",
+              "name_ko": "DA_18_Varus",
+              "star": 2,
+              "rarity": 0,
+              "items": []
+            },
+            {
+              "id": "DA_18_Diana",
+              "name_ko": "DA_18_Diana",
+              "star": 3,
+              "rarity": 2,
+              "items": [
+                {
+                  "id": "DA_Evenshroud",
+                  "name_ko": "저녁갑주"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Aphelios",
+              "name_ko": "DA_18_Aphelios",
+              "star": 2,
+              "rarity": 3,
+              "items": [
+                {
+                  "id": "DA_GuinsoosRageblade",
+                  "name_ko": "구인수의 격노검"
+                },
+                {
+                  "id": "DA_InfinityEdge",
+                  "name_ko": "무한의 대검"
+                },
+                {
+                  "id": "DA_StrikersFlail",
+                  "name_ko": "타격대의 철퇴"
+                }
+              ]
+            },
+            {
+              "id": "DA_Vi18",
+              "name_ko": "DA_Vi18",
+              "star": 2,
+              "rarity": 2,
+              "items": []
+            },
+            {
+              "id": "DA_KogMaw18_AD",
+              "name_ko": "DA_KogMaw18_AD",
+              "star": 2,
+              "rarity": 2,
+              "items": [
+                {
+                  "id": "DA_InfinityEdge",
+                  "name_ko": "무한의 대검"
+                }
+              ]
+            },
+            {
+              "id": "DA_Amumu18",
+              "name_ko": "DA_Amumu18",
+              "star": 2,
+              "rarity": 3,
+              "items": [
+                {
+                  "id": "DA_GargoyleStoneplate",
+                  "name_ko": "가고일 돌갑옷"
+                },
+                {
+                  "id": "DA_WarmogsArmor",
+                  "name_ko": "워모그의 갑옷"
+                },
+                {
+                  "id": "DA_SteadfastHeart",
+                  "name_ko": "굳건한 심장"
+                }
+              ]
+            },
+            {
+              "id": "DA_Sentinel18",
+              "name_ko": "DA_Sentinel18",
+              "star": 2,
+              "rarity": 3,
+              "items": [
+                {
+                  "id": "DA_ProtectorsVow",
+                  "name_ko": "수호자의 맹세"
+                },
+                {
+                  "id": "DA_ProtectorsVow",
+                  "name_ko": "수호자의 맹세"
+                }
+              ]
+            },
+            {
+              "id": "DA_Nidalee18_AP",
+              "name_ko": "DA_Nidalee18_AP",
+              "star": 1,
+              "rarity": 3,
+              "items": []
+            }
+          ]
+        },
+        {
+          "is_me": false,
+          "placement": 3,
+          "level": 8,
+          "last_round": 31,
+          "gold_left": 1,
+          "players_eliminated": 0,
+          "total_damage_to_players": 0,
+          "augments": [],
+          "traits": [
+            {
+              "id": "DA_18_Battlemage",
+              "name_ko": "DA_18_Battlemage",
+              "num_units": 1,
+              "tier_current": 1,
+              "tier_total": 1,
+              "style": 3
+            },
+            {
+              "id": "DA_18_Blackthorn",
+              "name_ko": "DA_18_Blackthorn",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Defender",
+              "name_ko": "DA_18_Defender",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Inferno",
+              "name_ko": "DA_18_Inferno",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 4,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Executioner",
+              "name_ko": "DA_18_Executioner",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Summoner",
+              "name_ko": "DA_18_Summoner",
+              "num_units": 3,
+              "tier_current": 2,
+              "tier_total": 2,
+              "style": 4
+            },
+            {
+              "id": "DA_FloraFatalis18",
+              "name_ko": "DA_FloraFatalis18",
+              "num_units": 2,
+              "tier_current": 2,
+              "tier_total": 2,
+              "style": 4
+            },
+            {
+              "id": "DA_Juggernaut18",
+              "name_ko": "DA_Juggernaut18",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            },
+            {
+              "id": "DA_18_ZyraUniqueTrait",
+              "name_ko": "DA_18_ZyraUniqueTrait",
+              "num_units": 1,
+              "tier_current": 1,
+              "tier_total": 1,
+              "style": 3
+            }
+          ],
+          "units": [
+            {
+              "id": "DA_18_Azir",
+              "name_ko": "DA_18_Azir",
+              "star": 3,
+              "rarity": 2,
+              "items": [
+                {
+                  "id": "DA_GuinsoosRageblade",
+                  "name_ko": "구인수의 격노검"
+                },
+                {
+                  "id": "DA_ArchangelsStaff",
+                  "name_ko": "대천사의 지팡이"
+                },
+                {
+                  "id": "DA_ArchangelsStaff",
+                  "name_ko": "대천사의 지팡이"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Yorick",
+              "name_ko": "DA_18_Yorick",
+              "star": 2,
+              "rarity": 0,
+              "items": []
+            },
+            {
+              "id": "DA_18_Shen",
+              "name_ko": "DA_18_Shen",
+              "star": 2,
+              "rarity": 1,
+              "items": []
+            },
+            {
+              "id": "DA_18_Zyra",
+              "name_ko": "DA_18_Zyra",
+              "star": 2,
+              "rarity": 3,
+              "items": [
+                {
+                  "id": "DA_VoidStaff",
+                  "name_ko": "공허의 지팡이"
+                },
+                {
+                  "id": "DA_BlueBuff",
+                  "name_ko": "푸른 파수꾼"
+                },
+                {
+                  "id": "DA_Component_RecurveBow",
+                  "name_ko": "곡궁"
+                }
+              ]
+            },
+            {
+              "id": "DA_Fiddlesticks18",
+              "name_ko": "DA_Fiddlesticks18",
+              "star": 1,
+              "rarity": 2,
+              "items": []
+            },
+            {
+              "id": "DA_18_Soraka",
+              "name_ko": "DA_18_Soraka",
+              "star": 2,
+              "rarity": 3,
+              "items": [
+                {
+                  "id": "DA_ThiefsGloves",
+                  "name_ko": "도적의 장갑"
+                },
+                {
+                  "id": "DA_Morellonomicon",
+                  "name_ko": "모렐로노미콘"
+                },
+                {
+                  "id": "DA_InfinityEdge",
+                  "name_ko": "무한의 대검"
+                }
+              ]
+            },
+            {
+              "id": "DA_Amumu18",
+              "name_ko": "DA_Amumu18",
+              "star": 2,
+              "rarity": 3,
+              "items": [
+                {
+                  "id": "DA_AdaptiveHelm",
+                  "name_ko": "적응형 투구"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Malphite",
+              "name_ko": "DA_18_Malphite",
+              "star": 2,
+              "rarity": 3,
+              "items": [
+                {
+                  "id": "DA_GargoyleStoneplate",
+                  "name_ko": "가고일 돌갑옷"
+                },
+                {
+                  "id": "DA_WarmogsArmor",
+                  "name_ko": "워모그의 갑옷"
+                },
+                {
+                  "id": "DA_SpiritVisage",
+                  "name_ko": "정령의 형상"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "is_me": false,
+          "placement": 4,
+          "level": 9,
+          "last_round": 31,
+          "gold_left": 1,
+          "players_eliminated": 0,
+          "total_damage_to_players": 0,
+          "augments": [],
+          "traits": [
+            {
+              "id": "DA_18_Blossom",
+              "name_ko": "DA_18_Blossom",
+              "num_units": 3,
+              "tier_current": 1,
+              "tier_total": 5,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Brawler",
+              "name_ko": "DA_18_Brawler",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Defender",
+              "name_ko": "DA_18_Defender",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Elderwood",
+              "name_ko": "DA_18_Elderwood",
+              "num_units": 3,
+              "tier_current": 1,
+              "tier_total": 5,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Maokai_UniqueTrait",
+              "name_ko": "DA_18_Maokai_UniqueTrait",
+              "num_units": 1,
+              "tier_current": 1,
+              "tier_total": 1,
+              "style": 3
+            },
+            {
+              "id": "DA_18_Executioner",
+              "name_ko": "DA_18_Executioner",
+              "num_units": 3,
+              "tier_current": 2,
+              "tier_total": 3,
+              "style": 2
+            },
+            {
+              "id": "DA_18_Spellweaver",
+              "name_ko": "DA_18_Spellweaver",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            },
+            {
+              "id": "DA_FloraFatalis18",
+              "name_ko": "DA_FloraFatalis18",
+              "num_units": 2,
+              "tier_current": 2,
+              "tier_total": 2,
+              "style": 4
+            }
+          ],
+          "units": [
+            {
+              "id": "DA_Fiddlesticks18",
+              "name_ko": "DA_Fiddlesticks18",
+              "star": 2,
+              "rarity": 2,
+              "items": []
+            },
+            {
+              "id": "DA_18_Ornn",
+              "name_ko": "DA_18_Ornn",
+              "star": 2,
+              "rarity": 0,
+              "items": []
+            },
+            {
+              "id": "DA_18_Alistar",
+              "name_ko": "DA_18_Alistar",
+              "star": 1,
+              "rarity": 1,
+              "items": []
+            },
+            {
+              "id": "DA_18_Yunara",
+              "name_ko": "DA_18_Yunara",
+              "star": 1,
+              "rarity": 1,
+              "items": []
+            },
+            {
+              "id": "DA_18_Ezreal",
+              "name_ko": "DA_18_Ezreal",
+              "star": 2,
+              "rarity": 3,
+              "items": [
+                {
+                  "id": "DA_LastWhisper",
+                  "name_ko": "최후의 속삭임"
+                },
+                {
+                  "id": "DA_Deathblade",
+                  "name_ko": "죽음의 검"
+                },
+                {
+                  "id": "DA_SpearOfShojin",
+                  "name_ko": "쇼진의 창"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Sett",
+              "name_ko": "DA_18_Sett",
+              "star": 2,
+              "rarity": 3,
+              "items": [
+                {
+                  "id": "DA_GargoyleStoneplate",
+                  "name_ko": "가고일 돌갑옷"
+                },
+                {
+                  "id": "DA_Component_GiantsBelt",
+                  "name_ko": "거인의 허리띠"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Ahri",
+              "name_ko": "DA_18_Ahri",
+              "star": 2,
+              "rarity": 3,
+              "items": [
+                {
+                  "id": "DA_Morellonomicon",
+                  "name_ko": "모렐로노미콘"
+                },
+                {
+                  "id": "DA_JeweledGauntlet",
+                  "name_ko": "보석 건틀릿"
+                },
+                {
+                  "id": "DA_NashorsTooth",
+                  "name_ko": "내셔의 이빨"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Soraka",
+              "name_ko": "DA_18_Soraka",
+              "star": 1,
+              "rarity": 3,
+              "items": [
+                {
+                  "id": "DA_SpearOfShojin",
+                  "name_ko": "쇼진의 창"
+                },
+                {
+                  "id": "DA_RedBuff",
+                  "name_ko": "붉은 덩굴정령"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Maokai",
+              "name_ko": "DA_18_Maokai",
+              "star": 1,
+              "rarity": 4,
+              "items": []
+            }
+          ]
+        },
+        {
+          "is_me": false,
+          "placement": 5,
+          "level": 9,
+          "last_round": 31,
+          "gold_left": 0,
+          "players_eliminated": 0,
+          "total_damage_to_players": 0,
+          "augments": [],
+          "traits": [
+            {
+              "id": "DA_18_Defender",
+              "name_ko": "DA_18_Defender",
+              "num_units": 6,
+              "tier_current": 3,
+              "tier_total": 3,
+              "style": 4
+            },
+            {
+              "id": "DA_18_Spellweaver",
+              "name_ko": "DA_18_Spellweaver",
+              "num_units": 4,
+              "tier_current": 2,
+              "tier_total": 3,
+              "style": 2
+            },
+            {
+              "id": "DA_FloraFatalis18",
+              "name_ko": "DA_FloraFatalis18",
+              "num_units": 1,
+              "tier_current": 1,
+              "tier_total": 2,
+              "style": 1
+            },
+            {
+              "id": "DA_AluneUniqueTrait18",
+              "name_ko": "DA_AluneUniqueTrait18",
+              "num_units": 1,
+              "tier_current": 1,
+              "tier_total": 1,
+              "style": 3
+            }
+          ],
+          "units": [
+            {
+              "id": "DA_18_Cassiopeia",
+              "name_ko": "DA_18_Cassiopeia",
+              "star": 2,
+              "rarity": 2,
+              "items": [
+                {
+                  "id": "DA_ArchangelsStaff",
+                  "name_ko": "대천사의 지팡이"
+                },
+                {
+                  "id": "DA_ArchangelsStaff",
+                  "name_ko": "대천사의 지팡이"
+                },
+                {
+                  "id": "DA_ArchangelsStaff",
+                  "name_ko": "대천사의 지팡이"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Ornn",
+              "name_ko": "DA_18_Ornn",
+              "star": 2,
+              "rarity": 0,
+              "items": []
+            },
+            {
+              "id": "DA_18_Leona",
+              "name_ko": "DA_18_Leona",
+              "star": 2,
+              "rarity": 0,
+              "items": []
+            },
+            {
+              "id": "DA_18_Rammus",
+              "name_ko": "DA_18_Rammus",
+              "star": 2,
+              "rarity": 2,
+              "items": [
+                {
+                  "id": "DA_BrambleVest",
+                  "name_ko": "덤불 조끼"
+                },
+                {
+                  "id": "DA_SteraksGage",
+                  "name_ko": "스테락의 도전"
+                },
+                {
+                  "id": "DA_KrakensFury",
+                  "name_ko": "크라켄의 분노"
+                }
+              ]
+            },
+            {
+              "id": "DA_Fiddlesticks18",
+              "name_ko": "DA_Fiddlesticks18",
+              "star": 2,
+              "rarity": 2,
+              "items": [
+                {
+                  "id": "DA_Artifact_TheIndomitable",
+                  "name_ko": "불굴"
+                },
+                {
+                  "id": "DA_WarmogsArmor",
+                  "name_ko": "워모그의 갑옷"
+                },
+                {
+                  "id": "DA_IonicSpark",
+                  "name_ko": "이온 충격기"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Shen",
+              "name_ko": "DA_18_Shen",
+              "star": 2,
+              "rarity": 1,
+              "items": []
+            },
+            {
+              "id": "DA_18_Lillia",
+              "name_ko": "DA_18_Lillia",
+              "star": 2,
+              "rarity": 3,
+              "items": [
+                {
+                  "id": "DA_ThiefsGloves",
+                  "name_ko": "도적의 장갑"
+                },
+                {
+                  "id": "DA_TitansResolve",
+                  "name_ko": "거인의 결의"
+                },
+                {
+                  "id": "DA_BrambleVest",
+                  "name_ko": "덤불 조끼"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Alune",
+              "name_ko": "DA_18_Alune",
+              "star": 1,
+              "rarity": 4,
+              "items": [
+                {
+                  "id": "DA_ArchangelsStaff",
+                  "name_ko": "대천사의 지팡이"
+                },
+                {
+                  "id": "DA_SpearOfShojin",
+                  "name_ko": "쇼진의 창"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Ahri",
+              "name_ko": "DA_18_Ahri",
+              "star": 1,
+              "rarity": 3,
+              "items": []
+            }
+          ]
+        },
+        {
+          "is_me": true,
+          "placement": 6,
+          "level": 9,
+          "last_round": 28,
+          "gold_left": 1,
+          "players_eliminated": 0,
+          "total_damage_to_players": 0,
+          "augments": [],
+          "traits": [
+            {
+              "id": "DA_18_Defender",
+              "name_ko": "DA_18_Defender",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Fae",
+              "name_ko": "DA_18_Fae",
+              "num_units": 3,
+              "tier_current": 1,
+              "tier_total": 2,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Hunter",
+              "name_ko": "DA_18_Hunter",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 4,
+              "style": 1
+            },
+            {
+              "id": "DA_18_LuxUniqueTrait",
+              "name_ko": "DA_18_LuxUniqueTrait",
+              "num_units": 1,
+              "tier_current": 1,
+              "tier_total": 1,
+              "style": 3
+            },
+            {
+              "id": "DA_18_Rival",
+              "name_ko": "DA_18_Rival",
+              "num_units": 1,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 4
+            },
+            {
+              "id": "DA_18_Spellweaver",
+              "name_ko": "DA_18_Spellweaver",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Sprykin",
+              "name_ko": "DA_18_Sprykin",
+              "num_units": 6,
+              "tier_current": 2,
+              "tier_total": 3,
+              "style": 2
+            },
+            {
+              "id": "DA_FloraFatalis18",
+              "name_ko": "DA_FloraFatalis18",
+              "num_units": 1,
+              "tier_current": 1,
+              "tier_total": 2,
+              "style": 1
+            }
+          ],
+          "units": [
+            {
+              "id": "DA_18_Veigar",
+              "name_ko": "DA_18_Veigar",
+              "star": 2,
+              "rarity": 0,
+              "items": [
+                {
+                  "id": "DA_HextechGunblade",
+                  "name_ko": "마법공학 총검"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Kobuko",
+              "name_ko": "DA_18_Kobuko",
+              "star": 2,
+              "rarity": 0,
+              "items": [
+                {
+                  "id": "DA_Artifact_MogulsMail",
+                  "name_ko": "거물의갑옷"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Teemo",
+              "name_ko": "DA_18_Teemo",
+              "star": 2,
+              "rarity": 1,
+              "items": []
+            },
+            {
+              "id": "DA_18_KhaZix",
+              "name_ko": "DA_18_KhaZix",
+              "star": 2,
+              "rarity": 2,
+              "items": []
+            },
+            {
+              "id": "DA_18_Rammus",
+              "name_ko": "DA_18_Rammus",
+              "star": 2,
+              "rarity": 2,
+              "items": [
+                {
+                  "id": "DA_WarmogsArmor",
+                  "name_ko": "워모그의 갑옷"
+                },
+                {
+                  "id": "DA_Component_ChainVest",
+                  "name_ko": "쇠사슬 조끼"
+                }
+              ]
+            },
+            {
+              "id": "DA_Fiddlesticks18",
+              "name_ko": "DA_Fiddlesticks18",
+              "star": 1,
+              "rarity": 2,
+              "items": []
+            },
+            {
+              "id": "DA_Lux18_Base",
+              "name_ko": "DA_Lux18_Base",
+              "star": 1,
+              "rarity": 4,
+              "items": []
+            },
+            {
+              "id": "DA_18_Tristana",
+              "name_ko": "DA_18_Tristana",
+              "star": 3,
+              "rarity": 2,
+              "items": [
+                {
+                  "id": "DA_GuinsoosRageblade",
+                  "name_ko": "구인수의 격노검"
+                },
+                {
+                  "id": "DA_GiantSlayer",
+                  "name_ko": "거인 학살자"
+                },
+                {
+                  "id": "DA_Component_NeedlesslyLargeRod",
+                  "name_ko": "쓸데없이 큰 지팡이"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Ashe",
+              "name_ko": "DA_18_Ashe",
+              "star": 1,
+              "rarity": 4,
+              "items": [
+                {
+                  "id": "DA_18_EmblemSprykin",
+                  "name_ko": "날렵이 상징"
+                }
+              ]
+            }
+          ],
+          "debug_augment": {
+            "raw_augments": null,
+            "skill_tree": null,
+            "related_fields": {}
+          }
+        },
+        {
+          "is_me": false,
+          "placement": 7,
+          "level": 7,
+          "last_round": 27,
+          "gold_left": 27,
+          "players_eliminated": 0,
+          "total_damage_to_players": 0,
+          "augments": [],
+          "traits": [
+            {
+              "id": "DA_18_Blackthorn",
+              "name_ko": "DA_18_Blackthorn",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Brawler",
+              "name_ko": "DA_18_Brawler",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Defender",
+              "name_ko": "DA_18_Defender",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Spellweaver",
+              "name_ko": "DA_18_Spellweaver",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Sprykin",
+              "name_ko": "DA_18_Sprykin",
+              "num_units": 5,
+              "tier_current": 2,
+              "tier_total": 3,
+              "style": 2
+            },
+            {
+              "id": "DA_FloraFatalis18",
+              "name_ko": "DA_FloraFatalis18",
+              "num_units": 1,
+              "tier_current": 1,
+              "tier_total": 2,
+              "style": 1
+            }
+          ],
+          "units": [
+            {
+              "id": "DA_18_Teemo",
+              "name_ko": "DA_18_Teemo",
+              "star": 2,
+              "rarity": 1,
+              "items": []
+            },
+            {
+              "id": "DA_18_Veigar",
+              "name_ko": "DA_18_Veigar",
+              "star": 3,
+              "rarity": 0,
+              "items": [
+                {
+                  "id": "DA_BlueBuff",
+                  "name_ko": "푸른 파수꾼"
+                },
+                {
+                  "id": "DA_JeweledGauntlet",
+                  "name_ko": "보석 건틀릿"
+                },
+                {
+                  "id": "DA_NashorsTooth",
+                  "name_ko": "내셔의 이빨"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Kobuko",
+              "name_ko": "DA_18_Kobuko",
+              "star": 3,
+              "rarity": 0,
+              "items": [
+                {
+                  "id": "DA_GargoyleStoneplate",
+                  "name_ko": "가고일 돌갑옷"
+                },
+                {
+                  "id": "DA_ProtectorsVow",
+                  "name_ko": "수호자의 맹세"
+                },
+                {
+                  "id": "DA_WarmogsArmor",
+                  "name_ko": "워모그의 갑옷"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_RekSai",
+              "name_ko": "DA_18_RekSai",
+              "star": 2,
+              "rarity": 0,
+              "items": []
+            },
+            {
+              "id": "DA_Fiddlesticks18",
+              "name_ko": "DA_Fiddlesticks18",
+              "star": 1,
+              "rarity": 2,
+              "items": [
+                {
+                  "id": "DA_SunfireCape",
+                  "name_ko": "태양불꽃 망토"
+                },
+                {
+                  "id": "DA_SpiritVisage",
+                  "name_ko": "정령의 형상"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Rammus",
+              "name_ko": "DA_18_Rammus",
+              "star": 1,
+              "rarity": 2,
+              "items": []
+            },
+            {
+              "id": "DA_18_Tristana",
+              "name_ko": "DA_18_Tristana",
+              "star": 1,
+              "rarity": 2,
+              "items": []
+            }
+          ]
+        },
+        {
+          "is_me": false,
+          "placement": 8,
+          "level": 7,
+          "last_round": 23,
+          "gold_left": 3,
+          "players_eliminated": 0,
+          "total_damage_to_players": 0,
+          "augments": [],
+          "traits": [
+            {
+              "id": "DA_18_Defender",
+              "name_ko": "DA_18_Defender",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Elderwood",
+              "name_ko": "DA_18_Elderwood",
+              "num_units": 4,
+              "tier_current": 1,
+              "tier_total": 5,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Rival",
+              "name_ko": "DA_18_Rival",
+              "num_units": 1,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 4
+            },
+            {
+              "id": "DA_18_Slayer",
+              "name_ko": "DA_18_Slayer",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            },
+            {
+              "id": "DA_18_Vanguard",
+              "name_ko": "DA_18_Vanguard",
+              "num_units": 2,
+              "tier_current": 1,
+              "tier_total": 3,
+              "style": 1
+            },
+            {
+              "id": "DA_FloraFatalis18",
+              "name_ko": "DA_FloraFatalis18",
+              "num_units": 1,
+              "tier_current": 1,
+              "tier_total": 2,
+              "style": 1
+            }
+          ],
+          "units": [
+            {
+              "id": "DA_18_Ornn",
+              "name_ko": "DA_18_Ornn",
+              "star": 2,
+              "rarity": 0,
+              "items": []
+            },
+            {
+              "id": "DA_18_Xayah",
+              "name_ko": "DA_18_Xayah",
+              "star": 1,
+              "rarity": 0,
+              "items": [
+                {
+                  "id": "DA_Component_TearOfTheGoddess",
+                  "name_ko": "여신의 눈물"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Diana",
+              "name_ko": "DA_18_Diana",
+              "star": 2,
+              "rarity": 2,
+              "items": [
+                {
+                  "id": "DA_Component_NegatronCloak",
+                  "name_ko": "음전자 망토"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Ezreal",
+              "name_ko": "DA_18_Ezreal",
+              "star": 1,
+              "rarity": 3,
+              "items": [
+                {
+                  "id": "DA_Component_RecurveBow",
+                  "name_ko": "곡궁"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_KhaZix",
+              "name_ko": "DA_18_KhaZix",
+              "star": 2,
+              "rarity": 2,
+              "items": [
+                {
+                  "id": "DA_JeweledGauntlet",
+                  "name_ko": "보석 건틀릿"
+                },
+                {
+                  "id": "DA_HandOfJustice",
+                  "name_ko": "정의의 손길"
+                }
+              ]
+            },
+            {
+              "id": "DA_18_Hecarim",
+              "name_ko": "DA_18_Hecarim",
+              "star": 3,
+              "rarity": 2,
+              "items": [
+                {
+                  "id": "DA_SteadfastHeart",
+                  "name_ko": "굳건한 심장"
+                },
+                {
+                  "id": "DA_GargoyleStoneplate",
+                  "name_ko": "가고일 돌갑옷"
+                },
+                {
+                  "id": "DA_WarmogsArmor",
+                  "name_ko": "워모그의 갑옷"
+                }
+              ]
+            },
+            {
+              "id": "DA_Fiddlesticks18",
+              "name_ko": "DA_Fiddlesticks18",
+              "star": 2,
+              "rarity": 2,
+              "items": []
+            }
+          ]
+        }
+      ]
+    },
     {
       "schema_version": 5,
       "match_id": "KR_8389259052",
