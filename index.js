@@ -4,7 +4,10 @@ const REGION = "asia";
 
 const MAX_STORED_MATCHES = 20;
 const MATCH_LOOKBACK = 20;
-const SCHEMA_VERSION = 7;
+const SCHEMA_VERSION = 8;
+const MAX_HISTORY_MATCHES = 300;
+const RAW_RETENTION_SECONDS = 90 * 24 * 60 * 60;
+const SYNC_BATCH_SIZE = 5;
 
 const GITHUB_BRANCH = "main";
 const GITHUB_FILE_PATH = "recent.json";
@@ -27,7 +30,7 @@ export default {
         status: "ok",
         player: `${GAME_NAME}#${TAG_LINE}`,
         schema_version: SCHEMA_VERSION,
-        endpoints: ["/health", "/latest", "/recent", "/recent?limit=5"]
+        endpoints: ["/health", "/latest", "/recent", "/recent?limit=5", "/analysis"]
       });
     }
 
@@ -52,7 +55,7 @@ export default {
         );
       }
 
-      return rawJson(latest);
+      return json(sanitizeMatchForPublic(JSON.parse(latest)));
     }
 
     if (url.pathname === "/recent") {
@@ -71,8 +74,13 @@ export default {
         player: `${GAME_NAME}#${TAG_LINE}`,
         count: matches.length,
         schema_version: SCHEMA_VERSION,
-        matches
+        matches: matches.map(sanitizeMatchForPublic)
       });
+    }
+
+    if (url.pathname === "/analysis") {
+      const rows = await getHistoryRows(env);
+      return json(buildHistoryAnalysis(rows));
     }
 
     return json({ error: "Not found" }, 404);
@@ -139,15 +147,26 @@ async function syncMatches(env) {
     if (matchesToProcess.length > 0) {
       console.log(`재수집/신규 경기 ${matchesToProcess.length}개`);
 
-      matchesToProcess.reverse();
+      // Bound API requests per run. Newest first; older upgrades follow later.
 
-      for (const matchId of matchesToProcess) {
+      for (const matchId of matchesToProcess.slice(0, SYNC_BATCH_SIZE)) {
         const matchUrl =
           `https://${REGION}.api.riotgames.com` +
           `/tft/match/v1/matches/` +
           `${encodeURIComponent(matchId)}`;
 
-        const match = await riotFetch(matchUrl, env);
+        const archived = await env.TFT_KV.get(`raw_match:${matchId}`);
+        const match = archived
+          ? JSON.parse(archived).response
+          : await riotFetch(matchUrl, env);
+
+        // Raw responses never enter a public endpoint or GitHub mirror.
+        if (!archived) {
+          await env.TFT_KV.put(`raw_match:${matchId}`, JSON.stringify({
+            fetched_at: new Date().toISOString(),
+            response: match
+          }), { expirationTtl: RAW_RETENTION_SECONDS });
+        }
 
         const result = buildMatchResult(
           match,
@@ -156,15 +175,16 @@ async function syncMatches(env) {
           dictionary
         );
 
+        // Checkpoint the compact history before marking the match processed.
+        await saveHistoryRow(env, result);
         await env.TFT_KV.put(
           `match:${matchId}`,
           JSON.stringify(result)
         );
 
-        recentIds = [
-          matchId,
-          ...recentIds.filter(id => id !== matchId)
-        ].slice(0, MAX_STORED_MATCHES);
+        recentIds = [...new Set([...matchIds, ...recentIds])]
+          .slice(0, MAX_STORED_MATCHES);
+        await env.TFT_KV.put("recent_match_ids", JSON.stringify(recentIds));
 
         if (matchId === matchIds[0]) {
           newestResult = result;
@@ -173,6 +193,8 @@ async function syncMatches(env) {
         console.log(
           `저장 완료 ${matchId} / ${result.me?.placement ?? "?"}위`
         );
+        // KV limits writes to the same history/index key to one per second.
+        await new Promise(resolve => setTimeout(resolve, 1100));
       }
 
       await env.TFT_KV.put(
@@ -338,13 +360,27 @@ function buildParticipant(
       participant.last_round ?? null,
 
     gold_left:
-      participant.gold_left ?? 0,
+      numericOrNull(participant.gold_left),
+
+    time_eliminated_seconds:
+      numericOrNull(participant.time_eliminated),
+
+    data_quality: {
+      source: "riot_match_result",
+      timeline_available: false,
+      missing_fields: ["gold_left", "time_eliminated", "last_round", "level",
+        "placement", "total_damage_to_players", "players_eliminated"]
+        .filter(key => numericOrNull(participant[key]) === null),
+      augments_present: Array.isArray(participant.augments),
+      missions_present: participant.missions != null,
+      missions_interpretation: "unverified_not_used"
+    },
 
     players_eliminated:
-      participant.players_eliminated ?? 0,
+      numericOrNull(participant.players_eliminated),
 
     total_damage_to_players:
-      participant.total_damage_to_players ?? 0,
+      numericOrNull(participant.total_damage_to_players),
 
     augments,
 
@@ -906,8 +942,13 @@ async function maybePublishGithubMirror(
   env,
   latestMatchId
 ) {
-  const marker =
-    `${SCHEMA_VERSION}:${latestMatchId}`;
+  const matches = await getRecentMatches(env, MAX_STORED_MATCHES);
+  const history = buildHistoryAnalysis(await getHistoryRows(env));
+  const publicMatches = matches.map(sanitizeMatchForPublic);
+  const fingerprint = JSON.stringify({publicMatches, history});
+  const hash = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(fingerprint));
+  const marker = `${SCHEMA_VERSION}:${latestMatchId}:` +
+    Array.from(new Uint8Array(hash), b => b.toString(16).padStart(2, "0")).join("");
 
   const oldMarker =
     await env.TFT_KV.get("github_mirror_marker");
@@ -916,17 +957,6 @@ async function maybePublishGithubMirror(
     console.log("GitHub mirror 변경 없음");
     return;
   }
-
-  const matches =
-    await getRecentMatches(
-      env,
-      MAX_STORED_MATCHES
-    );
-
-  const publicMatches =
-    matches.map(
-      sanitizeMatchForPublic
-    );
 
   const payload = {
     player:
@@ -943,6 +973,8 @@ async function maybePublishGithubMirror(
 
     count:
       publicMatches.length,
+
+    history_analysis: history,
 
     matches:
       publicMatches
@@ -1017,6 +1049,12 @@ function sanitizeParticipant(
     gold_left:
       player.gold_left ?? null,
 
+    time_eliminated_seconds:
+      player.time_eliminated_seconds ?? null,
+
+    data_quality:
+      player.data_quality ?? null,
+
     players_eliminated:
       player.players_eliminated ?? null,
 
@@ -1033,10 +1071,7 @@ function sanitizeParticipant(
       player.units ?? []
   };
 
-  if (includeDebug) {
-    output.debug_augment =
-      player.debug_augment ?? null;
-  }
+  // Arbitrary debug/mission fields are private: only explicit fields are public.
 
   return output;
 }
@@ -1158,6 +1193,151 @@ function utf8ToBase64(text) {
   }
 
   return btoa(binary);
+}
+
+function numericOrNull(value) {
+  return typeof value === "number" && Number.isFinite(value) ? value : null;
+}
+
+async function getHistoryRows(env) {
+  const raw = await env.TFT_KV.get("history_rows_v1");
+  if (!raw) return [];
+  const rows = JSON.parse(raw);
+  if (!Array.isArray(rows)) throw new Error("Invalid history rows");
+  return rows;
+}
+
+function buildHistoryRow(match) {
+  const me = match.me;
+  if (!me) return null;
+  const units = me.units ?? [];
+  const opponents = (match.lobby ?? []).filter(p => !p.is_me);
+  const keyTraits = (me.traits ?? []).filter(t => t.num_units > 0)
+    .sort((a, b) => b.num_units - a.num_units || a.id.localeCompare(b.id))
+    .slice(0, 2).map(t => ({id: t.id, name_ko: t.name_ko}));
+  return {
+    match_id: match.match_id,
+    datetime: match.game.datetime ?? match.synced_at,
+    // Exact build version prevents accidentally pooling different patches.
+    game_version: match.game.game_version,
+    set_number: match.game.set_number,
+    set_core_name: match.game.set_core_name,
+    queue_id: match.game.queue_id,
+    game_type: match.game.game_type,
+    schema_version: match.schema_version,
+    placement: numericOrNull(me.placement),
+    level: numericOrNull(me.level),
+    last_round: numericOrNull(me.last_round),
+    gold_left: numericOrNull(me.gold_left),
+    time_eliminated_seconds: numericOrNull(me.time_eliminated_seconds),
+    total_damage_to_players: numericOrNull(me.total_damage_to_players),
+    players_eliminated: numericOrNull(me.players_eliminated),
+    key_traits: keyTraits,
+    unit_count: units.length,
+    three_star_units: units.filter(u => u.star === 3).length,
+    equipped_item_entries: units.reduce((n, u) => n + u.items.length, 0),
+    // These are occupied item entries, NOT counts of completed items.
+    units_with_three_item_entries: units.filter(u => u.items.length >= 3).length,
+    contested_units: units.map(u => ({
+      id: u.id,
+      name_ko: u.name_ko,
+      opposing_final_boards: opponents.filter(p =>
+        (p.units ?? []).some(other => other.id === u.id)).length
+    })).filter(u => u.opposing_final_boards > 0)
+  };
+}
+
+async function saveHistoryRow(env, match) {
+  const row = buildHistoryRow(match);
+  if (!row) throw new Error(`Target participant missing: ${match.match_id}`);
+  const rows = await getHistoryRows(env);
+  const next = [row, ...rows.filter(r => r.match_id !== row.match_id)]
+    .sort((a, b) => b.datetime.localeCompare(a.datetime))
+    .slice(0, MAX_HISTORY_MATCHES);
+  await env.TFT_KV.put("history_rows_v1", JSON.stringify(next));
+}
+
+function summarizeRows(rows) {
+  const values = key => rows.map(r => r[key]).filter(v => numericOrNull(v) !== null);
+  const metric = key => {
+    const samples = values(key);
+    return {sample_count: samples.length, mean: samples.length
+      ? Math.round(samples.reduce((a, b) => a + b, 0) / samples.length * 100) / 100
+      : null};
+  };
+  const placements = values("placement").filter(p => p >= 1 && p <= 8);
+  const bottom = rows.filter(r => r.placement >= 5 && r.placement <= 8);
+  const knownGoldBottom = bottom.filter(r => numericOrNull(r.gold_left) !== null);
+  return {
+    match_count: rows.length,
+    small_sample: rows.length < 20,
+    average_placement: metric("placement"),
+    top4_rate: placements.length ? placements.filter(p => p <= 4).length / placements.length : null,
+    first_rate: placements.length ? placements.filter(p => p === 1).length / placements.length : null,
+    top4_denominator: placements.length,
+    gold_left: metric("gold_left"),
+    last_round: metric("last_round"),
+    time_eliminated_seconds: metric("time_eliminated_seconds"),
+    total_damage_to_players: metric("total_damage_to_players"),
+    level: metric("level"),
+    three_star_units: metric("three_star_units"),
+    bottom4_gold_review: {
+      threshold: 20,
+      known_gold_matches: knownGoldBottom.length,
+      matches_at_or_above_threshold: knownGoldBottom.filter(r => r.gold_left >= 20).length,
+      interpretation: "review_signal_not_proof_of_misplay"
+    }
+  };
+}
+
+function buildHistoryAnalysis(rows) {
+  const groups = new Map();
+  for (const row of rows) {
+    const key = JSON.stringify([row.game_version, row.set_number, row.set_core_name,
+      row.queue_id, row.game_type]);
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(row);
+  }
+  return {
+    max_history_matches: MAX_HISTORY_MATCHES,
+    stored_match_count: rows.length,
+    coverage_start: rows.length ? rows[rows.length - 1].datetime : null,
+    coverage_end: rows.length ? rows[0].datetime : null,
+    limitations: [
+      "Final states only; no shop, purchases, rerolls, bench or positioning timeline.",
+      "Equipped item entries include components; they are not completed item counts.",
+      "Opposing final boards are recorded at different elimination times, not simultaneous scouting.",
+      "Trait groups describe final boards, not confirmed strategies or causal effects.",
+      "Missing metrics are excluded, not treated as zero. Small samples are descriptive only.",
+      "Unverified missions data is archived privately and excluded from all metrics.",
+      "History accumulates from processed matches; this is not a complete career archive.",
+      "Placement/top4 labels are not team-adjusted; interpret each queue separately."
+    ],
+    groups: [...groups.values()].map(group => {
+      const first = group[0];
+      const traits = new Map();
+      for (const row of group) {
+        const key = row.key_traits.map(t => t.id).sort().join("|") || "unknown";
+        if (!traits.has(key)) traits.set(key, []);
+        traits.get(key).push(row);
+      }
+      return {
+        game_version: first.game_version,
+        set_number: first.set_number,
+        set_core_name: first.set_core_name,
+        queue_id: first.queue_id,
+        game_type: first.game_type,
+        summary: summarizeRows(group),
+        recent_10: summarizeRows(group.slice(0, 10)),
+        previous_10: summarizeRows(group.slice(10, 20)),
+        final_trait_groups: [...traits.values()].map(traitRows => ({
+          traits: traitRows[0].key_traits,
+          ...summarizeRows(traitRows)
+        })),
+        matches: group
+      };
+    })
+  };
 }
 
 function rawJson(text) {
