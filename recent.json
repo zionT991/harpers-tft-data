@@ -1,14 +1,711 @@
 {
   "player": "Harpers#KR1",
-  "generated_at": "2026-09-22T04:35:33.723Z",
-  "schema_version": 7,
+  "generated_at": "2026-09-22T07:31:18.040Z",
+  "schema_version": 8,
   "latest_match_id": "KR_8390325321",
   "count": 7,
+  "history_analysis": {
+    "max_history_matches": 300,
+    "stored_match_count": 5,
+    "coverage_start": "2026-09-20T03:16:19.127Z",
+    "coverage_end": "2026-09-22T04:15:42.993Z",
+    "limitations": [
+      "Final states only; no shop, purchases, rerolls, bench or positioning timeline.",
+      "Equipped item entries include components; they are not completed item counts.",
+      "Opposing final boards are recorded at different elimination times, not simultaneous scouting.",
+      "Trait groups describe final boards, not confirmed strategies or causal effects.",
+      "Missing metrics are excluded, not treated as zero. Small samples are descriptive only.",
+      "Unverified missions data is archived privately and excluded from all metrics.",
+      "History accumulates from processed matches; this is not a complete career archive.",
+      "Placement/top4 labels are not team-adjusted; interpret each queue separately."
+    ],
+    "groups": [
+      {
+        "game_version": "TFT Unreal Version ?.?.?.?",
+        "set_number": 18,
+        "set_core_name": "TFTSet18",
+        "queue_id": 1100,
+        "game_type": "standard",
+        "summary": {
+          "match_count": 5,
+          "small_sample": true,
+          "average_placement": {
+            "sample_count": 5,
+            "mean": 4.2
+          },
+          "top4_rate": 0.4,
+          "first_rate": 0.4,
+          "top4_denominator": 5,
+          "gold_left": {
+            "sample_count": 5,
+            "mean": 10.4
+          },
+          "last_round": {
+            "sample_count": 5,
+            "mean": 30.2
+          },
+          "time_eliminated_seconds": {
+            "sample_count": 5,
+            "mean": 2025
+          },
+          "total_damage_to_players": {
+            "sample_count": 5,
+            "mean": 0
+          },
+          "level": {
+            "sample_count": 5,
+            "mean": 8.6
+          },
+          "three_star_units": {
+            "sample_count": 5,
+            "mean": 0.8
+          },
+          "bottom4_gold_review": {
+            "threshold": 20,
+            "known_gold_matches": 3,
+            "matches_at_or_above_threshold": 0,
+            "interpretation": "review_signal_not_proof_of_misplay"
+          }
+        },
+        "recent_10": {
+          "match_count": 5,
+          "small_sample": true,
+          "average_placement": {
+            "sample_count": 5,
+            "mean": 4.2
+          },
+          "top4_rate": 0.4,
+          "first_rate": 0.4,
+          "top4_denominator": 5,
+          "gold_left": {
+            "sample_count": 5,
+            "mean": 10.4
+          },
+          "last_round": {
+            "sample_count": 5,
+            "mean": 30.2
+          },
+          "time_eliminated_seconds": {
+            "sample_count": 5,
+            "mean": 2025
+          },
+          "total_damage_to_players": {
+            "sample_count": 5,
+            "mean": 0
+          },
+          "level": {
+            "sample_count": 5,
+            "mean": 8.6
+          },
+          "three_star_units": {
+            "sample_count": 5,
+            "mean": 0.8
+          },
+          "bottom4_gold_review": {
+            "threshold": 20,
+            "known_gold_matches": 3,
+            "matches_at_or_above_threshold": 0,
+            "interpretation": "review_signal_not_proof_of_misplay"
+          }
+        },
+        "previous_10": {
+          "match_count": 0,
+          "small_sample": true,
+          "average_placement": {
+            "sample_count": 0,
+            "mean": null
+          },
+          "top4_rate": null,
+          "first_rate": null,
+          "top4_denominator": 0,
+          "gold_left": {
+            "sample_count": 0,
+            "mean": null
+          },
+          "last_round": {
+            "sample_count": 0,
+            "mean": null
+          },
+          "time_eliminated_seconds": {
+            "sample_count": 0,
+            "mean": null
+          },
+          "total_damage_to_players": {
+            "sample_count": 0,
+            "mean": null
+          },
+          "level": {
+            "sample_count": 0,
+            "mean": null
+          },
+          "three_star_units": {
+            "sample_count": 0,
+            "mean": null
+          },
+          "bottom4_gold_review": {
+            "threshold": 20,
+            "known_gold_matches": 0,
+            "matches_at_or_above_threshold": 0,
+            "interpretation": "review_signal_not_proof_of_misplay"
+          }
+        },
+        "final_trait_groups": [
+          {
+            "traits": [
+              {
+                "id": "DA_18_Sprykin",
+                "name_ko": "날렵이"
+              },
+              {
+                "id": "DA_18_Fae",
+                "name_ko": "요정"
+              }
+            ],
+            "match_count": 1,
+            "small_sample": true,
+            "average_placement": {
+              "sample_count": 1,
+              "mean": 6
+            },
+            "top4_rate": 0,
+            "first_rate": 0,
+            "top4_denominator": 1,
+            "gold_left": {
+              "sample_count": 1,
+              "mean": 1
+            },
+            "last_round": {
+              "sample_count": 1,
+              "mean": 28
+            },
+            "time_eliminated_seconds": {
+              "sample_count": 1,
+              "mean": 1895
+            },
+            "total_damage_to_players": {
+              "sample_count": 1,
+              "mean": 0
+            },
+            "level": {
+              "sample_count": 1,
+              "mean": 9
+            },
+            "three_star_units": {
+              "sample_count": 1,
+              "mean": 1
+            },
+            "bottom4_gold_review": {
+              "threshold": 20,
+              "known_gold_matches": 1,
+              "matches_at_or_above_threshold": 0,
+              "interpretation": "review_signal_not_proof_of_misplay"
+            }
+          },
+          {
+            "traits": [
+              {
+                "id": "DA_18_Elderwood",
+                "name_ko": "나무정령"
+              },
+              {
+                "id": "DA_18_Rapidfire",
+                "name_ko": "속사포"
+              }
+            ],
+            "match_count": 1,
+            "small_sample": true,
+            "average_placement": {
+              "sample_count": 1,
+              "mean": 7
+            },
+            "top4_rate": 0,
+            "first_rate": 0,
+            "top4_denominator": 1,
+            "gold_left": {
+              "sample_count": 1,
+              "mean": 2
+            },
+            "last_round": {
+              "sample_count": 1,
+              "mean": 28
+            },
+            "time_eliminated_seconds": {
+              "sample_count": 1,
+              "mean": 1809
+            },
+            "total_damage_to_players": {
+              "sample_count": 1,
+              "mean": 0
+            },
+            "level": {
+              "sample_count": 1,
+              "mean": 8
+            },
+            "three_star_units": {
+              "sample_count": 1,
+              "mean": 0
+            },
+            "bottom4_gold_review": {
+              "threshold": 20,
+              "known_gold_matches": 1,
+              "matches_at_or_above_threshold": 0,
+              "interpretation": "review_signal_not_proof_of_misplay"
+            }
+          },
+          {
+            "traits": [
+              {
+                "id": "DA_18_Executioner",
+                "name_ko": "처형자"
+              },
+              {
+                "id": "DA_18_Inferno",
+                "name_ko": "지옥불"
+              }
+            ],
+            "match_count": 1,
+            "small_sample": true,
+            "average_placement": {
+              "sample_count": 1,
+              "mean": 6
+            },
+            "top4_rate": 0,
+            "first_rate": 0,
+            "top4_denominator": 1,
+            "gold_left": {
+              "sample_count": 1,
+              "mean": 2
+            },
+            "last_round": {
+              "sample_count": 1,
+              "mean": 27
+            },
+            "time_eliminated_seconds": {
+              "sample_count": 1,
+              "mean": 1743
+            },
+            "total_damage_to_players": {
+              "sample_count": 1,
+              "mean": 0
+            },
+            "level": {
+              "sample_count": 1,
+              "mean": 7
+            },
+            "three_star_units": {
+              "sample_count": 1,
+              "mean": 1
+            },
+            "bottom4_gold_review": {
+              "threshold": 20,
+              "known_gold_matches": 1,
+              "matches_at_or_above_threshold": 0,
+              "interpretation": "review_signal_not_proof_of_misplay"
+            }
+          },
+          {
+            "traits": [
+              {
+                "id": "DA_18_Inferno",
+                "name_ko": "지옥불"
+              },
+              {
+                "id": "DA_Riftbeast18",
+                "name_ko": "협곡야수"
+              }
+            ],
+            "match_count": 1,
+            "small_sample": true,
+            "average_placement": {
+              "sample_count": 1,
+              "mean": 1
+            },
+            "top4_rate": 1,
+            "first_rate": 1,
+            "top4_denominator": 1,
+            "gold_left": {
+              "sample_count": 1,
+              "mean": 2
+            },
+            "last_round": {
+              "sample_count": 1,
+              "mean": 35
+            },
+            "time_eliminated_seconds": {
+              "sample_count": 1,
+              "mean": 2571
+            },
+            "total_damage_to_players": {
+              "sample_count": 1,
+              "mean": 0
+            },
+            "level": {
+              "sample_count": 1,
+              "mean": 9
+            },
+            "three_star_units": {
+              "sample_count": 1,
+              "mean": 1
+            },
+            "bottom4_gold_review": {
+              "threshold": 20,
+              "known_gold_matches": 0,
+              "matches_at_or_above_threshold": 0,
+              "interpretation": "review_signal_not_proof_of_misplay"
+            }
+          },
+          {
+            "traits": [
+              {
+                "id": "DA_18_Elderwood",
+                "name_ko": "나무정령"
+              },
+              {
+                "id": "DA_18_Brawler",
+                "name_ko": "싸움꾼"
+              }
+            ],
+            "match_count": 1,
+            "small_sample": true,
+            "average_placement": {
+              "sample_count": 1,
+              "mean": 1
+            },
+            "top4_rate": 1,
+            "first_rate": 1,
+            "top4_denominator": 1,
+            "gold_left": {
+              "sample_count": 1,
+              "mean": 45
+            },
+            "last_round": {
+              "sample_count": 1,
+              "mean": 33
+            },
+            "time_eliminated_seconds": {
+              "sample_count": 1,
+              "mean": 2107
+            },
+            "total_damage_to_players": {
+              "sample_count": 1,
+              "mean": 0
+            },
+            "level": {
+              "sample_count": 1,
+              "mean": 10
+            },
+            "three_star_units": {
+              "sample_count": 1,
+              "mean": 1
+            },
+            "bottom4_gold_review": {
+              "threshold": 20,
+              "known_gold_matches": 0,
+              "matches_at_or_above_threshold": 0,
+              "interpretation": "review_signal_not_proof_of_misplay"
+            }
+          }
+        ],
+        "matches": [
+          {
+            "match_id": "KR_8390325321",
+            "datetime": "2026-09-22T04:15:42.993Z",
+            "game_version": "TFT Unreal Version ?.?.?.?",
+            "set_number": 18,
+            "set_core_name": "TFTSet18",
+            "queue_id": 1100,
+            "game_type": "standard",
+            "schema_version": 8,
+            "placement": 6,
+            "level": 9,
+            "last_round": 28,
+            "gold_left": 1,
+            "time_eliminated_seconds": 1895,
+            "total_damage_to_players": 0,
+            "players_eliminated": 0,
+            "key_traits": [
+              {
+                "id": "DA_18_Sprykin",
+                "name_ko": "날렵이"
+              },
+              {
+                "id": "DA_18_Fae",
+                "name_ko": "요정"
+              }
+            ],
+            "unit_count": 9,
+            "three_star_units": 1,
+            "equipped_item_entries": 8,
+            "units_with_three_item_entries": 1,
+            "contested_units": [
+              {
+                "id": "DA_18_Veigar",
+                "name_ko": "베이가",
+                "opposing_final_boards": 1
+              },
+              {
+                "id": "DA_18_Kobuko",
+                "name_ko": "코부코",
+                "opposing_final_boards": 1
+              },
+              {
+                "id": "DA_18_Teemo",
+                "name_ko": "티모",
+                "opposing_final_boards": 1
+              },
+              {
+                "id": "DA_18_KhaZix",
+                "name_ko": "카직스",
+                "opposing_final_boards": 1
+              },
+              {
+                "id": "DA_18_Rammus",
+                "name_ko": "람머스",
+                "opposing_final_boards": 2
+              },
+              {
+                "id": "DA_Fiddlesticks18",
+                "name_ko": "피들스틱",
+                "opposing_final_boards": 5
+              },
+              {
+                "id": "DA_18_Tristana",
+                "name_ko": "트리스타나",
+                "opposing_final_boards": 1
+              }
+            ]
+          },
+          {
+            "match_id": "KR_8389259052",
+            "datetime": "2026-09-21T03:47:44.232Z",
+            "game_version": "TFT Unreal Version ?.?.?.?",
+            "set_number": 18,
+            "set_core_name": "TFTSet18",
+            "queue_id": 1100,
+            "game_type": "standard",
+            "schema_version": 8,
+            "placement": 7,
+            "level": 8,
+            "last_round": 28,
+            "gold_left": 2,
+            "time_eliminated_seconds": 1809,
+            "total_damage_to_players": 0,
+            "players_eliminated": 0,
+            "key_traits": [
+              {
+                "id": "DA_18_Elderwood",
+                "name_ko": "나무정령"
+              },
+              {
+                "id": "DA_18_Rapidfire",
+                "name_ko": "속사포"
+              }
+            ],
+            "unit_count": 8,
+            "three_star_units": 0,
+            "equipped_item_entries": 12,
+            "units_with_three_item_entries": 2,
+            "contested_units": [
+              {
+                "id": "DA_18_Varus",
+                "name_ko": "바루스",
+                "opposing_final_boards": 1
+              },
+              {
+                "id": "DA_18_Kayle",
+                "name_ko": "케일",
+                "opposing_final_boards": 1
+              },
+              {
+                "id": "DA_CrimsonRaptor18",
+                "name_ko": "어미 부리",
+                "opposing_final_boards": 1
+              }
+            ]
+          },
+          {
+            "match_id": "KR_8389175867",
+            "datetime": "2026-09-21T00:13:15.935Z",
+            "game_version": "TFT Unreal Version ?.?.?.?",
+            "set_number": 18,
+            "set_core_name": "TFTSet18",
+            "queue_id": 1100,
+            "game_type": "standard",
+            "schema_version": 8,
+            "placement": 6,
+            "level": 7,
+            "last_round": 27,
+            "gold_left": 2,
+            "time_eliminated_seconds": 1743,
+            "total_damage_to_players": 0,
+            "players_eliminated": 0,
+            "key_traits": [
+              {
+                "id": "DA_18_Executioner",
+                "name_ko": "처형자"
+              },
+              {
+                "id": "DA_18_Inferno",
+                "name_ko": "지옥불"
+              }
+            ],
+            "unit_count": 7,
+            "three_star_units": 1,
+            "equipped_item_entries": 9,
+            "units_with_three_item_entries": 1,
+            "contested_units": [
+              {
+                "id": "DA_18_Varus",
+                "name_ko": "바루스",
+                "opposing_final_boards": 2
+              },
+              {
+                "id": "DA_18_Shen",
+                "name_ko": "쉔",
+                "opposing_final_boards": 1
+              },
+              {
+                "id": "DA_18_Akali_AD",
+                "name_ko": "아칼리",
+                "opposing_final_boards": 1
+              },
+              {
+                "id": "DA_18_Malphite",
+                "name_ko": "말파이트",
+                "opposing_final_boards": 1
+              }
+            ]
+          },
+          {
+            "match_id": "KR_8388357955",
+            "datetime": "2026-09-20T10:10:09.344Z",
+            "game_version": "TFT Unreal Version ?.?.?.?",
+            "set_number": 18,
+            "set_core_name": "TFTSet18",
+            "queue_id": 1100,
+            "game_type": "standard",
+            "schema_version": 8,
+            "placement": 1,
+            "level": 9,
+            "last_round": 35,
+            "gold_left": 2,
+            "time_eliminated_seconds": 2571,
+            "total_damage_to_players": 0,
+            "players_eliminated": 0,
+            "key_traits": [
+              {
+                "id": "DA_18_Inferno",
+                "name_ko": "지옥불"
+              },
+              {
+                "id": "DA_Riftbeast18",
+                "name_ko": "협곡야수"
+              }
+            ],
+            "unit_count": 8,
+            "three_star_units": 1,
+            "equipped_item_entries": 11,
+            "units_with_three_item_entries": 1,
+            "contested_units": [
+              {
+                "id": "DA_18_Akali_AD",
+                "name_ko": "아칼리",
+                "opposing_final_boards": 1
+              },
+              {
+                "id": "DA_18_Varus",
+                "name_ko": "바루스",
+                "opposing_final_boards": 2
+              },
+              {
+                "id": "DA_18_Shen",
+                "name_ko": "쉔",
+                "opposing_final_boards": 2
+              },
+              {
+                "id": "DA_18_Kayle",
+                "name_ko": "케일",
+                "opposing_final_boards": 2
+              },
+              {
+                "id": "DA_Amumu18",
+                "name_ko": "아무무",
+                "opposing_final_boards": 1
+              }
+            ]
+          },
+          {
+            "match_id": "KR_8387845292",
+            "datetime": "2026-09-20T03:16:19.127Z",
+            "game_version": "TFT Unreal Version ?.?.?.?",
+            "set_number": 18,
+            "set_core_name": "TFTSet18",
+            "queue_id": 1100,
+            "game_type": "standard",
+            "schema_version": 8,
+            "placement": 1,
+            "level": 10,
+            "last_round": 33,
+            "gold_left": 45,
+            "time_eliminated_seconds": 2107,
+            "total_damage_to_players": 0,
+            "players_eliminated": 0,
+            "key_traits": [
+              {
+                "id": "DA_18_Elderwood",
+                "name_ko": "나무정령"
+              },
+              {
+                "id": "DA_18_Brawler",
+                "name_ko": "싸움꾼"
+              }
+            ],
+            "unit_count": 10,
+            "three_star_units": 1,
+            "equipped_item_entries": 11,
+            "units_with_three_item_entries": 1,
+            "contested_units": [
+              {
+                "id": "DA_18_LeBlanc",
+                "name_ko": "르블랑",
+                "opposing_final_boards": 1
+              },
+              {
+                "id": "DA_18_Xayah",
+                "name_ko": "자야",
+                "opposing_final_boards": 1
+              },
+              {
+                "id": "DA_18_Ornn",
+                "name_ko": "오른",
+                "opposing_final_boards": 1
+              },
+              {
+                "id": "DA_18_Hecarim",
+                "name_ko": "헤카림",
+                "opposing_final_boards": 1
+              },
+              {
+                "id": "DA_18_Alistar",
+                "name_ko": "알리스타",
+                "opposing_final_boards": 1
+              },
+              {
+                "id": "DA_18_Lillia",
+                "name_ko": "릴리아",
+                "opposing_final_boards": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "matches": [
     {
-      "schema_version": 7,
+      "schema_version": 8,
       "match_id": "KR_8390325321",
-      "synced_at": "2026-09-22T04:35:33.403Z",
+      "synced_at": "2026-09-22T07:31:09.503Z",
       "game": {
         "datetime": "2026-09-22T04:15:42.993Z",
         "length_seconds": 2394.995361328125,
@@ -24,6 +721,15 @@
         "level": 9,
         "last_round": 28,
         "gold_left": 1,
+        "time_eliminated_seconds": 1895,
+        "data_quality": {
+          "source": "riot_match_result",
+          "timeline_available": false,
+          "missing_fields": [],
+          "augments_present": false,
+          "missions_present": true,
+          "missions_interpretation": "unverified_not_used"
+        },
         "players_eliminated": 0,
         "total_damage_to_players": 0,
         "augments": [],
@@ -194,12 +900,7 @@
               }
             ]
           }
-        ],
-        "debug_augment": {
-          "raw_augments": null,
-          "skill_tree": null,
-          "related_fields": {}
-        }
+        ]
       },
       "lobby": [
         {
@@ -208,6 +909,15 @@
           "level": 8,
           "last_round": 37,
           "gold_left": 2,
+          "time_eliminated_seconds": 2394,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -395,6 +1105,15 @@
           "level": 8,
           "last_round": 37,
           "gold_left": 1,
+          "time_eliminated_seconds": 2389,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -582,6 +1301,15 @@
           "level": 8,
           "last_round": 31,
           "gold_left": 1,
+          "time_eliminated_seconds": 2064,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -781,6 +1509,15 @@
           "level": 9,
           "last_round": 31,
           "gold_left": 1,
+          "time_eliminated_seconds": 2064,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -966,6 +1703,15 @@
           "level": 9,
           "last_round": 31,
           "gold_left": 0,
+          "time_eliminated_seconds": 2064,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -1136,6 +1882,15 @@
           "level": 9,
           "last_round": 28,
           "gold_left": 1,
+          "time_eliminated_seconds": 1895,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -1306,12 +2061,7 @@
                 }
               ]
             }
-          ],
-          "debug_augment": {
-            "raw_augments": null,
-            "skill_tree": null,
-            "related_fields": {}
-          }
+          ]
         },
         {
           "is_me": false,
@@ -1319,6 +2069,15 @@
           "level": 7,
           "last_round": 27,
           "gold_left": 27,
+          "time_eliminated_seconds": 1830,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -1465,6 +2224,15 @@
           "level": 7,
           "last_round": 23,
           "gold_left": 3,
+          "time_eliminated_seconds": 1579,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -1610,9 +2378,9 @@
       ]
     },
     {
-      "schema_version": 7,
+      "schema_version": 8,
       "match_id": "KR_8389259052",
-      "synced_at": "2026-09-22T04:35:33.030Z",
+      "synced_at": "2026-09-22T07:31:11.255Z",
       "game": {
         "datetime": "2026-09-21T03:47:44.232Z",
         "length_seconds": 2213.411376953125,
@@ -1628,6 +2396,15 @@
         "level": 8,
         "last_round": 28,
         "gold_left": 2,
+        "time_eliminated_seconds": 1809,
+        "data_quality": {
+          "source": "riot_match_result",
+          "timeline_available": false,
+          "missing_fields": [],
+          "augments_present": false,
+          "missions_present": true,
+          "missions_interpretation": "unverified_not_used"
+        },
         "players_eliminated": 0,
         "total_damage_to_players": 0,
         "augments": [],
@@ -1784,12 +2561,7 @@
             "rarity": 2,
             "items": []
           }
-        ],
-        "debug_augment": {
-          "raw_augments": null,
-          "skill_tree": null,
-          "related_fields": {}
-        }
+        ]
       },
       "lobby": [
         {
@@ -1798,6 +2570,15 @@
           "level": 9,
           "last_round": 35,
           "gold_left": 1,
+          "time_eliminated_seconds": 2213,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -2038,6 +2819,15 @@
           "level": 8,
           "last_round": 35,
           "gold_left": 21,
+          "time_eliminated_seconds": 2208,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -2199,6 +2989,15 @@
           "level": 8,
           "last_round": 31,
           "gold_left": 7,
+          "time_eliminated_seconds": 1982,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -2381,6 +3180,15 @@
           "level": 9,
           "last_round": 31,
           "gold_left": 50,
+          "time_eliminated_seconds": 1982,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -2573,6 +3381,15 @@
           "level": 8,
           "last_round": 30,
           "gold_left": 8,
+          "time_eliminated_seconds": 1906,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -2719,6 +3536,15 @@
           "level": 8,
           "last_round": 28,
           "gold_left": 36,
+          "time_eliminated_seconds": 1809,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -2870,6 +3696,15 @@
           "level": 8,
           "last_round": 28,
           "gold_left": 2,
+          "time_eliminated_seconds": 1809,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -3026,12 +3861,7 @@
               "rarity": 2,
               "items": []
             }
-          ],
-          "debug_augment": {
-            "raw_augments": null,
-            "skill_tree": null,
-            "related_fields": {}
-          }
+          ]
         },
         {
           "is_me": false,
@@ -3039,6 +3869,15 @@
           "level": 6,
           "last_round": 27,
           "gold_left": 70,
+          "time_eliminated_seconds": 1737,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -3160,9 +3999,9 @@
       ]
     },
     {
-      "schema_version": 7,
+      "schema_version": 8,
       "match_id": "KR_8389175867",
-      "synced_at": "2026-09-22T04:35:32.637Z",
+      "synced_at": "2026-09-22T07:31:12.995Z",
       "game": {
         "datetime": "2026-09-21T00:13:15.935Z",
         "length_seconds": 2538.100830078125,
@@ -3178,6 +4017,15 @@
         "level": 7,
         "last_round": 27,
         "gold_left": 2,
+        "time_eliminated_seconds": 1743,
+        "data_quality": {
+          "source": "riot_match_result",
+          "timeline_available": false,
+          "missing_fields": [],
+          "augments_present": false,
+          "missions_present": true,
+          "missions_interpretation": "unverified_not_used"
+        },
         "players_eliminated": 0,
         "total_damage_to_players": 0,
         "augments": [],
@@ -3315,12 +4163,7 @@
             "rarity": 3,
             "items": []
           }
-        ],
-        "debug_augment": {
-          "raw_augments": null,
-          "skill_tree": null,
-          "related_fields": {}
-        }
+        ]
       },
       "lobby": [
         {
@@ -3329,6 +4172,15 @@
           "level": 8,
           "last_round": 40,
           "gold_left": 14,
+          "time_eliminated_seconds": 2538,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -3495,6 +4347,15 @@
           "level": 8,
           "last_round": 40,
           "gold_left": 12,
+          "time_eliminated_seconds": 2533,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -3646,6 +4507,15 @@
           "level": 9,
           "last_round": 37,
           "gold_left": 0,
+          "time_eliminated_seconds": 2377,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -3827,6 +4697,15 @@
           "level": 9,
           "last_round": 34,
           "gold_left": 0,
+          "time_eliminated_seconds": 2220,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -3993,6 +4872,15 @@
           "level": 8,
           "last_round": 33,
           "gold_left": 0,
+          "time_eliminated_seconds": 2135,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -4148,6 +5036,15 @@
           "level": 7,
           "last_round": 27,
           "gold_left": 2,
+          "time_eliminated_seconds": 1743,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -4285,12 +5182,7 @@
               "rarity": 3,
               "items": []
             }
-          ],
-          "debug_augment": {
-            "raw_augments": null,
-            "skill_tree": null,
-            "related_fields": {}
-          }
+          ]
         },
         {
           "is_me": false,
@@ -4298,6 +5190,15 @@
           "level": 6,
           "last_round": 24,
           "gold_left": 0,
+          "time_eliminated_seconds": 1591,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -4418,6 +5319,15 @@
           "level": 7,
           "last_round": 23,
           "gold_left": 26,
+          "time_eliminated_seconds": 1510,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -4534,9 +5444,9 @@
       ]
     },
     {
-      "schema_version": 7,
+      "schema_version": 8,
       "match_id": "KR_8388357955",
-      "synced_at": "2026-09-22T04:35:32.247Z",
+      "synced_at": "2026-09-22T07:31:14.737Z",
       "game": {
         "datetime": "2026-09-20T10:10:09.344Z",
         "length_seconds": 2571.096435546875,
@@ -4552,6 +5462,15 @@
         "level": 9,
         "last_round": 35,
         "gold_left": 2,
+        "time_eliminated_seconds": 2571,
+        "data_quality": {
+          "source": "riot_match_result",
+          "timeline_available": false,
+          "missing_fields": [],
+          "augments_present": false,
+          "missions_present": true,
+          "missions_interpretation": "unverified_not_used"
+        },
         "players_eliminated": 0,
         "total_damage_to_players": 0,
         "augments": [],
@@ -4704,12 +5623,7 @@
               }
             ]
           }
-        ],
-        "debug_augment": {
-          "raw_augments": null,
-          "skill_tree": null,
-          "related_fields": {}
-        }
+        ]
       },
       "lobby": [
         {
@@ -4718,6 +5632,15 @@
           "level": 9,
           "last_round": 35,
           "gold_left": 2,
+          "time_eliminated_seconds": 2571,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -4870,12 +5793,7 @@
                 }
               ]
             }
-          ],
-          "debug_augment": {
-            "raw_augments": null,
-            "skill_tree": null,
-            "related_fields": {}
-          }
+          ]
         },
         {
           "is_me": false,
@@ -4883,6 +5801,15 @@
           "level": 6,
           "last_round": 35,
           "gold_left": 149,
+          "time_eliminated_seconds": 2566,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -4997,6 +5924,15 @@
           "level": 6,
           "last_round": 33,
           "gold_left": 225,
+          "time_eliminated_seconds": 2457,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -5161,6 +6097,15 @@
           "level": 6,
           "last_round": 31,
           "gold_left": 182,
+          "time_eliminated_seconds": 2336,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -5277,6 +6222,15 @@
           "level": 6,
           "last_round": 31,
           "gold_left": 221,
+          "time_eliminated_seconds": 2336,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -5411,6 +6365,15 @@
           "level": 6,
           "last_round": 27,
           "gold_left": 194,
+          "time_eliminated_seconds": 2058,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -5533,6 +6496,15 @@
           "level": 5,
           "last_round": 24,
           "gold_left": 175,
+          "time_eliminated_seconds": 1867,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -5624,6 +6596,15 @@
           "level": 5,
           "last_round": 21,
           "gold_left": 84,
+          "time_eliminated_seconds": 1684,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -5725,9 +6706,9 @@
       ]
     },
     {
-      "schema_version": 7,
+      "schema_version": 8,
       "match_id": "KR_8387845292",
-      "synced_at": "2026-09-22T04:35:31.851Z",
+      "synced_at": "2026-09-22T07:31:16.461Z",
       "game": {
         "datetime": "2026-09-20T03:16:19.127Z",
         "length_seconds": 2107.994140625,
@@ -5743,6 +6724,15 @@
         "level": 10,
         "last_round": 33,
         "gold_left": 45,
+        "time_eliminated_seconds": 2107,
+        "data_quality": {
+          "source": "riot_match_result",
+          "timeline_available": false,
+          "missing_fields": [],
+          "augments_present": false,
+          "missions_present": true,
+          "missions_interpretation": "unverified_not_used"
+        },
         "players_eliminated": 0,
         "total_damage_to_players": 0,
         "augments": [],
@@ -5926,12 +6916,7 @@
             "rarity": 4,
             "items": []
           }
-        ],
-        "debug_augment": {
-          "raw_augments": null,
-          "skill_tree": null,
-          "related_fields": {}
-        }
+        ]
       },
       "lobby": [
         {
@@ -5940,6 +6925,15 @@
           "level": 10,
           "last_round": 33,
           "gold_left": 45,
+          "time_eliminated_seconds": 2107,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -6123,12 +7117,7 @@
               "rarity": 4,
               "items": []
             }
-          ],
-          "debug_augment": {
-            "raw_augments": null,
-            "skill_tree": null,
-            "related_fields": {}
-          }
+          ]
         },
         {
           "is_me": false,
@@ -6136,6 +7125,15 @@
           "level": 7,
           "last_round": 33,
           "gold_left": 274,
+          "time_eliminated_seconds": 2102,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -6286,6 +7284,15 @@
           "level": 6,
           "last_round": 31,
           "gold_left": 211,
+          "time_eliminated_seconds": 2001,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -6408,6 +7415,15 @@
           "level": 6,
           "last_round": 31,
           "gold_left": 194,
+          "time_eliminated_seconds": 2001,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -6537,6 +7553,15 @@
           "level": 6,
           "last_round": 30,
           "gold_left": 130,
+          "time_eliminated_seconds": 1935,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -6648,6 +7673,15 @@
           "level": 6,
           "last_round": 26,
           "gold_left": 144,
+          "time_eliminated_seconds": 1689,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -6748,6 +7782,15 @@
           "level": 6,
           "last_round": 26,
           "gold_left": 177,
+          "time_eliminated_seconds": 1689,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -6881,6 +7924,15 @@
           "level": 5,
           "last_round": 24,
           "gold_left": 128,
+          "time_eliminated_seconds": 1568,
+          "data_quality": {
+            "source": "riot_match_result",
+            "timeline_available": false,
+            "missing_fields": [],
+            "augments_present": false,
+            "missions_present": true,
+            "missions_interpretation": "unverified_not_used"
+          },
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -7008,6 +8060,8 @@
         "level": 10,
         "last_round": 35,
         "gold_left": 4,
+        "time_eliminated_seconds": null,
+        "data_quality": null,
         "players_eliminated": 0,
         "total_damage_to_players": 0,
         "augments": [],
@@ -7156,12 +8210,7 @@
             "rarity": 2,
             "items": []
           }
-        ],
-        "debug_augment": {
-          "raw_augments": null,
-          "skill_tree": null,
-          "related_fields": {}
-        }
+        ]
       },
       "lobby": [
         {
@@ -7170,6 +8219,8 @@
           "level": 10,
           "last_round": 35,
           "gold_left": 4,
+          "time_eliminated_seconds": null,
+          "data_quality": null,
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -7318,12 +8369,7 @@
               "rarity": 2,
               "items": []
             }
-          ],
-          "debug_augment": {
-            "raw_augments": null,
-            "skill_tree": null,
-            "related_fields": {}
-          }
+          ]
         },
         {
           "is_me": false,
@@ -7331,6 +8377,8 @@
           "level": 6,
           "last_round": 35,
           "gold_left": 213,
+          "time_eliminated_seconds": null,
+          "data_quality": null,
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -7450,6 +8498,8 @@
           "level": 6,
           "last_round": 34,
           "gold_left": 236,
+          "time_eliminated_seconds": null,
+          "data_quality": null,
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -7548,6 +8598,8 @@
           "level": 6,
           "last_round": 33,
           "gold_left": 254,
+          "time_eliminated_seconds": null,
+          "data_quality": null,
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -7677,6 +8729,8 @@
           "level": 6,
           "last_round": 27,
           "gold_left": 134,
+          "time_eliminated_seconds": null,
+          "data_quality": null,
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -7796,6 +8850,8 @@
           "level": 6,
           "last_round": 26,
           "gold_left": 197,
+          "time_eliminated_seconds": null,
+          "data_quality": null,
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -7920,6 +8976,8 @@
           "level": 6,
           "last_round": 24,
           "gold_left": 148,
+          "time_eliminated_seconds": null,
+          "data_quality": null,
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -8026,6 +9084,8 @@
           "level": 6,
           "last_round": 23,
           "gold_left": 142,
+          "time_eliminated_seconds": null,
+          "data_quality": null,
           "players_eliminated": 0,
           "total_damage_to_players": 0,
           "augments": [],
@@ -8165,6 +9225,8 @@
         "level": 8,
         "last_round": 28,
         "gold_left": 0,
+        "time_eliminated_seconds": null,
+        "data_quality": null,
         "players_eliminated": 0,
         "total_damage_to_players": 63,
         "augments": [
@@ -8311,22 +9373,7 @@
               }
             ]
           }
-        ],
-        "debug_augment": {
-          "raw_augments": [
-            "TFT12_Augment_IncantorCrest",
-            "TFT9_Augment_LongDistanceRelationship2",
-            "TFT_Augment_AvengeTheFallen"
-          ],
-          "skill_tree": null,
-          "related_fields": {
-            "augments": [
-              "TFT12_Augment_IncantorCrest",
-              "TFT9_Augment_LongDistanceRelationship2",
-              "TFT_Augment_AvengeTheFallen"
-            ]
-          }
-        }
+        ]
       },
       "lobby": [
         {
@@ -8335,6 +9382,8 @@
           "level": 9,
           "last_round": 35,
           "gold_left": 1,
+          "time_eliminated_seconds": null,
+          "data_quality": null,
           "players_eliminated": 4,
           "total_damage_to_players": 215,
           "augments": [
@@ -8521,6 +9570,8 @@
           "level": 9,
           "last_round": 35,
           "gold_left": 1,
+          "time_eliminated_seconds": null,
+          "data_quality": null,
           "players_eliminated": 0,
           "total_damage_to_players": 118,
           "augments": [
@@ -8676,6 +9727,8 @@
           "level": 9,
           "last_round": 33,
           "gold_left": 47,
+          "time_eliminated_seconds": null,
+          "data_quality": null,
           "players_eliminated": 2,
           "total_damage_to_players": 104,
           "augments": [
@@ -8837,6 +9890,8 @@
           "level": 8,
           "last_round": 31,
           "gold_left": 0,
+          "time_eliminated_seconds": null,
+          "data_quality": null,
           "players_eliminated": 0,
           "total_damage_to_players": 84,
           "augments": [
@@ -8997,6 +10052,8 @@
           "level": 8,
           "last_round": 28,
           "gold_left": 0,
+          "time_eliminated_seconds": null,
+          "data_quality": null,
           "players_eliminated": 0,
           "total_damage_to_players": 56,
           "augments": [
@@ -9155,6 +10212,8 @@
           "level": 8,
           "last_round": 28,
           "gold_left": 1,
+          "time_eliminated_seconds": null,
+          "data_quality": null,
           "players_eliminated": 0,
           "total_damage_to_players": 53,
           "augments": [
@@ -9311,6 +10370,8 @@
           "level": 8,
           "last_round": 28,
           "gold_left": 0,
+          "time_eliminated_seconds": null,
+          "data_quality": null,
           "players_eliminated": 0,
           "total_damage_to_players": 63,
           "augments": [
@@ -9457,22 +10518,7 @@
                 }
               ]
             }
-          ],
-          "debug_augment": {
-            "raw_augments": [
-              "TFT12_Augment_IncantorCrest",
-              "TFT9_Augment_LongDistanceRelationship2",
-              "TFT_Augment_AvengeTheFallen"
-            ],
-            "skill_tree": null,
-            "related_fields": {
-              "augments": [
-                "TFT12_Augment_IncantorCrest",
-                "TFT9_Augment_LongDistanceRelationship2",
-                "TFT_Augment_AvengeTheFallen"
-              ]
-            }
-          }
+          ]
         },
         {
           "is_me": false,
@@ -9480,6 +10526,8 @@
           "level": 8,
           "last_round": 26,
           "gold_left": 0,
+          "time_eliminated_seconds": null,
+          "data_quality": null,
           "players_eliminated": 0,
           "total_damage_to_players": 31,
           "augments": [
