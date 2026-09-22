@@ -500,7 +500,7 @@ function collectStrings(value, output) {
 
 async function getKoreanDictionary(env) {
   const cacheKey =
-    `ko_dictionary_v${SCHEMA_VERSION}`;
+    `ko_dictionary_v${SCHEMA_VERSION}_r1`;
 
   const cached = await env.TFT_KV.get(cacheKey);
 
@@ -711,6 +711,37 @@ function translateName(dictionary, id) {
 
   if (dictionary?.[lower]) {
     return dictionary[lower];
+  }
+
+  // Riot DA IDs use a set prefix that is not always present in
+  // CommunityDragon identifiers (for example DA_18_Hecarim).
+  const daMatch =
+    key.match(/^DA[_-]?\d+[_-](.+)$/i);
+
+  if (daMatch) {
+    const shortId = daMatch[1];
+    const shortLower = shortId.toLowerCase();
+
+    if (dictionary?.[shortId]) {
+      return dictionary[shortId];
+    }
+
+    if (dictionary?.[shortLower]) {
+      return dictionary[shortLower];
+    }
+
+    const normalizedShort =
+      normalizeGameId(shortId);
+
+    const normalizedShortKey =
+      `__normalized__${normalizedShort}`;
+
+    if (
+      normalizedShort &&
+      dictionary?.[normalizedShortKey]
+    ) {
+      return dictionary[normalizedShortKey];
+    }
   }
 
   const normalized =
