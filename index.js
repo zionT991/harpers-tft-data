@@ -4,7 +4,7 @@ const REGION = "asia";
 
 const MAX_STORED_MATCHES = 20;
 const MATCH_LOOKBACK = 20;
-const SCHEMA_VERSION = 5;
+const SCHEMA_VERSION = 6;
 
 const GITHUB_BRANCH = "main";
 const GITHUB_FILE_PATH = "recent.json";
