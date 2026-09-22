@@ -1,0 +1,15 @@
+{
+  "name": "harpers-tft",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-22",
+  "keep_vars": true,
+  "kv_namespaces": [
+    {
+      "binding": "TFT_KV",
+      "id": "139b70555fea4968a85a60329930e8b1"
+    }
+  ],
+  "triggers": {
+    "crons": ["*/5 * * * *"]
+  }
+}
