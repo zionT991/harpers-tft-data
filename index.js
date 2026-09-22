@@ -1293,8 +1293,10 @@ function summarizeRows(rows) {
 function buildHistoryAnalysis(rows) {
   const groups = new Map();
   for (const row of rows) {
+    const versionKnown = typeof row.game_version === "string" &&
+      /\d+\.\d+/.test(row.game_version) && !row.game_version.includes("?");
     const key = JSON.stringify([row.game_version, row.set_number, row.set_core_name,
-      row.queue_id, row.game_type]);
+      row.queue_id, row.game_type, versionKnown ? null : row.match_id]);
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push(row);
   }
@@ -1323,6 +1325,8 @@ function buildHistoryAnalysis(rows) {
       }
       return {
         game_version: first.game_version,
+        patch_comparison_available: typeof first.game_version === "string" &&
+          /\d+\.\d+/.test(first.game_version) && !first.game_version.includes("?"),
         set_number: first.set_number,
         set_core_name: first.set_core_name,
         queue_id: first.queue_id,
