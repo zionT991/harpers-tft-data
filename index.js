@@ -4,7 +4,7 @@ const REGION = "asia";
 
 const MAX_STORED_MATCHES = 20;
 const MATCH_LOOKBACK = 20;
-const SCHEMA_VERSION = 6;
+const SCHEMA_VERSION = 7;
 
 const GITHUB_BRANCH = "main";
 const GITHUB_FILE_PATH = "recent.json";
@@ -12,6 +12,10 @@ const GITHUB_FILE_PATH = "recent.json";
 const CDRAGON_BASE =
   "https://raw.communitydragon.org/latest/" +
   "plugins/rcp-be-lol-game-data/global/ko_kr/v1";
+
+const CDRAGON_TFT_KO =
+  "https://raw.communitydragon.org/latest/" +
+  "cdragon/tft/ko_kr.json";
 
 export default {
   async fetch(request, env) {
@@ -500,7 +504,7 @@ function collectStrings(value, output) {
 
 async function getKoreanDictionary(env) {
   const cacheKey =
-    `ko_dictionary_v${SCHEMA_VERSION}_r1`;
+    `ko_dictionary_v${SCHEMA_VERSION}_r2`;
 
   const cached = await env.TFT_KV.get(cacheKey);
 
@@ -516,36 +520,50 @@ async function getKoreanDictionary(env) {
     championsJson,
     traitsJson,
     itemsJson,
-    contentJson
+    contentJson,
+    tftLocaleJson
   ] = await Promise.all([
     fetchJson(`${CDRAGON_BASE}/tftchampions.json`),
     fetchJson(`${CDRAGON_BASE}/tfttraits.json`),
     fetchJson(`${CDRAGON_BASE}/tftitems.json`),
-    fetchJson(`${CDRAGON_BASE}/tftcontentdata.json`)
+    fetchJson(`${CDRAGON_BASE}/tftcontentdata.json`),
+    fetchJson(CDRAGON_TFT_KO)
   ]);
 
   const champions =
     mergeMaps(
-      buildNameMap(championsJson),
-      buildNameMap(contentJson)
+      buildNameMap(tftLocaleJson),
+      mergeMaps(
+        buildNameMap(championsJson),
+        buildNameMap(contentJson)
+      )
     );
 
   const traits =
     mergeMaps(
-      buildNameMap(traitsJson),
-      buildNameMap(contentJson)
+      buildNameMap(tftLocaleJson),
+      mergeMaps(
+        buildNameMap(traitsJson),
+        buildNameMap(contentJson)
+      )
     );
 
   const items =
     mergeMaps(
-      buildNameMap(itemsJson),
-      buildNameMap(contentJson)
+      buildNameMap(tftLocaleJson),
+      mergeMaps(
+        buildNameMap(itemsJson),
+        buildNameMap(contentJson)
+      )
     );
 
   const augments =
     mergeMaps(
-      buildNameMap(contentJson),
-      buildNameMap(itemsJson)
+      buildNameMap(tftLocaleJson),
+      mergeMaps(
+        buildNameMap(contentJson),
+        buildNameMap(itemsJson)
+      )
     );
 
   const dictionary = {
