@@ -4,7 +4,7 @@ const REGION = "asia";
 
 const MAX_STORED_MATCHES = 20;
 const MATCH_LOOKBACK = 20;
-const SCHEMA_VERSION = 8;
+const SCHEMA_VERSION = 9;
 const MAX_HISTORY_MATCHES = 300;
 const RAW_RETENTION_SECONDS = 90 * 24 * 60 * 60;
 const SYNC_BATCH_SIZE = 5;
@@ -12,13 +12,7 @@ const SYNC_BATCH_SIZE = 5;
 const GITHUB_BRANCH = "main";
 const GITHUB_FILE_PATH = "recent.json";
 
-const CDRAGON_BASE =
-  "https://raw.communitydragon.org/latest/" +
-  "plugins/rcp-be-lol-game-data/global/ko_kr/v1";
-
-const CDRAGON_TFT_KO =
-  "https://raw.communitydragon.org/latest/" +
-  "cdragon/tft/ko_kr.json";
+const DDRAGON_BASE = "https://ddragon.leagueoflegends.com";
 
 export default {
   async fetch(request, env) {
@@ -35,11 +29,7 @@ export default {
     }
 
     if (url.pathname === "/health") {
-      return json({
-        status: "ok",
-        player: `${GAME_NAME}#${TAG_LINE}`,
-        schema_version: SCHEMA_VERSION
-      });
+      return json(await getHealth(env));
     }
 
     if (url.pathname === "/latest") {
@@ -92,11 +82,20 @@ export default {
 };
 
 async function syncMatches(env) {
+  const previous = JSON.parse(await env.TFT_KV.get("sync_status") || "{}");
+  const state = { ...previous, schema_version: SCHEMA_VERSION,
+    last_attempt_at: new Date().toISOString(), status: "running", error: null,
+    stage: "riot_account", processed_count: 0, pending_count: null };
   try {
-    validateGithubConfig(env);
-
+    const retryAt = Number(await env.TFT_KV.get("riot_retry_after") || 0);
+    if (Date.now() < retryAt) {
+      state.status = "rate_limited";
+      state.retry_after = new Date(retryAt).toISOString();
+      return;
+    }
+    state.retry_after = null;
     const puuid = await getPuuid(env);
-    const dictionary = await getKoreanDictionary(env);
+    state.stage = "riot_match_list";
 
     const idsUrl =
       `https://${REGION}.api.riotgames.com` +
@@ -105,9 +104,14 @@ async function syncMatches(env) {
       `?start=0&count=${MATCH_LOOKBACK}`;
 
     const matchIds = await riotFetch(idsUrl, env);
+    if (!Array.isArray(matchIds)) throw new Error("Invalid match list");
+    state.last_riot_check_at = new Date().toISOString();
+    state.latest_discovered_match_id = matchIds[0] ?? null;
 
     if (!Array.isArray(matchIds) || matchIds.length === 0) {
       console.log("최근 TFT 경기 없음");
+      state.status = "ok";
+      state.pending_count = 0;
       return;
     }
 
@@ -143,6 +147,8 @@ async function syncMatches(env) {
     }
 
     let newestResult = null;
+    state.pending_count = matchesToProcess.length;
+    state.stage = "riot_match_details";
 
     if (matchesToProcess.length > 0) {
       console.log(`재수집/신규 경기 ${matchesToProcess.length}개`);
@@ -159,6 +165,11 @@ async function syncMatches(env) {
         const match = archived
           ? JSON.parse(archived).response
           : await riotFetch(matchUrl, env);
+        if (!match?.info || !Array.isArray(match.info.participants) ||
+            !match.info.participants.some(p => p.puuid === puuid)) {
+          throw new Error(`Invalid match payload: ${matchId}`);
+        }
+        const dictionary = await getKoreanDictionary(env, match.info.game_version);
 
         // Raw responses never enter a public endpoint or GitHub mirror.
         if (!archived) {
@@ -174,6 +185,7 @@ async function syncMatches(env) {
           puuid,
           dictionary
         );
+        result.review_evidence = buildReviewEvidence(result);
 
         // Checkpoint the compact history before marking the match processed.
         await saveHistoryRow(env, result);
@@ -181,6 +193,8 @@ async function syncMatches(env) {
           `match:${matchId}`,
           JSON.stringify(result)
         );
+        state.processed_count++;
+        state.pending_count--;
 
         recentIds = [...new Set([...matchIds, ...recentIds])]
           .slice(0, MAX_STORED_MATCHES);
@@ -220,10 +234,17 @@ async function syncMatches(env) {
       console.log(`새 경기 없음 ${matchIds[0]}`);
     }
 
+    state.stage = "github_mirror";
+    validateGithubConfig(env);
     await maybePublishGithubMirror(env, matchIds[0]);
+    state.last_mirror_check_at = new Date().toISOString();
+    state.status = state.pending_count ? "backfilling" : "ok";
 
     console.log(`동기화 완료 ${matchIds[0]}`);
   } catch (error) {
+    state.status = "error";
+    state.error = { stage: state.stage, message: String(error?.message || "Sync failed").slice(0, 180),
+      http_status: error?.httpStatus ?? null };
     console.error(
       `TFT sync error message: ${error?.message ?? String(error)}`
     );
@@ -231,6 +252,17 @@ async function syncMatches(env) {
     console.error(
       `TFT sync error stack: ${error?.stack ?? "no stack"}`
     );
+  } finally {
+    state.finished_at = new Date().toISOString();
+    if (state.status === "ok" || state.status === "backfilling") state.last_success_at = state.finished_at;
+    await env.TFT_KV.put("sync_status", JSON.stringify(state));
+    // A successful API check remains visible even when no new match exists.
+    try {
+      validateGithubConfig(env);
+      await upsertGithubFile(env, "health.json", JSON.stringify(state, null, 2));
+    } catch (error) {
+      console.error("Health mirror unavailable", error?.httpStatus ?? "unknown");
+    }
   }
 }
 
@@ -283,6 +315,11 @@ function buildMatchResult(
     player: `${GAME_NAME}#${TAG_LINE}`,
     match_id: matchId,
     synced_at: new Date().toISOString(),
+    dictionary: { source: dictionary.source, version: dictionary.version,
+      patch_verified: dictionary.patch_verified, available: dictionary.available },
+    review_status: { collected: true, analysis_status: "evidence_prepared",
+      notification_requested: null, delivery_confirmed: null,
+      delivery_tracking: "not_available_from_chatgpt" },
 
     game: {
       datetime:
@@ -412,10 +449,10 @@ function buildParticipant(
             ),
 
           num_units:
-            trait.num_units ?? 0,
+            numericOrNull(trait.num_units),
 
           tier_current:
-            trait.tier_current ?? 0,
+            numericOrNull(trait.tier_current),
 
           tier_total:
             trait.tier_total ?? 0,
@@ -437,7 +474,10 @@ function buildParticipant(
             ),
 
           star:
-            unit.tier ?? 0,
+            numericOrNull(unit.tier),
+
+          classification: dictionary.unit_metadata?.[unit.character_id]?.classification ?? "unknown",
+          classification_source: dictionary.unit_metadata?.[unit.character_id] ? "riot_ddragon_shop_entry" : null,
 
           rarity:
             unit.rarity ?? null,
@@ -464,6 +504,7 @@ function extractItems(unit, dictionary) {
 
   return ids.map(id => ({
     id: String(id),
+    category: "unverified",
     name_ko:
       translateName(
         dictionary.items,
@@ -538,280 +579,66 @@ function collectStrings(value, output) {
   }
 }
 
-async function getKoreanDictionary(env) {
-  const cacheKey =
-    `ko_dictionary_v${SCHEMA_VERSION}_r2`;
-
-  const cached = await env.TFT_KV.get(cacheKey);
-
-  if (cached) {
-    try {
-      return JSON.parse(cached);
-    } catch {}
-  }
-
-  console.log("한국어 사전 생성 시작");
-
-  const [
-    championsJson,
-    traitsJson,
-    itemsJson,
-    contentJson,
-    tftLocaleJson
-  ] = await Promise.all([
-    fetchJson(`${CDRAGON_BASE}/tftchampions.json`),
-    fetchJson(`${CDRAGON_BASE}/tfttraits.json`),
-    fetchJson(`${CDRAGON_BASE}/tftitems.json`),
-    fetchJson(`${CDRAGON_BASE}/tftcontentdata.json`),
-    fetchJson(CDRAGON_TFT_KO)
-  ]);
-
-  const champions =
-    mergeMaps(
-      buildNameMap(tftLocaleJson),
-      mergeMaps(
-        buildNameMap(championsJson),
-        buildNameMap(contentJson)
-      )
-    );
-
-  const traits =
-    mergeMaps(
-      buildNameMap(tftLocaleJson),
-      mergeMaps(
-        buildNameMap(traitsJson),
-        buildNameMap(contentJson)
-      )
-    );
-
-  const items =
-    mergeMaps(
-      buildNameMap(tftLocaleJson),
-      mergeMaps(
-        buildNameMap(itemsJson),
-        buildNameMap(contentJson)
-      )
-    );
-
-  const augments =
-    mergeMaps(
-      buildNameMap(tftLocaleJson),
-      mergeMaps(
-        buildNameMap(contentJson),
-        buildNameMap(itemsJson)
-      )
-    );
-
-  const dictionary = {
-    source:
-      "CommunityDragon ko_kr",
-
-    created_at:
-      new Date().toISOString(),
-
-    champions,
-    traits,
-    items,
-    augments
-  };
-
-  await env.TFT_KV.put(
-    cacheKey,
-    JSON.stringify(dictionary),
-    {
-      expirationTtl:
-        60 * 60 * 24
+async function getKoreanDictionary(env, gameVersion) {
+  const patch = knownPatch(gameVersion);
+  let versions;
+  try {
+    versions = await fetchJson(DDRAGON_BASE + "/api/versions.json");
+    if (!Array.isArray(versions)) throw new Error("Invalid versions");
+    const version = patch ? versions.find(v => v.startsWith(patch + ".")) : versions[0];
+    if (!version) throw new Error("No matching Data Dragon version");
+    const cacheKey = `riot_dictionary_v9:${version}`;
+    const cached = await env.TFT_KV.get(cacheKey);
+    if (cached) return {...JSON.parse(cached), patch_verified: Boolean(patch)};
+    const types = ["champion", "trait", "item", "augments"];
+    const docs = await Promise.all(types.map(type =>
+      fetchJson(`${DDRAGON_BASE}/cdn/${version}/data/ko_KR/tft-${type}.json`)
+        .catch(() => null)));
+    const maps = docs.map(doc => buildNameMap(doc?.data));
+    const unit_metadata = {};
+    for (const [path, unit] of Object.entries(docs[0]?.data || {})) {
+      if (unit.id && path.includes("/Shop/") && unit.cost > 0) {
+        unit_metadata[unit.id] = {classification: "shop_unit"};
+      }
     }
-  );
+    const dictionary = {source: "Riot Data Dragon", version,
+      available: docs.some(Boolean), patch_verified: Boolean(patch),
+      champions: maps[0], traits: maps[1], items: maps[2], augments: maps[3], unit_metadata};
+    // Do not cache incomplete downloads for a whole day.
+    if (docs.every(Boolean)) await env.TFT_KV.put(cacheKey, JSON.stringify(dictionary), {expirationTtl: 86400});
+    return dictionary;
+  } catch {
+    return {source: "Riot Data Dragon", version: null, patch_verified: false,
+      available: false, champions: {}, traits: {}, items: {}, augments: {}, unit_metadata: {}};
+  }
+}
 
-  return dictionary;
+function knownPatch(version) {
+  if (typeof version !== "string" || version.includes("?")) return null;
+  return version.match(/(?:Version\s+)?(\d+\.\d+)(?:\.|\s|$)/i)?.[1] ?? null;
 }
 
 async function fetchJson(url) {
-  const response = await fetch(url, {
-    headers: {
-      "User-Agent":
-        "Harpers-TFT-Tracker"
-    }
-  });
-
-  if (!response.ok) {
-    throw new Error(
-      `CommunityDragon HTTP ${response.status}`
-    );
-  }
-
+  const response = await fetch(url, {signal: AbortSignal.timeout(15000)});
+  if (!response.ok) throw new Error(`Static data HTTP ${response.status}`);
   return response.json();
-}
-
-function normalizeGameId(value) {
-  if (
-    value === undefined ||
-    value === null
-  ) {
-    return "";
-  }
-
-  let s = String(value)
-    .trim()
-    .toLowerCase();
-
-  s = s.replace(/^da[_-]?/, "");
-  s = s.replace(/^tft[_-]?/, "");
-  s = s.replace(/\d+/g, "");
-
-  s = s.replace(
-    /^[_-]*(item|trait|champion|unit)[_-]*/,
-    ""
-  );
-
-  s = s.replace(
-    /[^a-z0-9가-힣]/g,
-    ""
-  );
-
-  return s;
 }
 
 function buildNameMap(data) {
   const map = {};
-
-  walkObject(
-    data,
-    obj => {
-      if (
-        !obj ||
-        typeof obj !== "object" ||
-        Array.isArray(obj)
-      ) {
-        return;
-      }
-
-      const displayName =
-        firstNonEmptyString([
-          obj.name,
-          obj.displayName,
-          obj.title
-        ]);
-
-      if (!displayName) {
-        return;
-      }
-
-      const identifiers = [
-        obj.apiName,
-        obj.characterName,
-        obj.id,
-        obj.nameId,
-        obj.internalName,
-        obj.key
-      ];
-
-      for (
-        const identifier
-        of identifiers
-      ) {
-        if (
-          identifier === undefined ||
-          identifier === null
-        ) {
-          continue;
-        }
-
-        const id =
-          String(identifier).trim();
-
-        if (!id) continue;
-
-        map[id] = displayName;
-        map[id.toLowerCase()] = displayName;
-
-        const normalized =
-          normalizeGameId(id);
-
-        if (normalized) {
-          const key =
-            `__normalized__${normalized}`;
-
-          if (!map[key]) {
-            map[key] = displayName;
-          }
-        }
-      }
-    }
-  );
-
+  for (const obj of Object.values(data || {})) {
+    if (!obj || typeof obj !== "object") continue;
+    const id = typeof obj.id === "string" || typeof obj.id === "number" ? String(obj.id) : null;
+    if (id && typeof obj.name === "string") map[id] = obj.name;
+  }
   return map;
 }
 
 function translateName(dictionary, id) {
-  if (
-    id === undefined ||
-    id === null
-  ) {
-    return "";
-  }
-
-  const key =
-    String(id).trim();
-
-  if (!key) return "";
-
-  if (dictionary?.[key]) {
-    return dictionary[key];
-  }
-
-  const lower = key.toLowerCase();
-
-  if (dictionary?.[lower]) {
-    return dictionary[lower];
-  }
-
-  // Riot DA IDs use a set prefix that is not always present in
-  // CommunityDragon identifiers (for example DA_18_Hecarim).
-  const daMatch =
-    key.match(/^DA[_-]?\d+[_-](.+)$/i);
-
-  if (daMatch) {
-    const shortId = daMatch[1];
-    const shortLower = shortId.toLowerCase();
-
-    if (dictionary?.[shortId]) {
-      return dictionary[shortId];
-    }
-
-    if (dictionary?.[shortLower]) {
-      return dictionary[shortLower];
-    }
-
-    const normalizedShort =
-      normalizeGameId(shortId);
-
-    const normalizedShortKey =
-      `__normalized__${normalizedShort}`;
-
-    if (
-      normalizedShort &&
-      dictionary?.[normalizedShortKey]
-    ) {
-      return dictionary[normalizedShortKey];
-    }
-  }
-
-  const normalized =
-    normalizeGameId(key);
-
-  const normalizedKey =
-    `__normalized__${normalized}`;
-
-  if (
-    normalized &&
-    dictionary?.[normalizedKey]
-  ) {
-    return dictionary[normalizedKey];
-  }
-
-  return key;
+  if (id === undefined || id === null) return "";
+  const key = String(id).trim();
+  // No digit stripping, cross-set aliases, or guesses from a display name.
+  return dictionary?.[key] ?? key;
 }
 
 function walkObject(value, callback) {
@@ -907,6 +734,7 @@ async function getStoredRecentIds(env) {
 
 async function riotFetch(url, env) {
   const response = await fetch(url, {
+    signal: AbortSignal.timeout(15000),
     headers: {
       "X-Riot-Token":
         env.RIOT_API_KEY
@@ -916,9 +744,14 @@ async function riotFetch(url, env) {
   const text = await response.text();
 
   if (!response.ok) {
-    throw new Error(
-      `Riot API ${response.status} | ${text}`
-    );
+    if (response.status === 429) {
+      const seconds = Number(response.headers.get("Retry-After"));
+      const delay = Number.isFinite(seconds) && seconds > 0 ? seconds : 60;
+      await env.TFT_KV.put("riot_retry_after", String(Date.now() + delay * 1000));
+    }
+    const error = new Error(`Riot API HTTP ${response.status}`);
+    error.httpStatus = response.status;
+    throw error;
   }
 
   return JSON.parse(text);
@@ -945,7 +778,8 @@ async function maybePublishGithubMirror(
   const matches = await getRecentMatches(env, MAX_STORED_MATCHES);
   const history = buildHistoryAnalysis(await getHistoryRows(env));
   const publicMatches = matches.map(sanitizeMatchForPublic);
-  const fingerprint = JSON.stringify({publicMatches, history});
+  const comparisons = buildSimilarBoards(matches);
+  const fingerprint = JSON.stringify({publicMatches, history, comparisons});
   const hash = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(fingerprint));
   const marker = `${SCHEMA_VERSION}:${latestMatchId}:` +
     Array.from(new Uint8Array(hash), b => b.toString(16).padStart(2, "0")).join("");
@@ -975,6 +809,11 @@ async function maybePublishGithubMirror(
       publicMatches.length,
 
     history_analysis: history,
+    similar_boards: comparisons,
+    health_url: "health.json",
+    review_contract: { required_sections: ["deck_direction", "opponents", "positioning", "items"],
+      timeline_available: false, delivery_confirmation_available: false,
+      instruction: "Data collection and evidence preparation do not confirm notification delivery." },
 
     matches:
       publicMatches
@@ -1004,6 +843,9 @@ function sanitizeMatchForPublic(match) {
 
     synced_at:
       match.synced_at,
+    dictionary: match.dictionary ?? null,
+    review_status: match.review_status ?? null,
+    review_evidence: match.review_evidence ?? null,
 
     game:
       match.game,
@@ -1102,6 +944,7 @@ async function upsertGithubFile(
     await fetch(
       `${url}?ref=${GITHUB_BRANCH}`,
       {
+        signal: AbortSignal.timeout(15000),
         headers: githubHeaders(env)
       }
     );
@@ -1115,8 +958,7 @@ async function upsertGithubFile(
     getResponse.status !== 404
   ) {
     throw new Error(
-      `GitHub GET ${getResponse.status} ` +
-      await getResponse.text()
+      `GitHub GET HTTP ${getResponse.status}`
     );
   }
 
@@ -1138,6 +980,7 @@ async function upsertGithubFile(
       url,
       {
         method: "PUT",
+        signal: AbortSignal.timeout(15000),
         headers: githubHeaders(env),
         body: JSON.stringify(body)
       }
@@ -1145,8 +988,7 @@ async function upsertGithubFile(
 
   if (!putResponse.ok) {
     throw new Error(
-      `GitHub PUT ${putResponse.status} ` +
-      await putResponse.text()
+      `GitHub PUT HTTP ${putResponse.status}`
     );
   }
 }
@@ -1342,6 +1184,73 @@ function buildHistoryAnalysis(rows) {
       };
     })
   };
+}
+
+async function getHealth(env) {
+  const saved = JSON.parse(await env.TFT_KV.get("sync_status") || "null");
+  if (!saved) return {schema_version: SCHEMA_VERSION, status: "waiting", last_attempt_at: null};
+  const stale = Date.now() - Date.parse(saved.last_attempt_at) > 20 * 60 * 1000;
+  return {...saved, stale, status: stale ? "stale" : saved.status};
+}
+
+function buildReviewEvidence(match) {
+  const me = match.me;
+  const opponents = match.lobby.filter(p => !p.is_me);
+  const unknown = me.units.filter(u => u.classification === "unknown").map(u => u.id);
+  const units = [...new Map(me.units.map(u => [u.id, u])).values()];
+  return {
+    source: "final_boards_only",
+    patch_verified: Boolean(knownPatch(match.game.game_version)),
+    unknown_unit_ids: unknown,
+    missing_name_ids: me.units.filter(u => u.name_ko === u.id).map(u => u.id),
+    signals: {
+      gold_review: me.placement >= 5 && me.gold_left >= 20,
+      gold_review_is_proof_of_error: false,
+      one_star_equipped_units: me.units.filter(u => u.star === 1 && u.items.length > 0).map(u => u.id),
+      frontline_count: null,
+      frontline_count_reason: "unit_roles_not_verified",
+      completed_item_count: null,
+      item_count_reason: "item_categories_not_verified"
+    },
+    contested_units: units.map(u => ({id: u.id, name_ko: u.name_ko,
+      opponent_boards: opponents.filter(p => p.units.some(v => v.id === u.id)).map(p => ({
+        placement: p.placement, last_round: p.last_round,
+        stars: p.units.filter(v => v.id === u.id).map(v => v.star)
+      }))})).filter(u => u.opponent_boards.length),
+    limitations: ["Opponents finished at different times; this is not simultaneous scouting.",
+      "No shop, reroll, purchase, bench or positioning timeline.",
+      "Unknown units must not be assumed to be tanks or summons."]
+  };
+}
+
+function buildSimilarBoards(matches) {
+  return matches.map(match => {
+    const version = match.game.game_version;
+    if (!knownPatch(version)) return {match_id: match.match_id, available: false,
+      reason: "unknown_patch", sample_count: 0, examples: []};
+    const anchors = match.me.units.filter(u => u.classification === "shop_unit" && u.items.length >= 2);
+    const candidates = [];
+    for (const other of matches) {
+      if (other.match_id === match.match_id) continue;
+      if (["game_version", "set_number", "set_core_name", "queue_id", "game_type"]
+          .some(k => other.game[k] == null || match.game[k] == null || other.game[k] !== match.game[k])) continue;
+      for (const player of other.lobby) {
+        if (numericOrNull(player.level) === null || numericOrNull(match.me.level) === null ||
+            numericOrNull(player.last_round) === null || numericOrNull(match.me.last_round) === null) continue;
+        if (Math.abs(player.level - match.me.level) > 1 || Math.abs(player.last_round - match.me.last_round) > 3) continue;
+        const overlap = anchors.filter(a => player.units.some(u => u.id === a.id && u.star === a.star));
+        if (!overlap.length) continue;
+        candidates.push({match_id: other.match_id, placement: player.placement,
+          level: player.level, last_round: player.last_round,
+          matched_units: overlap.map(a => a.id), units: player.units});
+      }
+    }
+    return {match_id: match.match_id, available: true, sample_count: candidates.length,
+      small_sample: candidates.length < 20,
+      method: "same_build_set_queue_mode; level +/-1; last_round +/-3; equipped unit and star match",
+      limitation: "Local archive only; not a representative meta sample or proof of better decisions.",
+      examples: candidates.sort((a, b) => b.matched_units.length - a.matched_units.length || a.placement - b.placement).slice(0, 5)};
+  });
 }
 
 function rawJson(text) {
